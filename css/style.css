@@ -114,7 +114,22 @@ div.pagination a.page_number{
 	background-color: rgba(255,255,255,0.9);
 }
 
-
+/*back-top*/
+div.back-top{
+	position: fixed;
+	right: 2em;
+	bottom: 4em;
+	
+	background-color: #da6426;
+	height: 2.5em;
+	width: 2.5em;
+}
+div.back-top a{
+	display: block;
+	color: white;
+	vertical-align: middle;
+	font-size: 1em;
+}
 
 
 /*底部*/
