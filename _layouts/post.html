@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: defaultPost
 ---
 <div class="post">
 
@@ -11,5 +11,5 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-
+  {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </div>

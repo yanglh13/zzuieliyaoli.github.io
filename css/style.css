@@ -78,16 +78,35 @@ a.read-more:hover{
 	color:#da6426;
 }
 
+/*上一页下一页*/
 div.pagination{
 	text-align: center;
 }
 div.pagination a{
+	color: black;
 	display: inline-block;
-	height: 4em;
-	width: 4em;
+	padding: 1em;
+	height: auto;
+	width: auto;
 	background-color:#da6426; 
+	vertical-align: middle;
+	-webkit-transition: 0.2s;
+     -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+       -o-transition: 0.2s;
+          transition: 0.2s;
 }
-
+div.pagination a.on{
+	color: white;
+}
+div.pagination a.off{
+	color: black;
+	text-decoration: none;
+}
+div.pagination a.page_number{
+	color: white;
+	text-decoration: none;
+}
 /*about文章*/
 .post{
 	padding: 15px;

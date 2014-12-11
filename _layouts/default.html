@@ -14,19 +14,17 @@
 
       <div class="pagination">
         {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+          <a href="{{ paginator.previous_page_path }}" class="previous on">上一页</a>
         {% else %}
-          <span class="previous">Previous</span>
+          <a class="previous off"><span >上一页</span></a>
         {% endif %}
-        <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        <a class="page_number"><span >{{ paginator.page }} /{{ paginator.total_pages }}</span></a>
         {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+          <a href="{{ paginator.next_page_path }}" class="next on">下一页</a>
         {% else %}
-          <span class="next ">Next</span>
+          <a class="next off"><span >下一页</span></a>
         {% endif %}
-        <!-- <a href=""></a
-        ><a></a
-        ><a href=""></a> -->
+        
       </div>
     </div>
 
