@@ -1,9 +1,20 @@
 body{
-	background: url(../images/bg.jpg) repeat;
+	background: url(../images/bg.jpg);
+	background-attachment: fixed;
+	background-color: #777;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-position: left bottom;*/
 }
 
 /*导航条*/
+@media screen and (max-width: 600px){
+	.site-nav{
+		background-color: rgba(0,0,0,0.9);
+	}
+	
 
+}
 .site-header{
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	background-color: rgba(0,0,0,0.4);
@@ -36,7 +47,7 @@ body{
 }
 
 ul.post-list li{
-	padding: 5px;
+	padding: 15px;
 	border-radius: 2px;
 	background-color: rgba(255,255,255,0.9);
 }
@@ -53,6 +64,7 @@ ul.post-list li h2 a:hover{
 	color:#da6426;
 }
 
+
 /*read more*/
 a.read-more{
 	-webkit-transition: 0.2s;
@@ -66,4 +78,49 @@ a.read-more:hover{
 	color:#da6426;
 }
 
-/*baout文章*/
+div.pagination{
+	text-align: center;
+}
+div.pagination a{
+	display: inline-block;
+	height: 4em;
+	width: 4em;
+	background-color:#da6426; 
+}
+
+/*about文章*/
+.post{
+	padding: 15px;
+	border-radius: 2px;
+	background-color: rgba(255,255,255,0.9);
+}
+
+
+
+
+/*底部*/
+
+body > footer > div{
+	padding-top: 1.3em;
+	background-color: #34373b;
+	color: white;
+
+	-webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
+}
+
+body > footer > div a,
+body > footer > div span{
+	color: #da6426;
+}
+body > footer > div a:hover,
+body > footer > div span:hover{
+	
+	color: white;
+}
+body > footer > div p.text{
+	color:#da6426;
+}
