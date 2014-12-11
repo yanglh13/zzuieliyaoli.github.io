@@ -15,7 +15,7 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <div class="entry">
-          {{ post.content | truncatewords:40}}
+          {{ post.excerpt }}
         </div>
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       </li>
