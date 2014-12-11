@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 ##前端菜鸟一枚。
+![My helpful screenshot](/images/my.jpg)
 
 ## 本名：李耀力
 
