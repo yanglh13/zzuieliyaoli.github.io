@@ -102,10 +102,13 @@ div.pagination a.on{
 div.pagination a.off{
 	color: black;
 	text-decoration: none;
+	cursor: not-allowed	;
 }
 div.pagination a.page_number{
 	color: white;
 	text-decoration: none;
+	border-left: 1px solid rgba(0,0,0,0.2);
+	border-right: 1px solid rgba(0,0,0,0.2);
 }
 /*about文章*/
 .post{
@@ -115,21 +118,37 @@ div.pagination a.page_number{
 }
 
 /*back-top*/
-div.back-top{
-	position: fixed;
-	right: 2em;
-	bottom: 4em;
-	
-	background-color: #da6426;
-	height: 2.5em;
-	width: 2.5em;
+@media screen and (min-width: 600px){
+	a.back-top{
+		display: none;
+		position: fixed;
+		right: 2em;
+		bottom: 4em;
+		
+		height: 50px;
+		width: 50px;
+		
+		background-color: #da6426;
+		background-image: url(../images/scrollup.png);
+		background-position: center;
+		border-radius: 7px;
+		-webkit-transition: 0.5s;
+	     -moz-transition: 0.5s;
+	      -ms-transition: 0.5s;
+	       -o-transition: 0.5s;
+	          transition: 0.5s;		
+	}
+	a.back-top:hover{
+		background-color: white;
+	}
+
 }
-div.back-top a{
-	display: block;
-	color: white;
-	vertical-align: middle;
-	font-size: 1em;
+@media screen and (max-width: 600px){
+	a.back-top{
+		display: none;
+	}
 }
+
 
 
 /*底部*/
