@@ -1,7 +1,7 @@
 body{
 	background: url(../images/bg.jpg);
 	background-attachment: fixed;
-	background-color: #777;
+	background-color: #eee;
 	background-size: cover;
 	background-repeat: no-repeat;
 	/*background-position: left bottom;*/
@@ -168,6 +168,11 @@ body > footer > div{
 body > footer > div a,
 body > footer > div span{
 	color: #da6426;
+	-webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
 }
 body > footer > div a:hover,
 body > footer > div span:hover{
