@@ -138,7 +138,7 @@ ul.pager li.off a{
 }
 /*文章分类*/
 /*标题*/
-div.category a{
+p.post-meta a{
 	-webkit-transition: 0.2s;
      -moz-transition: 0.2s;
       -ms-transition: 0.2s;
@@ -146,9 +146,9 @@ div.category a{
           transition: 0.2s;
 }
 
-div.category a:hover,
-div.category a:active,
-div.category a:focus{
+p.post-meta a:hover,
+p.post-meta a:active,
+p.post-meta a:focus{
 	color: #da6426;
 }
 
