@@ -78,6 +78,10 @@ a.read-more:hover{
 	color:#da6426;
 }
 
+
+
+
+
 /*上一页下一页*/
 div.pagination{
 	text-align: center;
@@ -110,6 +114,45 @@ div.pagination a.page_number{
 	border-left: 1px solid rgba(0,0,0,0.2);
 	border-right: 1px solid rgba(0,0,0,0.2);
 }
+
+/*上一篇、下一篇文章*/
+ul.pager{
+	margin: 0px;
+}
+ul.pager li{
+	list-style:none;
+	-webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
+}
+ul.pager li a:hover,
+ul.pager li a:active,
+ul.pager li a:focus{
+	color: #da6426;
+}
+
+ul.pager li.off a{
+	cursor: not-allowed	;
+}
+/*文章分类*/
+/*标题*/
+div.category a{
+	-webkit-transition: 0.2s;
+     -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+       -o-transition: 0.2s;
+          transition: 0.2s;
+}
+
+div.category a:hover,
+div.category a:active,
+div.category a:focus{
+	color: #da6426;
+}
+
+
 /*about文章*/
 .post{
 	padding: 15px;
@@ -182,3 +225,5 @@ body > footer > div span:hover{
 body > footer > div p.text{
 	color:#da6426;
 }
+
+/*文章分类*/

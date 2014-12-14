@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "学习笔记-2014.12.6"
+title:  "学习笔记"
 date:   2014-12-06 
-tage: ["学习笔记","JavaScript"]
+categories: [javascript-learning]
 ---
 
 1、this对象是在运行时基于函数的执行环境绑定的:在全局函数中，this等于window，而当函数被作为某个对象的方法调用时，this等于那个对象。

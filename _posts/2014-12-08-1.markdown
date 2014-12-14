@@ -2,7 +2,7 @@
 layout: post
 title:  "Javascript事件知识点整理"
 date:   2014-12-08 
-tage: ["学习笔记","JavaScript"]
+categories: [javascript-learning]
 ---
 
 ##一、事件流P346
