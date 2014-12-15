@@ -227,3 +227,16 @@ body > footer > div p.text{
 }
 
 /*文章分类*/
+div.category li a{
+	-webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
+}
+
+div.category li a:hover,
+div.category li a:active,
+div.category li a:focus{
+	color:#da6426; 
+}
