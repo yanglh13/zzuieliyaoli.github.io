@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "javascript-各种尺寸-偏移量(offset dimension)"
+date:   2014-12-15 
+categories: [javascript-organization-and-thinking]
+---
+把这篇博客的日期改为大学开学的日子，仅当个纪念吧~
+
+1、哇哈哈哈啊哈~兴奋难以言表。
+
+2、以前被github的命令行搞到崩溃，丢掉了一段时间。。。（其实是英文差）。
+
+3、接下来，要把我CSDN仅有的博客搬过来，哈哈！
+
+4、还得研究一下文档，把tags等插件功能加上。

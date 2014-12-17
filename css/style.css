@@ -240,3 +240,15 @@ div.category li a:active,
 div.category li a:focus{
 	color:#da6426; 
 }
+
+
+/*文字选定*/
+::selection{
+	background:#da6426;
+	color: white;
+}
+
+::-moz-selection{
+	background:#da6426;
+	color: white;
+}
