@@ -157,7 +157,7 @@ p.post-meta a:focus{
 .post{
 	padding: 15px;
 	border-radius: 2px;
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,0.95);
 }
 
 /*back-top*/
@@ -192,7 +192,13 @@ p.post-meta a:focus{
 	}
 }
 
+/*blockquote*/
 
+.blockquot{
+	background-color: #eef !important;
+	border-left: 4px solid #da6426 !important;
+	content: black !important;
+}
 
 /*底部*/
 
