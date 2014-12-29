@@ -1,0 +1,1270 @@
+@charset "UTF-8";
+
+/*
+京都アニメーション
+Copyright (C) Kyoto Animaion Co.,Ltd. All Rights Reserved.
+*/
+
+/*
+font-size list (base: 12px)
+ 67% =  8px
+ 75% =  9px
+ 83% = 10px
+ 92% = 11px        175% = 21px
+100% = 12px        184% = 22px
+108% = 13px        192% = 23px
+117% = 14px        200% = 24px
+125% = 15px        209% = 25px
+133% = 16px        217% = 26px
+142% = 17px
+150% = 18px
+159% = 19px
+167% = 20px
+*/
+
+/* ---------------------------
+base setting
+--------------------------- */
+html, body {
+	height: 100%;
+	text-align: center;
+}
+
+/* ---------------------------
+clearfix setting
+--------------------------- */
+.clearfix { zoom: 1; }
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+	overflow: hidden;
+}
+.clearfix:after { clear: both; }
+
+/* ---------------------------
+plugin setting
+--------------------------- */
+
+/* maximage */
+#maxbg {
+	display: none;
+	z-index: -999;
+}
+	.mc-hide-scrolls{ overflow: hidden; }
+	.mc-cycle {
+		height: 100%;
+		left: 0;
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.mc-image {
+		background-size: cover;
+		-moz-background-size: cover;
+		background-attachment: fixed;
+		background-position :center center;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+	}
+
+/* colorbox */
+#colorbox, #cboxOverlay, #cboxWrapper { position: absolute; top: 0; left: 0; z-index: 9999; overflow: hidden; }
+#cboxOverlay { position: fixed; width: 100%; height: 100%; }
+#cboxMiddleLeft, #cboxBottomLeft { clear: left; }
+#cboxContent { position: relative; }
+#cboxLoadedContent { overflow: auto; }
+#cboxTitle { margin: 0; }
+#cboxLoadingOverlay, #cboxLoadingGraphic { position: absolute; top: 0; left: 0; width: 100%; }
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor: pointer; }
+#cboxOverlay { background: #000; }
+#cboxContent { overflow:hidden; }
+#cboxError { padding: 50px; border: 1px solid #ccc; }
+#cboxLoadedContent { margin-bottom: 28px; overflow: hidden; }
+#cboxTitle { position: absolute; bottom: 4px; left: 0; text-align: center; width: 100%; color: #949494; }
+#cboxCurrent { position: absolute; bottom: 4px; left: 58px; color: #949494; }
+#cboxSlideshow { position: absolute; right: 30px; bottom: 4px; color: #0092ef; }
+#cboxPrevious { position: absolute; left: 0; bottom: 0; background: url(/img/colorbox/control.png) no-repeat 0 0; width: 25px; height: 25px; text-indent:-9999px; }
+#cboxPrevious:hover{ background-position: 0 -25px; }
+#cboxNext { position: absolute; left: 27px; bottom: 0; background: url(/img/colorbox/control.png) no-repeat -25px 0; width: 25px; height: 25px; text-indent:-9999px; }
+#cboxNext:hover { background-position: -25px -25px; }
+#cboxLoadingGraphic { background: url(/img/colorbox/loading.gif) no-repeat center center; }
+#cboxClose { position: absolute; right: 0; bottom: 0; background: url(/img/colorbox/close.png) no-repeat left top; width: 70px; height: 25px; text-indent:-9999px; }
+#cboxClose:hover { background-position: left -25px; }
+.cboxIE #cboxTopLeft, .cboxIE #cboxTopCenter, .cboxIE #cboxTopRight, .cboxIE #cboxBottomLeft, .cboxIE #cboxBottomCenter, .cboxIE #cboxBottomRight, .cboxIE #cboxMiddleLeft, .cboxIE #cboxMiddleRight { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); }
+.cboxIE6 #cboxTopLeft, .cboxIE6 #cboxTopCenter, .cboxIE6 #cboxTopRight, .cboxIE6 #cboxBottomLeft, .cboxIE6 #cboxBottomCenter, .cboxIE6 #cboxBottomRight, .cboxIE6 #cboxMiddleLeft, .cboxIE6 #cboxMiddleRight { _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')"); }
+
+/* ---------------------------
+content setting
+--------------------------- */
+#siteWrap {
+	position: relative;
+	width: 100%;
+	min-width: 900px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	display: none;
+}
+#globalNavWrap {
+	position: fixed;
+	_position: absolute;
+	left: -1000px;
+	top: 0;
+	width: 1000px;
+	z-index: 1;
+}
+#globalNav {
+	height: 640px;
+	background: url(../images/globalNavBg.png);
+}
+	h1 {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+		h1 a { display: block; }
+		h1 a:hover { opacity: 0.8; }
+	.globalNavList {
+		width: 200px;
+		height: 180px;
+	}
+#globalNavMenu-01 {
+	position: absolute;
+	right: 0;
+	top: 280px;
+	height: 180px;
+}
+#globalNavMenu-02 {
+	position: absolute;
+	right: 0;
+	top: 470px;
+	height: 140px;
+}
+	.globalNavList li {
+		position: relative;
+		float: right;
+		width: 40px;
+	}
+		.globalNavList li a {
+			display: block;
+			width: 40px;
+			background: url(../images/globalNavList.png);
+		}
+#globalNavMenu-01 li a { height: 180px; }
+#globalNavMenu-02 li a { height: 140px; }
+	.globalNavList li span { display: none; }
+#globalNavList-01 a { background-position: -360px 0; }
+#globalNavList-02 a { background-position: -320px 0; }
+#globalNavList-03 a { background-position: -280px 0; }
+#globalNavList-04 a { background-position: -240px 0; }
+#globalNavList-05 a { background-position: -200px 0; }
+#globalNavList-06 a { background-position: -160px 0; }
+#globalNavList-07 a { background-position: -120px 0; }
+#globalNavList-08 a { background-position: -80px 0; }
+#globalNavList-09 a { background-position: -40px 0; }
+#globalNavList-10 a { background-position: 0 0; }
+#globalNavList-01 a:hover, #globalNavList-01 .current { background-position: -360px -180px; }
+#globalNavList-02 a:hover, #globalNavList-02 .current { background-position: -320px -180px; }
+#globalNavList-03 a:hover, #globalNavList-03 .current { background-position: -280px -180px; }
+#globalNavList-04 a:hover, #globalNavList-04 .current { background-position: -240px -180px; }
+#globalNavList-05 a:hover, #globalNavList-05 .current { background-position: -200px -180px; }
+#globalNavList-06 a:hover, #globalNavList-06 .current { background-position: -160px -180px; }
+#globalNavList-07 a:hover, #globalNavList-07 .current { background-position: -120px -180px; }
+#globalNavList-08 a:hover, #globalNavList-08 .current { background-position: -80px -180px; }
+#globalNavList-09 a:hover, #globalNavList-09 .current { background-position: -40px -180px; }
+#globalNavList-10 a:hover, #globalNavList-10 .current { background-position: 0 -180px; }
+	.subNav {
+		display: none;
+		position: absolute;
+		left: 32px;
+		top: 20px;
+		padding: 5px 0;
+		-webkit-border-radius: 0 5px 5px 0;
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+		background: rgba(0, 0, 0, 0.5)!important;
+		background: url(../images/subNavBg.png) repeat\9; /* IE8 and below*/
+	}
+		.subNav li {
+			width: 140px;
+			height: 30px;
+			text-align: left;
+			background: url(../images/subNavList.png) no-repeat 7px 10px!important;
+		}
+			.subNav li span { display: block; }
+			.subNav li a {
+				width: 120px!important;
+				height: 30px!important;
+				padding-left: 20px;
+				line-height: 30px;
+				color: #fff;
+				background: none!important;
+			}
+			.subNav li a:hover {
+				text-decoration: underline;
+				color: #cc6699;
+				background: none!important;
+				-webkit-border-radius: 0 5px 5px 0;
+				-moz-border-radius: 0 5px 5px 0;
+				border-radius: 0 5px 5px 0;
+			}
+#contentWrap {
+	width: 100%;
+	padding-bottom: 80px;
+}
+#contentBox {
+	width: 720px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+	padding: 30px 0 10px;
+	text-align: left;
+}
+#mainContentBox {
+	position: relative;
+	min-height: 610px;
+}
+	#mainContentBox h2 { text-align: right; }
+#pankuzuList {
+	margin: 5px 10px 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px #999 dotted;
+}
+	#pankuzuList li {
+		float: left;
+		padding-left: 20px;
+		background: url(/img/kotenbu/pankuzuListBg.png) no-repeat 9px 6px;
+	}
+		#pankuzuList li a {
+			color: #cc6699;
+			text-decoration: underline;
+		}
+		#pankuzuList li a:hover { text-decoration: none; }
+	.pageTopLink {
+		clear: both;
+		position: relative;
+		padding: 15px 0 10px 0;
+		background: url(/img/kotenbu/pageTopLinkBorder.png) no-repeat right 0;
+	}
+		.pageTopLink a {
+			position: absolute;
+			right: 30px;
+			top: 7px;
+			display: block;
+			width: 47px;
+			height: 7px;
+			background: url(/img/kotenbu/pageTopLink.png) 0 0;
+		}
+		.pageTopLink a:hover { background-position: left -7px; }
+			.pageTopLink a span { display: none; }
+#globalFooterWrap {
+	position: absolute;
+	margin-top: -80px;
+	width: 100%;
+	min-width: 900px;
+	height: 80px;
+	background: url(/img/kotenbu/globalFooterWrapBg.png) repeat-x;
+	display: none;
+}
+#globalFooter {
+	position: relative;
+	width: 900px;
+	height: 80px;
+	margin: 0 auto;
+}
+#shareList {
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	padding-top: 20px;
+	background: url(/img/kotenbu/shareLinkBg.png) no-repeat 0 0;
+}
+	#shareList li { float: left; }
+#twitter { width: 110px; height: 20px; }
+#facebook { width: 133px; height: 20px; }
+#hatena { width: 50px; height: 20px; }
+	small {
+		display: block;
+		padding-top: 5px;
+	}
+#footerOfficialLink {
+	position: absolute;
+	right: 200px;
+	bottom: 10px;
+	width: 200px;
+}
+#footerCorporateLink {
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+	#footerCorporateLink ul { padding-left: 25px; }
+		#footerCorporateLink ul li {
+			text-align:left;
+			padding-left: 10px;
+			background: url(/img/kotenbu/footerCorporateLinkBg.png) no-repeat 0 6px;
+		}
+			#footerCorporateLink ul li a {
+				font-size: 83%;
+				color: #fff;
+			}
+			#footerCorporateLink ul li a:hover { text-decoration: underline; }
+
+/* index */
+#topCatch {
+	position: absolute;
+	left: 340px;
+}
+	#topCatch p {
+		width: 0;
+		height: 30px;
+		margin-bottom: 10px;
+	}
+#topCatch-01 { background: url(/img/kotenbu/top/topTextList.png) 0 0;}
+#topCatch-02 { background: url(/img/kotenbu/top/topTextList.png) 0 -30px; }
+#topCatch-03 { background: url(/img/kotenbu/top/topTextList.png) 0 -60px; }
+	#topCatch p span, #topOnair p span { display: none; }
+#topOnair {
+	position: absolute;
+	left: 340px;
+	top: 140px;
+}
+	#topOnair p {
+		width: 0;
+		height: 45px;
+		margin-bottom: 10px;
+	}
+#topOnair-01 {
+	width: 280px;
+	background: url(/img/kotenbu/top/topTextList.png) 0 -90px;
+}
+#topOnair-02 {
+	width: 390px;
+	background: url(/img/kotenbu/top/topTextList.png) 0 -135px;
+}
+#topUpdateInfoWrap {
+	position: relative;
+	padding-top : 600px;
+	color: #fff;
+}
+	.topUpdateInfoWrapper { width: 720px!important; }
+#topUpdateInfoControlPrev {
+	position: absolute;
+	left: 0;
+	bottom: 35px;
+	z-index: 1;
+}
+#topUpdateInfoControlPrev a { background: url(/img/kotenbu/top/topUpdateInfoControlBg.png) 0 0; }
+#topUpdateInfoControlPrev a:hover { background-position: left -70px; }
+#topUpdateInfoControlNext {
+	position: absolute;
+	right: 0;
+	bottom: 35px;
+	z-index: 1;
+}
+#topUpdateInfoControlNext a { background: url(/img/kotenbu/top/topUpdateInfoControlBg.png) right 0; }
+#topUpdateInfoControlNext a:hover { background-position: right -70px; }
+	.browse {
+		width: 30px;
+		height: 70px;
+		display: block;
+		cursor: pointer;
+	}
+#topUpdateInfo {
+	background: url(/img/kotenbu/top/topUpdateInfoBg.png) repeat;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 10px 35px;
+	height: 130px!important;
+}
+	.topUpdateInfoList {
+		float: left;
+		width: 720px;
+	}
+		.topUpdateInfoList dt {
+			float: left;
+			padding-left: 25px;
+		}
+		.topUpdateInfoList .new { background: url(/img/kotenbu/top/new.png) no-repeat 0 2px; }
+		.topUpdateInfoList dd {
+			margin: -2px 0 0 130px;
+			padding-right: 35px;
+			line-height: 1.8em;
+		}
+			.topUpdateInfoList dd a { color: #cc6699; }
+			.topUpdateInfoList dd a:hover { text-decoration: underline; }
+#topBannerLinkList {
+	margin-top: 15px;
+	padding: 0 45px;
+}
+	#topBannerLinkList li {
+		float: left;
+		margin-left: 10px;
+	}
+#topAdvertiseList {
+	margin-top: 15px;
+	background: url(/img/kotenbu/top/ad/topAdvertiseListBg.jpg) no-repeat;
+}
+	#topAdvertiseList li { float: left; }
+
+/* news */
+.kotenbuNews {
+	margin-bottom: 30px;
+	padding: 5px 10px 0;
+	background: url(/img/kotenbu/news/newsArticleBg.png) repeat;
+	background: rgba(255, 255, 255, 0.4);
+}
+	.kotenbuNews a {
+		color: #cc6699;
+		text-decoration: underline;
+	}
+	.kotenbuNews a:hover { text-decoration: none; }
+	.kotenbuNews h3 {
+		padding: 10px 0 8px 3px;
+		font-size: 150%;
+		border-bottom: 2px #333 solid;
+	}
+	.kotenbuNews h4 {
+		margin: 10px 0 10px 10px;
+		padding-left: 5px;
+		font-size: 133%;
+		border-left: 3px #333 solid;
+	}
+#oabTitle { border: none; }
+#oabSubTitle {
+	padding: 0 0 5px 30px;
+	font-size: 150%;
+}
+#oabDescription {
+	text-align: center;
+	font-size: 125%;
+}
+	.oabDetail dt {
+		margin-bottom: 10px;
+		padding: 0 0 0 5px!important;
+		border-left: 3px #333 solid;
+	}
+	.kotenbuNews aside {
+		padding: 5px 5px 10px 0;
+		text-align: right;
+	}
+	.kotenbuNews p {
+		padding: 10px 20px;
+		font-size: 117%;
+		line-height: 1.8em;
+	}
+		.kotenbuNews p .bold { font-weight: bold; }
+		.kotenbuNews p .baseColor { color: #cc6699; }
+	.kotenbuNews ul {
+		padding: 10px 20px;
+		font-size: 117%;
+	}
+		.kotenbuNews ul li { line-height: 1.8em; }
+	.kotenbuNews dl {
+		padding: 10px 20px;
+		font-size: 117%;
+	}
+		.kotenbuNews dl dt { padding-bottom: 5px; }
+		.kotenbuNews dl dd {
+			padding-left: 10px;
+			line-height: 1.8em;
+		}
+#radioRelease {}
+	#radioRelease p {
+		float: left;
+		width: 270px;
+		padding: 10px 0;
+	}
+		#radioRelease p img { margin: 5px 10px; }
+		#radioRelease p a {
+			display: block;
+			text-align: center;
+		}
+	#radioRelease dl {
+		float: left;
+		width: 430px;
+		padding: 10px 0;
+	}
+		#radioRelease dl dt {
+			margin: 10px 0 0 10px;
+			padding: 3px 0 3px 10px;
+			border-left: 3px #cc6699 solid;
+			font-size: 117%;
+			color: #666;
+		}
+		#radioRelease dl dd {
+			padding: 10px 10px 10px 20px;
+			font-size: 92%;
+			line-height: 1.8em;
+		}
+
+/* story */
+#storyContent {}
+	#storyContent h3 { margin-bottom: 5px; }
+#storyMenu {
+	float: left;
+	width: 200px;
+}
+#storyMenuList { padding: 20px 0; }
+	#storyMenuList li {
+		margin: 0 30px 5px 10px;
+		padding: 3px 0;
+		padding-left: 5px;
+		font-size: 133%;
+		border-left: 3px #cc6699 solid;
+		background-repeat: no-repeat;
+		background-position: right 10px;
+	}
+		#storyMenuList li a { color: #cc6699; }
+		#storyMenuList li a:hover { text-decoration: underline; }
+#storyOutline, #storyPreview {
+	position: relative;
+	float: left;
+	width: 520px;
+}
+	#storyOutline h3 { margin-left: 25px; }
+	#storyPreview h3 {
+		margin-bottom: 20px;
+		padding-bottom: 3px;
+		font-size: 142%;
+		border-bottom: 2px #333 solid;
+		background-repeat: no-repeat;
+		background-position: right 10px;
+	}
+	.update0420 { background-image: url(/img/kotenbu/story/update0420.png) }
+	.update0427 { background-image: url(/img/kotenbu/story/update0427.png) }
+	.update0504 { background-image: url(/img/kotenbu/story/update0504.png) }
+	.update0511 { background-image: url(/img/kotenbu/story/update0511.png) }
+	.update0518 { background-image: url(/img/kotenbu/story/update0518.png) }
+	.update0525 { background-image: url(/img/kotenbu/story/update0525.png) }
+	.update0601 { background-image: url(/img/kotenbu/story/update0601.png) }
+	.update0608 { background-image: url(/img/kotenbu/story/update0608.png) }
+	.update0615 { background-image: url(/img/kotenbu/story/update0615.png) }
+	.update0622 { background-image: url(/img/kotenbu/story/update0622.png) }
+	.update0629 { background-image: url(/img/kotenbu/story/update0629.png) }
+	.update0706 { background-image: url(/img/kotenbu/story/update0706.png) }
+	.update0713 { background-image: url(/img/kotenbu/story/update0713.png) }
+	.update0720 { background-image: url(/img/kotenbu/story/update0720.png) }
+	.update0727 { background-image: url(/img/kotenbu/story/update0727.png) }
+	.update0803 { background-image: url(/img/kotenbu/story/update0803.png) }
+	.update0810 { background-image: url(/img/kotenbu/story/update0810.png) }
+	.update0817 { background-image: url(/img/kotenbu/story/update0817.png) }
+	.update0824 { background-image: url(/img/kotenbu/story/update0824.png) }
+	.update0831 { background-image: url(/img/kotenbu/story/update0831.png) }
+	.update0907 { background-image: url(/img/kotenbu/story/update0907.png) }
+	.update0914 { background-image: url(/img/kotenbu/story/update0914.png) }
+	.update0921 { background-image: url(/img/kotenbu/story/update0921.png) }
+#storyOutlineText {
+	width: 520px;
+	height: 650px;
+	background: url(/img/kotenbu/story/storyOutline.png);
+}
+	#storyOutlineText span { display: none; }
+#storyPreviewCut {
+	margin-bottom: 10px;
+	padding: 25px 5px;
+	background: url(/img/kotenbu/story/storyPreviewCutBg.png) repeat-x;
+}
+	#storyPreviewCut li {
+		float: left;
+		padding: 0 5px;
+	}
+#storyPreviewOutline {
+	padding: 10px 0;
+	font-size: 117%;
+	line-height: 1.8em;
+}
+#storyPreviewStaff { 
+	padding: 20px 0 20px 30px;
+	font-size: 117%;
+}
+	#storyPreviewStaff dt { float: left; }
+	#storyPreviewStaff dd {
+		margin-left: 120px;
+		padding-bottom: 5px;
+	}
+#storyPreviewNotice {
+	margin: 10px 20px 30px;
+	padding: 10px 0;
+	border-top: 1px #999 dotted;
+	border-bottom: 1px #999 dotted;
+	font-size: 108%;
+	text-align: center;
+}
+	#storyPreviewNotice a { color: #cc6699; }
+	#storyPreviewNotice a:hover { text-decoration: underline; }
+
+/* onair */
+#onairDescription {
+	padding: 20px 0;
+	text-align: center;
+}
+#onairInfo { padding: 10px 70px 30px; }
+	#onairInfo h4 {
+		margin-bottom: 10px;
+		padding-left: 3px;
+		border-bottom: 1px #666 dotted;
+		font-size: 133%;
+	}
+	.onairInfoList {
+		padding: 10px 0;
+		font-size: 108%;
+	}
+		.onairInfoList dt {
+			float: left;
+			margin-left: 20px;
+			padding-left: 5px;
+			border-left: 3px #333 solid;
+		}
+		.onairInfoList dd { margin-left: 120px; }
+#onairList {
+	margin: 0 60px;
+	background: url(/img/kotenbu/onair/onairListBg.png) repeat;
+}
+		#onairList thead { background: url(/img/kotenbu/onair/onairListBorder.png) repeat-x left bottom; }
+		#onairList tbody {}
+			#onairList th {
+				padding-left: 10px;
+				height: 55px;
+				line-height: 55px;
+				text-align: left;
+				font-size: 125%;
+			}
+			#onairList td {
+				padding: 10px 0;
+				border-bottom: 1px #333 dotted;
+			}
+				#onairList td span {
+					padding: 0 18px 0 3px;
+					margin-right: 3px;
+					font-size: 83%;
+					background: url(/img/kotenbu/onair/onairLinkBlank.png) no-repeat right 1px;
+				}
+					#onairList td span a { color: #cc6699; }
+					#onairList td span a:hover { text-decoration: underline; }
+			.onairStation {
+				padding-left: 20px!important;
+				width: 240px;
+				font-size: 117%;
+				text-align: left;
+			}
+			.onairTime {
+				width: 190px;
+				font-size: 108%;
+				text-align: center;
+			}
+			.onairStartDay {
+				width: 130px;
+				font-size: 108%;
+				text-align: center;
+			}
+#onairNotice {
+	text-align: right;
+	padding: 15px 15px 30px 0;
+	font-size: 108%;
+}
+
+/* staff-cast */
+#creditContent {}
+	.creditList {
+		float: left;
+		width: 360px;
+	}
+		.creditList h3 { padding-left: 10px; }
+#staffList {
+	height: 1290px;
+	background: url(/img/kotenbu/staff-cast/staff/staffList.png) no-repeat 30px 60px;
+}
+#castList {
+	height: 2430px;
+	background: url(/img/kotenbu/staff-cast/cast/castList.png) no-repeat 20px 50px;
+}
+	#staffList dl, #castList dl { display: none; }
+
+/* gallery */
+#galleryNavLink { padding: 15px 40px 5px; }
+	#galleryNavLink li {
+		float: left;
+		padding-left: 25px;
+		line-height: 2em;
+		font-size: 117%;
+		background: url(/img/kotenbu/gallery/galleryNavList.png) no-repeat 15px 9px;
+	}
+		#galleryNavLink li a { color: #666; }
+		#galleryNavLink li a:hover {
+			color: #cc6699;
+			text-decoration: underline;
+		}
+.galleryList { padding: 5px 10px 30px; }
+	.galleryList h3 { padding: 10px 0 10px 15px; }
+	.gallerySceneList {
+		padding: 10px 50px;
+		zoom: 1;
+	}
+	.gallerySceneList:before, .gallerySceneList:after {
+		content: "";
+		display: table;
+		overflow: hidden;
+	}
+	.gallerySceneList:after { clear: both; }
+		.gallerySceneList li {
+			float: left;
+			padding: 0 5px;
+		}
+			.gallerySceneList li a { display: block; }
+	.gallerySettingList {
+		padding: 10px 40px;
+		zoom: 1;
+	}
+	.gallerySettingList:before, .gallerySettingList:after {
+		content: "";
+		display: table;
+		overflow: hidden;
+	}
+	.gallerySettingList:after { clear: both; }
+		.gallerySettingList li {
+			float: left;
+			padding: 0 5px;
+		}
+			.gallerySettingList li a { display: block; }
+	.keyVisual, .rpVisual { text-align: center; }
+	.spVisual {
+		width: 440px;
+		margin: 0 auto;
+	}
+		.spVisual li {
+			float: left;
+			text-align: center;
+		}
+			.spVisual li a {
+				display: block;
+				margin: 0 10px;
+			}
+	.spVisual2, .spVisual3 { text-align: center; }
+
+/* character */
+#characterContent {
+	padding-bottom: 420px;
+	margin-bottom: 30px;
+	background: url(/img/kotenbu/character/characterContentBg.png) no-repeat center bottom;
+}
+#characterNav {
+	margin: 0 15px 30px;
+	padding: 10px 0 25px;
+	background: url(/img/kotenbu/character/characterNavBorder.png) repeat-x left bottom;
+}
+	.characterNavList {
+		float: left;
+		width: 230px;
+	}
+		.characterNavList li a {
+			display: block;
+			width: 230px;
+			height: 30px;
+			background: url(/img/kotenbu/character/characterNavListBg.png);
+		}
+			.characterNavList li a span { display: none; }
+	#characterNavList-01 a { background-position: 0 0; }
+	#characterNavList-02 a { background-position: 0 -30px; }
+	#characterNavList-03 a { background-position: 0 -60px; }
+	#characterNavList-04 a { background-position: 0 -90px; }
+	#characterNavList-05 a { background-position: 0 -120px; }
+	#characterNavList-06 a { background-position: 0 -150px; }
+	#characterNavList-07 a { background-position: 0 -180px; }
+	#characterNavList-08 a { background-position: 0 -210px; }
+	#characterNavList-09 a { background-position: 0 -240px; }
+	#characterNavList-10 a { background-position: 0 -270px; }
+	#characterNavList-11 a { background-position: 0 -300px; }
+	#characterNavList-12 a { background-position: 0 -330px; }
+	#characterNavList-13 a { background-position: 0 -360px; }
+	#characterNavList-14 a { background-position: 0 -390px; }
+	#characterNavList-15 a { background-position: 0 -420px; }
+	#characterNavList-16 a { background-position: 0 -450px; }
+	#characterNavList-17 a { background-position: 0 -480px; }
+	#characterNavList-18 a { background-position: 0 -510px; }
+	#characterNavList-19 a { background-position: 0 -540px; }
+	#characterNavList-20 a { background-position: 0 -570px; }
+	#characterNavList-21 a { background-position: 0 -600px; }
+	#characterNavList-22 a { background-position: 0 -630px; }
+	#characterNavList-23 a { background-position: 0 -660px; }
+	#characterNavList-24 a { background-position: 0 -690px; }
+	#characterNavList-25 a { background-position: 0 -720px; }
+	#characterNavList-26 a { background-position: 0 -750px; }
+	#characterNavList-27 a { background-position: 0 -780px; }
+	#characterNavList-28 a { background-position: 0 -810px; }
+	#characterNavList-01 a:hover, #characterNavList-01 .selected { background-position: right 0; }
+	#characterNavList-02 a:hover, #characterNavList-02 .selected { background-position: right -30px; }
+	#characterNavList-03 a:hover, #characterNavList-03 .selected { background-position: right -60px; }
+	#characterNavList-04 a:hover, #characterNavList-04 .selected { background-position: right -90px; }
+	#characterNavList-05 a:hover, #characterNavList-05 .selected { background-position: right -120px; }
+	#characterNavList-06 a:hover, #characterNavList-06 .selected { background-position: right -150px; }
+	#characterNavList-07 a:hover, #characterNavList-07 .selected { background-position: right -180px; }
+	#characterNavList-08 a:hover, #characterNavList-08 .selected { background-position: right -210px; }
+	#characterNavList-09 a:hover, #characterNavList-09 .selected { background-position: right -240px; }
+	#characterNavList-10 a:hover, #characterNavList-10 .selected { background-position: right -270px; }
+	#characterNavList-11 a:hover, #characterNavList-11 .selected { background-position: right -300px; }
+	#characterNavList-12 a:hover, #characterNavList-12 .selected { background-position: right -330px; }
+	#characterNavList-13 a:hover, #characterNavList-13 .selected { background-position: right -360px; }
+	#characterNavList-14 a:hover, #characterNavList-14 .selected { background-position: right -390px; }
+	#characterNavList-15 a:hover, #characterNavList-15 .selected { background-position: right -420px; }
+	#characterNavList-16 a:hover, #characterNavList-16 .selected { background-position: right -450px; }
+	#characterNavList-17 a:hover, #characterNavList-17 .selected { background-position: right -480px; }
+	#characterNavList-18 a:hover, #characterNavList-18 .selected { background-position: right -510px; }
+	#characterNavList-19 a:hover, #characterNavList-19 .selected { background-position: right -540px; }
+	#characterNavList-20 a:hover, #characterNavList-20 .selected { background-position: right -570px; }
+	#characterNavList-21 a:hover, #characterNavList-21 .selected { background-position: right -600px; }
+	#characterNavList-22 a:hover, #characterNavList-22 .selected { background-position: right -630px; }
+	#characterNavList-23 a:hover, #characterNavList-23 .selected { background-position: right -660px; }
+	#characterNavList-24 a:hover, #characterNavList-24 .selected { background-position: right -690px; }
+	#characterNavList-25 a:hover, #characterNavList-25 .selected { background-position: right -720px; }
+	#characterNavList-26 a:hover, #characterNavList-26 .selected { background-position: right -750px; }
+	#characterNavList-27 a:hover, #characterNavList-27 .selected { background-position: right -780px; }
+	#characterNavList-28 a:hover, #characterNavList-28 .selected { background-position: right -810px; }
+#characterSetting {}
+	.characterSettingList {
+		position: relative;
+		float: left;
+		width: 720px;
+		height: 520px;
+		background: url(/img/kotenbu/character/characterSettingListBg.png) no-repeat 5px 0;
+		display: none;
+	}
+	#characterSetting .choice{ display: block; }
+		.characterUpList {
+			position: absolute;
+			right: 30px;
+			top: 30px;
+		}
+		.characterSettingList p {
+			position: absolute;
+			left: 350px;
+			top: 278px;
+		}
+		.characterSettingList h3 {
+			position: absolute;
+			left: 400px;
+			top: 408px;
+		}
+	.characterFigureWrapper {
+		width: 240px !important;
+		margin: 20px 0 20px 60px!important;
+	}
+		.characterFigureList {}
+			.characterFigureList li {
+				float: left;
+				width: 240px;
+				height: 480px;
+			}
+		.characterControlPrev {
+			position: absolute;
+			left: 40px;
+			top: 220px;
+			z-index: 2;
+		}
+			.characterControlPrev a { background: url(/img/kotenbu/character/characterControlBg.png) 0 0; }
+			.characterControlPrev a:hover { background-position: left -70px; }
+		.characterControlNext {
+			position: absolute;
+			left: 290px;
+			top: 220px;
+			z-index: 2;
+		}
+			.characterControlNext a { background: url(/img/kotenbu/character/characterControlBg.png) right 0; }
+			.characterControlNext a:hover { background-position: right -70px; }
+		.browse {
+			width: 30px;
+			height: 70px;
+			display: block;
+			cursor: pointer;
+		}
+
+/* interview */
+.commentList { padding: 20px 0 30px; }
+.comment { padding: 5px 20px; }
+	.comment li {
+		float: left;
+		width: 160px;
+		height: 70px;
+		margin-left: 10px;
+	}
+		.comment li a {
+			display: block;
+			width: 160px;
+			height: 70px;
+		}
+			.comment li a span { display: none; }
+#comment-1 { background: url(/img/kotenbu/interview/mainStaffComment/commentList.png) no-repeat 0 0; }
+#comment-2 { background: url(/img/kotenbu/interview/mainStaffComment/commentList.png) no-repeat -160px 0; }
+#comment-3 { background: url(/img/kotenbu/interview/mainStaffComment/commentList.png) no-repeat -320px 0; }
+#comment-4 { background: url(/img/kotenbu/interview/mainStaffComment/commentList.png) no-repeat -480px 0; }
+#comment-5 { background: url(/img/kotenbu/interview/mainStaffComment/commentList.png) no-repeat -640px 0; }
+#comment-6 { background: url(/img/kotenbu/interview/mainStaffComment/commentList.png) no-repeat -800px 0; }
+#comment-7 { background: url(/img/kotenbu/interview/mainStaffComment/commentList.png) no-repeat -960px 0; }
+#comment-8 { background: url(/img/kotenbu/interview/mainStaffComment/commentList.png) no-repeat right 0; }
+#comment-1:hover { background-position: 0 -70px; }
+#comment-2:hover { background-position: -160px -70px; }
+#comment-3:hover { background-position: -320px -70px; }
+#comment-4:hover { background-position: -480px -70px; }
+#comment-5:hover { background-position: -640px -70px; }
+#comment-6:hover { background-position: -800px -70px; }
+#comment-7:hover { background-position: -960px -70px; }
+#comment-8:hover { background-position: right -70px; }
+#staffComment { padding: 10px 20px 30px; }
+	#staffComment h4 {
+		border-left: 3px #cc6699 solid;
+		margin: 10px 0 10px 15px;
+		padding-left: 5px;
+		font-size: 133%;
+		color: #cc6699;
+		cursor: pointer;
+		background-repeat: no-repeat;
+		background-position: right 10px;
+	}
+	#staffComment h4:hover { text-decoration: underline; }
+	.staffCommentList { padding: 10px 0; }
+		.staffCommentList h5 {
+			margin: 0 10px;
+			padding-left: 3px;
+			border-bottom: 1px #666 dotted;
+			font-size: 133%;
+		}
+		.staffCommentList p {
+			margin: 10px;
+			padding: 41px 20px;
+			font-size: 117%;
+			line-height: 27px;
+			background: url(/img/kotenbu/interview/staffComment/bg.jpg) repeat-y;
+			border-radius: 12px;
+			box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+		}
+			.staffCommentList p span {
+				display: block;
+				padding-bottom: 27px;
+			}
+
+/* product */
+#productCategoryList { padding: 0 40px 15px; }
+	#productCategoryList li { float: left; }
+		#productCategoryList li a {
+			display: block;
+			width: 160px;
+			height: 40px;
+			background: url(/img/kotenbu/product/productCategoryList.png);
+		}
+			#productCategoryList li a span { display: none; }
+#productCategoryList-01 a { background-position: 0 0; }
+#productCategoryList-02 a { background-position: -160px 0!important; }
+#productCategoryList-03 a { background-position: -320px 0!important; }
+#productCategoryList-01 a:hover { background-position: 0 -40px; }
+#productCategoryList-02 a:hover { background-position: -160px -40px!important; }
+#productCategoryList-03 a:hover { background-position: -320px -40px!important; }
+#productCategoryList-01 .current { background-position: 0 -40px; }
+#productCategoryList-02 .current { background-position: -160px -40px!important; }
+#productCategoryList-03 .current { background-position: -320px -40px!important; }
+#productContent {}
+	.kotenbuProduct {
+		margin-bottom: 30px;
+		padding: 5px 10px;
+		background: url(/img/kotenbu/product/kotenbuProductBg.png) repeat;
+		background: rgba(255, 255, 255, 0.4);
+	}
+		.kotenbuProduct h3 {
+			font-size: 150%;
+			padding: 10px 0 8px 3px;
+			border-bottom: 2px #cc6699 solid;
+		}
+			.packageTop { padding: 30px 0 20px; }
+				.packageVisual {
+					float: left;
+					padding: 10px 7px;
+				}
+					.packageVisual img {
+						padding: 2px;
+						border: 1px #999 solid;
+					}
+				.packageInfo {
+					float: left;
+					width: 430px;
+					padding: 0 5px;
+				}
+					.packageInfo p {
+						padding: 10px 5px 15px;
+						line-height: 1.8em;
+						font-size: 108%;
+					}
+					.packageInfo h4 {
+						font-size: 125%;
+						color: #666;
+					}
+			.packageSpecList {
+				float: left;
+				width: 330px;
+				padding: 10px;
+			}
+				.packageSpecList h4 {
+					padding: 0 0 3px 3px;
+					border-bottom: 1px #333 solid;
+					font-size: 117%;
+					color: #cc6699;
+				}
+				.packageJacketBD, .packageJacketDVD {
+					padding: 15px 5px 0;
+					text-align: center;
+				}
+					.packageJacketBD a, .packageJacketDVD a { color: #cc6699; }
+					.packageJacketBD a:hover, .packageJacketDVD a:hover { text-decoration: underline; }
+					.packageJacketDVD a {
+						display: block;
+						float: left;
+					}
+						.packageJacketBD a span, .packageJacketDVD a span {
+							display: block;
+							padding-top: 5px;
+						}
+						.packageJacketDVD a img { margin: 0 5px; }
+				.packageSpecList dl {
+					padding: 10px;
+					font-size: 108%;
+				}
+					.packageSpecList dl dt {
+						float: left;
+						color: #666;
+					}
+						.packageSpecList dl dd {
+							margin-left: 70px;
+							padding-bottom: 5px;
+						}
+			.packageSpecial {}
+				.packageSpecialList { padding: 10px 0; }
+					.packageSpecialList h4 {
+						margin: 0 20px;
+						padding-bottom: 3px;
+						border-bottom: 1px #cc6699 solid;
+						font-size: 125%;
+						color: #cc6699;
+					}
+					.packageSpecialList ul { padding: 10px 30px; }
+						.packageSpecialList ul li {
+							padding-left: 10px;
+							font-size: 108%;
+							line-height: 1.8em;
+							background: url(/img/kotenbu/product/packageSpecialList.png) no-repeat left 8px;
+						}
+							.packageSpecialList ul li dl dt { float: left; }
+							.packageSpecialList ul li dl dd { margin-left: 7em; }
+	.kotenbuProductFigure {
+		position: relative;
+		margin-bottom: 30px;
+		padding: 5px 10px;
+		background: url(/img/kotenbu/product/kotenbuProductFigureBg.png) repeat;
+		background: rgba(0, 0, 0, 0.6);
+	}
+#figureGallery { padding: 10px 0 30px; }
+		.figureGalleryList {
+			width: 660px;
+			margin: 0 auto;
+			padding: 10px 0;
+		}
+			.figureGalleryList li { float: left; }
+				.figureGalleryList li a {
+					display: block;
+					margin-left: 10px;
+				}
+#packageKyoaniShop {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px #999 dotted;
+}
+	#packageKyoaniShop h4 {
+		margin: 0 0 10px 10px;
+		padding-left: 70px;
+		background: url(/img/kotenbu/product/package/kyoaniShop/packageKyoaniShopTitleBg.png) no-repeat;
+		font-size: 150%;
+		line-height: 30px;
+		color: #cc6699;
+	}
+#packageKyoaniShopSpecial {
+	padding: 15px 0;
+	text-align: center;
+}
+	#packageKyoaniShop p {
+		padding: 10px 20px;
+		line-height: 1.8em;
+		font-size: 117%;
+	}
+		#packageKyoaniShop p a {
+			color: #cc6699;
+			text-decoration: underline;
+		}
+		#packageKyoaniShop p a:hover { text-decoration: none; }
+	.red { color: red; }
+	.bold { font-weight: bold; }
+#packageKyoaniShopProduct { padding: 20px; }
+	.packageKyoaniShopProductList {
+		float: left;
+		width: 220px;
+		text-align: center;
+	}
+		.packageKyoaniShopProductList a {}
+		.packageKyoaniShopProductList h5 {
+			padding-top: 5px;
+			font-size: 108%;
+		}
+			.packageKyoaniShopProductList h5 a {
+				color: #0099ff;
+				text-decoration: underline;
+			}
+			.packageKyoaniShopProductList h5 a:hover {
+				color: #cc6699;
+				text-decoration: none;
+			}
+#packageKyoaniShopInfo { padding: 20px 0 20px 30px; }
+	#packageKyoaniShopInfo li {
+		font-size: 117%;
+		line-height: 1.8em;
+	}
+#packageKyoaniShopSpec { padding: 10px 0; }
+	#packageKyoaniShopSpec h5 {
+		margin-bottom: 20px;
+		padding: 5px;
+		font-size: 133%;
+		color: #cc6699;
+		border: 1px #cc6699 solid;
+	}
+	.packageKyoaniShopSpecList {
+		float: left;
+		width: 350px;
+	}
+		.packageKyoaniShopSpecList h6 {
+			margin: 0 10px;
+			padding-bottom: 3px;
+			border-bottom: 1px #333 dotted;
+			font-size: 117%;
+		}
+		.packageKyoaniShopSpecList ul { padding: 10px; }
+			.packageKyoaniShopSpecList li { font-size: 108%; }
+	#packageKyoaniShopSpec p {
+		clear: both;
+		padding: 5px 0;
+		text-align: center;
+	}
+#packageKyoaniShopNotice {
+	padding: 5px;
+	font-size: 108%;
+	color: #cc6699;
+}
+.kyoaniGoodsList { padding-top: 20px; }
+.kyoaniGoodsImage {
+	float: left;
+	width: 300px;
+}
+	.kyoaniGoodsImage ul {}
+		.kyoaniGoodsImage ul li { text-align: center; }
+	.kyoaniGoodsImage p a { 
+		display: block;
+		margin: 15px 75px 0;
+		width: 150px;
+		height: 45px;
+		background: url(/img/kotenbu/product/kyoani_goods/button.jpg);
+	}
+	.kyoaniGoodsImage p a:hover { background-position: 0 -45px; }
+		.kyoaniGoodsImage p span { display: none; }
+.kyoaniGoodsInfo {
+	float: left;
+	width: 400px;
+}
+	.kyoaniGoodsInfo h4 a {
+		font-size: 150%;
+		color: #cc6699;
+		text-decoration: underline;
+	}
+	.kyoaniGoodsInfo p {
+		padding: 10px;
+		font-size: 108%;
+		line-height: 1.8em;
+	}
+	.kyoaniGoodsInfo h5 {
+		margin: 0 10px;
+		font-size: 125%;
+		border-bottom: 1px #333 solid;
+	}
+	.kyoaniGoodsInfo dl {
+		padding: 10px 0;
+		font-size: 108%;
+	}
+		.kyoaniGoodsInfo dl dt {
+			float: left;
+			padding-left: 10px;
+			color: #666;
+		}
+		.kyoaniGoodsInfo dl dd {
+			margin-left: 100px;
+			padding-bottom: 5px;
+		}
+	.kyoaniGoodsInfo ul { padding: 10px 0; }
+		.kyoaniGoodsInfo li {
+			padding-right: 30px;
+			font-size: 117%;
+			color: #cc6699;
+			text-align: right;
+			line-height: 1.8em;
+		}
+#shopListLink { text-align: center; }
+	#shopListLink a {
+		color: #cc6699;
+		text-decoration: underline;
+	}
+	#shopListLink a:hover { text-decoration: none; }
+
+#shopListNotice { margin: 10px 30px 20px; }
+	#shopListNotice li {
+		font-size: 108%;
+		line-height: 1.8em;
+		color: red;
+	}
+#shopList {
+	margin: 10px 0 30px;
+	background: url(/img/kotenbu/product/kyoani_goods/shop/shopListBg.png) repeat;
+}
+	#shopList th {
+		padding: 10px 0;
+		border: 1px #999 solid;
+		font-size: 117%;
+		text-align: center;
+	}
+	#shopList td {
+		padding: 5px 0 5px 5px;
+		text-align: left;
+		border: 1px #999 solid;
+	}
+		#shopList td a {
+			color: #cc6699;
+			text-decoration: underline;
+			padding: 0 18px 0 3px;
+			margin-right: 3px;
+		}
+		.blank { background: url(/img/kotenbu/product/kyoani_goods/shop/shopLinkBlank.png) no-repeat right 1px; }
+		#shopList td a:hover { text-decoration: none; }
+	.shopArea { text-align: center!important; }
+
+/* link */
+#linkContent {}
+	#linkContent dl dd a { color: #cc6699; }
+#officialLink {
+	padding: 15px 30px;
+	margin: 0 20px;
+	border-bottom: 1px #999 solid;
+}
+	#officialLink dt { float: left; }
+	#officialLink dd {
+		margin-left: 250px;
+		line-height: 40px;
+	}
+#productionLink { padding: 30px; }
+	#productionLink dt { font-size: 125%; }
+	#productionLink dd {
+		padding: 0 0 10px 10px;
+		font-size: 117%;
+	}

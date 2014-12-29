@@ -193,8 +193,7 @@ p.post-meta a:focus{
 }
 
 /*blockquote*/
-
-.blockquot{
+blockquote{
 	background-color: #eef !important;
 	border-left: 4px solid #da6426 !important;
 	content: black !important;
