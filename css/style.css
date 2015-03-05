@@ -157,7 +157,7 @@ p.post-meta a:focus{
 .post{
 	padding: 15px;
 	border-radius: 2px;
-	background-color: rgba(255,255,255,0.95);
+	background-color: rgba(255,255,255,1);
 }
 
 /*back-top*/
