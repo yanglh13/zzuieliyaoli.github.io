@@ -36,7 +36,7 @@ layout: defaultPost
 		  {% if page.previous %}
 		  <li class="previous on"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">上一篇：  {{ page.previous.title }} {{ page.next.date  | date: "%b %-d, %Y"}}</a></li>
 		  {% else %}
-		  <li class="previous off"><a>本文章已经是最旧的文章 </a></li>
+		  <li class="previous off"><a>本文章已经是最后的文章 </a></li>
 		  {% endif %}
 		  {% if page.next %}
 		  <li class="next on"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇：  {{ page.next.title }} {{ page.next.date | date: "%b %-d, %Y" }}</a></li>
