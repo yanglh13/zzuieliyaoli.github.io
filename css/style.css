@@ -255,3 +255,7 @@ div.category li a:focus{
 	background:#da6426;
 	color: white;
 }
+
+div.cnzz{
+	display: none !important;
+}
