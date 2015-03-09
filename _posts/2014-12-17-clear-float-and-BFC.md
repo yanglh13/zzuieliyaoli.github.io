@@ -2,7 +2,7 @@
 layout: post
 title:  "清除浮动的一些方法和BFC知识"
 date:   2014-12-17 
-categories: [css-organization]
+categories: [CSS学习]
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "apply()的应用"
 date:   2014-12-29 
-categories: [javascript-learning]
+categories: [javascript学习]
 ---
 写在前面的吐槽：头晕哦~每次跟`this`相关的知识点都是晕的一笔。本以为掌握了，但是看书发现大牛把`apply()`方法玩得太溜了，自己只得灰溜溜的总结一下，以期获得更深的理解和更高的提升。
 

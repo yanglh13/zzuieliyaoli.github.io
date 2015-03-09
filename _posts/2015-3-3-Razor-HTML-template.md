@@ -2,7 +2,7 @@
 layout: post
 title:  "模板引擎 Razor 体验"
 date:   2015-3-3
-categories: [Template]
+categories: [模板]
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "document对象"
 date:   2015-03-07 
-categories: [javascript-learning]
+categories: [javascript学习]
 ---
 
 一准备面试，发现对一些基础的概念理解不到位。但亡羊补牢，为时未晚。

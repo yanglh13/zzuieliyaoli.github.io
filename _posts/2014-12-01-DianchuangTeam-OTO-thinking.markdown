@@ -2,7 +2,7 @@
 layout: post
 title:  "点创团队OTO配送鼠标垫反馈"
 date:   2014-12-02 
-categories: [team-management-and-thinking]
+categories: [团队管理反思与思考]
 ---
 
 大三加入的大学生创业团队“点创团队”，借助所运营的微信公众平台“郑州大学小助手”，进行了一次O2O。事后团队要求反馈问题，所以才有此文章，搬到博客上以作记录。

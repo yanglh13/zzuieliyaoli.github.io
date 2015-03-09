@@ -259,3 +259,10 @@ div.category li a:focus{
 div.cnzz{
 	display: none !important;
 }
+
+p img{
+	display: block;
+	padding: 1em;
+	background-color: #da6426;
+	border-radius: 5px;
+}
