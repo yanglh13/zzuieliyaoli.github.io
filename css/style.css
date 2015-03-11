@@ -56,6 +56,7 @@ ul.post-list li h2 a{
       -ms-transition: 0.2s;
        -o-transition: 0.2s;
           transition: 0.2s;
+    color: black;
 }
 
 ul.post-list li h2 a:hover{
@@ -71,9 +72,13 @@ a.read-more{
        -o-transition: 0.2s;
           transition: 0.2s;
 }
-
+a.read-more{
+	color: black;
+	border-bottom: 2px #da6426 solid;
+}
 a.read-more:hover{
 	color:#da6426;
+	text-decoration: none;
 }
 
 
@@ -260,9 +265,50 @@ div.cnzz{
 	display: none !important;
 }
 
+/*图片框*/
 p img{
 	display: block;
-	padding: 1em;
-	background-color: #da6426;
+	padding: 0.3em 0.5em;
+	background-color: rgba(0,0,0,0.05);
+
 	border-radius: 5px;
+}
+
+/*分类首字母大写*/
+div.category h2,
+p.post-meta a.category{
+	text-transform: capitalize;
+}
+
+/*首页文章标题*/
+div.home ul.post-list li h2{
+	margin-bottom: 5px;
+}
+
+div.home ul.post-list li h2 a{
+	line-height: 1.2;
+}
+@media screen and (min-width: 601px){
+	
+	div.home ul.post-list li h2 a{
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 600px){
+	div.home ul.post-list li h2 a{
+		font-size: 1em;
+	}
+	
+}
+
+/*导航条*/
+@media screen and (max-width: 600px){
+	
+	.site-nav {
+	 background-color: white; 
+	}
+	.site-nav div.trigger a{
+		color: black;
+	}
 }
