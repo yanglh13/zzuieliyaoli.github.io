@@ -83,7 +83,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-
+article.post-content h1,
+article.post-content h2{
+    border-bottom: 3px solid $grey-color-light;
+}
 
 /**
  * Links
