@@ -56,3 +56,16 @@ HTML中的<iframe\>标签（又称**内联框架元素**）表示了一个嵌套
 ##实际应用##
    
 2015.3.12 未完待续。 ：）
+
+http://www.cnblogs.com/fangjins/archive/2012/08/19/2645631.html
+
+http://www.zhihu.com/question/20653055
+
+http://www.ibm.com/developerworks/cn/web/wa-lo-comet/#N10101
+
+http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m3
+
+http://www.cnblogs.com/rainman/archive/2011/02/21/1960044.html
+
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe#.E6.A1.88.E4.BE.8B
+

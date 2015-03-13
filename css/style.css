@@ -284,7 +284,12 @@ p.post-meta a.category{
 div.home ul.post-list li h2{
 	margin-bottom: 5px;
 }
-
+header.post-header{
+	border-bottom: 2px #eee dashed ;
+}
+article.post-content{
+	border-bottom: 3px solid #da6426;
+} 
 div.home ul.post-list li h2 a{
 	line-height: 1.2;
 }
