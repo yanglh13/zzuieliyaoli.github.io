@@ -15,10 +15,10 @@ categories: [javascript学习]
 
 #####函数字面量分为四个部分：
 
-1. 保留字`function`
+1. 保留字**function**
 2. 函数名，可以被省略
   - 作用：可以通过自己的名字来调用自己，也可以被调试器和开发工具用来识别函数。
-  - 省略函数名后，被称为`匿名函数（anonymous）`
+  - 省略函数名后，被称为**匿名函数（anonymous）**
 3. 包围在圆括号中的一组参数
 4. 包围在花括号中的一组语句
 
@@ -26,7 +26,7 @@ categories: [javascript学习]
 
 ####二、函数调用
 
-在JavaScript中，函数一共有4种调用模式，这些模式在如何初始化`this`存在差异：
+在JavaScript中，函数一共有4种调用模式，这些模式在如何初始化**this**存在差异：
 
 1. 对象的方法调用方式
 
@@ -64,7 +64,7 @@ categories: [javascript学习]
 
 3. 构造器调用模式
 	
-	如果在函数前面带上`new`调用则会创建一个连接到该函数的`prototype`成员的新对象，同时`this`会被绑定到新对象上。
+	如果在函数前面带上**new**调用则会创建一个连接到该函数的**prototype**成员的新对象，同时**this**会被绑定到新对象上。
 		
 		//创建 Example对象，其拥有name属性，为其原型添加sayName()方法
 		var Example = function(string){
@@ -79,7 +79,7 @@ categories: [javascript学习]
 		nE.sayName(); //   Surprise
 		
 
-4. `apply`调用模式
+4. **apply**调用模式
 		
 		//创建 Example对象，其拥有name属性，为其原型添加sayName()方法
 		var Example = function(string){

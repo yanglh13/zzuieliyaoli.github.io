@@ -54,18 +54,14 @@ HTML中的<iframe\>标签（又称**内联框架元素**）表示了一个嵌套
   	
 
 ##实际应用##
-   
-2015.3.12 未完待续。 ：）
 
-http://www.cnblogs.com/fangjins/archive/2012/08/19/2645631.html
+整理到这发现，以我现在的能力，还无法理解下面链接里所列的大部分iframe用法，还需学习，所以只把链接里出来吧，不再整理。
 
-http://www.zhihu.com/question/20653055
+[Iframe 有什么好处，有什么坏处？国内还有哪些知名网站仍用Iframe，为什么？有哪些原来用的现在抛弃了？又是为什么？](http://www.zhihu.com/question/20653055)
 
-http://www.ibm.com/developerworks/cn/web/wa-lo-comet/#N10101
 
-http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m3
+###参考资料###
 
-http://www.cnblogs.com/rainman/archive/2011/02/21/1960044.html
+> https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe#.E6.A1.88.E4.BE.8B
 
-https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe#.E6.A1.88.E4.BE.8B
-
+> 《JavaScript高级程序设计》

@@ -288,6 +288,7 @@ header.post-header{
 	border-bottom: 2px #eee dashed ;
 }
 article.post-content{
+	padding-bottom: 3em;
 	border-bottom: 3px solid #da6426;
 } 
 div.home ul.post-list li h2 a{
@@ -317,3 +318,18 @@ div.home ul.post-list li h2 a{
 		color: black;
 	}
 }
+
+
+/*code*/
+code{
+	font-family: Consolas,"Courier New",Courier,FreeMono,monospace;
+	color: white;
+	background-color: black;
+}
+
+pre{
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+}
+  
