@@ -288,9 +288,23 @@ header.post-header{
 	border-bottom: 2px #eee dashed ;
 }
 article.post-content{
+	position: relative;
 	padding-bottom: 3em;
-	border-bottom: 3px solid #da6426;
+	border-bottom: 2px solid #eee;
 } 
+
+p.end {
+  color: #da6426;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: -15px;
+  left: 45%;
+  display: inline-block;
+  background-color: white;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
 div.home ul.post-list li h2 a{
 	line-height: 1.2;
 }
