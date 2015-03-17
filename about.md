@@ -15,6 +15,8 @@ permalink: /about/
 
 ### 大三计科男、美腿控、民谣狗、摇滚迷、RAP粉、旋律金属党、
 
-### 联系我:
 
-[zzuieliyaoli@gmail.com](mailto:zzuieliyaoli@gmail.com)
+
+###[简历](http://liyaoli.com/resume/index.html)
+
+
