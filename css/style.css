@@ -158,7 +158,7 @@ p.post-meta a:focus{
 
 /*about文章*/
 .post{
-	padding: 50px 50px 50px 50px;
+	padding: 3em;
 	border-radius: 2px;
 	background-color: rgba(255,255,255,1);
 }
@@ -197,7 +197,7 @@ p.post-meta a:focus{
 
 /*blockquote*/
 blockquote{
-	background-color: #eef !important;
+	background-color: white !important;
 	border-left: 4px solid #da6426 !important;
 	content: black !important;
 }
