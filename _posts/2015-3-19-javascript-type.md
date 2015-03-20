@@ -21,6 +21,8 @@ Object这是个什么鬼！？？这与第五章将的“引用类型”有什�
 
 虽然书中也说道：Object类型是所有它的实例的基础，换句话说，Object类型所具有的任何属性和方法也同样存在于更具体的对象中。
 
+喵的，被搞迷糊了哇。。。。
+
 综上，我觉得这样理解比较好：
 
 ECMA中有5种简单的数据类型（也称作基本数据类型）：Undefine、Null、Boolean、Number、String，还有一种复杂数据类型——**引用类型**。而引用类型除了Object类型、Array类型、Date类型、RegExp类型、Function类型外，还有基本包装类型：Boolean、Number和String，单体内置对象：Global对象、Math对象。
@@ -62,3 +64,4 @@ console.log(s1.color); // undefined
 
 
 以上。
+
