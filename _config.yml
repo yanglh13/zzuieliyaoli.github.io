@@ -1,7 +1,7 @@
 # Site settings
 title: 不忘初心，上下求索。
 email: zzuieliyaoli@gmail.com
-# description:>喜欢前端是因为：能够直接的把我认为的美，展现在大家面前。
+description: "一个博客，涉及技术、吐槽、思考。 "
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://liyaoli.com" # the base hostname & protocol for your site
 github_username:  zzuieliyaoli
