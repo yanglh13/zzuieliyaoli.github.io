@@ -73,7 +73,7 @@ function isPowerOfTwo(n){
 
 {% endhighlight %}
 
-解法五：
+解法五（待定）：
 
 {% highlight JavaScript %}
 function isPowerOfTwo(x){
