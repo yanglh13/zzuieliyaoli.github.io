@@ -308,12 +308,6 @@ p.end {
 div.home ul.post-list li h2 a{
 	line-height: 1.2;
 }
-@media screen and (min-width: 601px){
-	
-	div.home ul.post-list li h2 a{
-		font-size: 1.5em;
-	}
-}
 
 @media screen and (max-width: 600px){
 	div.home ul.post-list li h2 a{
