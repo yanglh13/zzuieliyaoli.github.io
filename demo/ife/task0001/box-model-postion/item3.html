@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化</title>
+	<meta name="description" content="用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化">
+
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		div.wrapperFirst div.aside{
+			width: 360px;
+			height: 300px;
+			background-color: #C9EFBA;
+			float: left;
+		}
+		div.wrapperFirst div.main{
+			width: 100%;
+			height: 300px;
+			margin-right: -360px;
+			background-color: #F5D999;
+		}
+
+		div.wrapperSecond{
+			margin-top: 20px;
+			position: relative;
+		}
+
+		div.wrapperSecond div.aside{
+
+			width: 360px;
+			height: 300px;
+			background-color: #C9EFBA;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		div.wrapperSecond div.main{
+			width: 100%;
+			height: 300px;
+			margin-right: -360px;
+			background-color: #F5D999;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapperFirst">
+		<div class="aside">
+			<h1>aside</h1>
+		</div>
+		<div class="main">
+			<h1>main</h1>
+			<br/>
+			JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。
+		</div>
+	</div>
+
+	<div class="wrapperSecond">
+		<div class="aside">
+			<h1>aside</h1>
+		</div>
+		<div class="main">
+			<h1>main</h1>
+			<br/>
+			JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。JavaScript 是弱类型的动态脚本语言，支持多种编程范式，包括面向对象和函数式编程。
+		</div>
+	</div>
+</body>
+</html>

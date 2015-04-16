@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化</title>
+	<meta name="description" content="用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化">
+	<style>
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		div.containerFirst div.wrapper{
+			height: 200px;
+			text-align: center;
+		}
+		div.containerFirst div.main{        
+            float: left;       
+            width: 100%;
+            height: 200px;
+            background-color: #3F5057;
+		}
+		div.containerFirst div.main div.content{
+			margin: 0 190px;
+			height: 200px;
+			color: white;
+		}
+		div.containerFirst div.sub{       
+		    float: left;        
+		    width: 190px;
+           	height: 200px;
+		    margin-left: -100%; 
+		    background-color: #C6D38E;   
+		}   
+		div.containerFirst div.extra{        
+		    float: left;        
+		    width: 190px;   
+		    height: 200px;     
+		    margin-left: -190px;   
+		    background-color: #A1C5BB;
+		}
+		
+		/*------*/
+
+
+		div.containerSecond div.wrapper{
+			height: 200px;
+			margin-top: 20px;
+			text-align: center;
+			
+			width: 100%;
+			display: -webkit-box;
+			display: box;
+		}
+		div.containerSecond div.main{        
+            background-color: #3F5057;
+			
+			-webkit-box-flex:1;
+			box-flex:1;
+			
+			-webkit-box-ordinal-group:2;
+		}
+		div.containerSecond div.main div.content{
+			color: white;
+		}
+		div.containerSecond div.sub{       
+		    width: 190px;
+           	height: 200px;
+		    background-color: #C6D38E;   
+		}   
+		div.containerSecond div.extra{        
+		    width: 190px;   
+		    height: 200px;     
+		    background-color: #A1C5BB;
+
+		    -webkit-box-ordinal-group:3;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="containerFirst">    
+       	<div class="wrapper">        
+            <div class="main">
+            	<div class="content"><h1>main</h1></div>
+            </div>        
+            <div class="sub"><h1>sub</h1></div>        
+            <div class="extra"><h1>extra</h1></div>    
+        </div>
+  	</div>
+
+  	<div class="containerSecond">    
+       	<div class="wrapper">        
+            <div class="main">
+            	<div class="content"><h1>main</h1></div>
+            </div>        
+            <div class="sub"><h1>sub</h1></div>        
+            <div class="extra"><h1>extra</h1></div>    
+        </div>
+  	</div>
+</body>
+</html>
