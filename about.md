@@ -17,6 +17,4 @@ permalink: /about/
 
 
 
-###[简历](http://liyaoli.com/resume/index.html)
-
 
