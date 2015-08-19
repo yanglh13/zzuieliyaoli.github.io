@@ -80,12 +80,12 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: bold;
 }
 
-article.post-content h1,
-article.post-content h2{
-    border-bottom: 3px solid $grey-color-light;
+article.post-content h2,
+article.post-content h3{
+    border-bottom: 1px solid $grey-color-light;
 }
 
 /**
@@ -125,31 +125,31 @@ blockquote {
 
 
 
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
+// /**
+//  * Code formatting
+//  */
+// pre,
+// code {
+//     font-size: 15px;
+//     border: 1px solid $grey-color-light;
+//     border-radius: 3px;
+//     background-color: #eef;
+// }
 
-code {
-    padding: 1px 5px;
-}
+// code {
+//     padding: 1px 5px;
+// }
 
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+// pre {
+//     padding: 8px 12px;
+//     overflow-x: scroll;
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
+//     > code {
+//         border: 0;
+//         padding-right: 0;
+//         padding-left: 0;
+//     }
+// }
 
 
 
