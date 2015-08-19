@@ -330,10 +330,13 @@ div.home ul.post-list li h2 a{
 
 /*code*/
 code{
-	font-family: Consolas,"Courier New",Courier,FreeMono,monospace;
-	/*color: white;
-	background-color: black;*/
-
+	padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
 }
 
 pre{
@@ -347,4 +350,5 @@ pre{
 
 pre code {
     background-color: transparent;
+    font-size: 100%;
 }

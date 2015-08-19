@@ -111,12 +111,13 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: black;
     border-left: 4px solid $grey-color-light;
     padding: 5px $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
-    
+    p {
+        color: #777;
+    }
 
     > :last-child {
         margin-bottom: 0;
