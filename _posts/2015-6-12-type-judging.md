@@ -191,7 +191,7 @@ jQuery.isPlainObject 是用来判定是否为纯净的JavaScript对象。既不�
 			typeof length === "number" && length > 0 && ( length - 1 ) in obj );
 	}
 
-[http://stackoverflow.com/questions/21115849/is-isarraylike](http://stackoverflow.com/questions/21115849/is-isarraylike)
+> [http://stackoverflow.com/questions/21115849/is-isarraylike](http://stackoverflow.com/questions/21115849/is-isarraylike)
 
 
 ###NodeList
@@ -205,7 +205,7 @@ jQuery.isPlainObject 是用来判定是否为纯净的JavaScript对象。既不�
 	        (nodes.length === 0 || (typeof nodes[0] === "object" && nodes[0].nodeType > 0));
 	}
 
-> http://stackoverflow.com/questions/7238177/detect-htmlcollection-nodelist-in-javascript/
+> [http://stackoverflow.com/questions/7238177/detect-htmlcollection-nodelist-in-javascript/](http://stackoverflow.com/questions/7238177/detect-htmlcollection-nodelist-in-javascript/)
 
 ###Window
 
