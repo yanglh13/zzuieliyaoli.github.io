@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "基本包装类型等概念辨析"
-date:   2015-3-19 
+date:   2015-3-19
 categories: [javascript学习]
 ---
 书读百遍，其义自现。
@@ -10,7 +10,7 @@ categories: [javascript学习]
 
 以下是读书笔记：
 
-##数据类型
+## 数据类型
 ECMA中有5种简单的数据类型（也称作基本数据类型）：Undefine、Null、Boolean、Number、String，还有一种复杂数据类型——**引用类型**。
 
 吐槽一下，来看高程（《JavaScript高级程序设计》，下同）是怎么说的：
@@ -38,7 +38,7 @@ new Function() instanceof Object // true
 
 {% endhighlight %}
 
-##基本包装类型
+## 基本包装类型
 实际上，每当读取一个基本类型值的时候，后台就会创建一个对应的基本包装类型的对象，从让我们能够调用一些方法来操作数据。
 
 {% highlight JavaScript %}
@@ -64,4 +64,3 @@ console.log(s1.color); // undefined
 
 
 以上。
-

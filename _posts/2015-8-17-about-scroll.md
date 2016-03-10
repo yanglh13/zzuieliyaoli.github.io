@@ -12,7 +12,7 @@ categories: [javascript学习]
 1. 页面滚动的监听(scroll event listener)应该绑定在哪个元素上？window，doucment，body，html？
 2. 通过哪个元素的何种属性来控制页面，使其滚动到指定的位置？
 
-##页面滚动的监听绑定在哪个元素上？
+## 页面滚动的监听绑定在哪个元素上？
 
 doucment，window，body，html中的哪一个呢？获得问题答案的方式很简单，一个一个元素来试就可以了。
 
@@ -24,7 +24,7 @@ doucment，window，body，html中的哪一个呢？获得问题答案的方式�
 	$(document).on("scroll", function(){
       console.log("hello"); // Chrome、FireFox、IE9+ 都可以
     });
-	
+
 	$("html").on("scroll", function(){
       console.log("hello"); // Chrome、FireFox、IE9+ 都不行
     });
@@ -35,7 +35,7 @@ doucment，window，body，html中的哪一个呢？获得问题答案的方式�
 
 所以，页面的监听应绑定到`window`和`document`上。答案虽然的出来了，但是为什么呢？
 
-1. scroll event会在什么时间触发？ 
+1. scroll event会在什么时间触发？
 	- Scrolling the contents of an element with the scrollbar.
 	- Rolling the mouse wheel over an element.
 	- Pressing a cursor left, up, right, down or the HOME, END, PAGE UP, PAGE DOWN or SPACE key when an element has the focus.
@@ -44,20 +44,20 @@ doucment，window，body，html中的哪一个呢？获得问题答案的方式�
 2. 谁拥有页面的滚动条呢？window还是document？
 
 	在google了一大堆资料后，我突然想明白了两点：
-		
+
 	1. 我用的事件监听，所以在上面的代码只能告诉我scroll event能够在window/document上被捕获到。
 	2. 我其实是在纠结`event.target`是谁！！！！这个简直so easy!
 
 
 			$(window).on("scroll", function(e){
-				console.log(e.target); 
+				console.log(e.target);
 			});
 
 	所以，在Chrome、FireFox、IE9+上scroll event target都是 `document`
 
 综上，我的问题不是“页面滚动的监听绑定在哪个元素上”，而是“页面滚动时的event.target是谁”。页面的滚动条属于document,也就是说“滚动的页面”其实是document。document的滚动事件冒泡被document/window捕获到。
 
-##通过哪个元素的何种属性来控制"页面"，使其滚动到指定的位置？
+## 通过哪个元素的何种属性来控制"页面"，使其滚动到指定的位置？
 
 当然，我脑里出现这个疑问的时候，还不知道页面滚动事件的目标是document。所以，我用jQuery进行了一系列的探索（骄傲状）。为什么用jQuery呢，最大的原因当然是它提供了`$.scrollTop()`方法。闲话不多说，来看代码：
 
@@ -65,7 +65,7 @@ doucment，window，body，html中的哪一个呢？获得问题答案的方式�
        $(window).scrollTop(300); // 都可以
        $(document).scrollTop(300) // 都可以
        $("html").scrollTop(300); // Chrome 不可以
-       $("body").scrollTop(300); // FireFox IE9+ 不可以 
+       $("body").scrollTop(300); // FireFox IE9+ 不可以
        return false;
     });
 
@@ -79,13 +79,13 @@ doucment，window，body，html中的哪一个呢？获得问题答案的方式�
 		// method 的名字为 scrollLeft 或者 scrollTop
 
 		var top = /Y/.test( prop ); 	// 判断是否含有字母Y
-	
+
 		jQuery.fn[ method ] = function( val ) {
 			// jQuery定义$对象方法的一种方式
 			return jQuery.access( this, function( elem, method, val ) {
 				// win 的值为两种 window 或者 false
 				var win = getWindow( elem );
-				
+
 				// $.scrollTop()，直接返回值
 				if ( val === undefined ) {
 					return win ? (prop in win) ? win[ prop ] :
@@ -98,7 +98,7 @@ doucment，window，body，html中的哪一个呢？获得问题答案的方式�
 						!top ? val : jQuery( win ).scrollLeft(),
 						top ? val : jQuery( win ).scrollTop()
 					);
-	
+
 				} else {
 					elem[ method ] = val;
 				}
@@ -123,9 +123,9 @@ doucment，window，body，html中的哪一个呢？获得问题答案的方式�
 2. Chrome上，`$("html").scrollTop(300)`使用的是body元素的`scrollTop/Left`方法。可以通过`document.querySelector("body").scrollTop = 20`来测试。同理，在FireFox和IE9+上，使用的是html元素的`scrollTop/Left`方法。可以通过`document.querySelector("html").scrollTop = 20`来测试。
 3. 满足兼容性有三种方法,哈哈，我是不是很机智。
 
-	    $(window).scrollTop(300); 
-        $(document).scrollTop(300) 
-        $("html,body").scrollTop(300); 
+	    $(window).scrollTop(300);
+        $(document).scrollTop(300)
+        $("html,body").scrollTop(300);
 
 所以到此为止，在不考虑兼容性的情况下，这个问题的答案就是：**window对象的scrollTo（）方法、body/html.scrollTop/Left**
 
@@ -134,7 +134,7 @@ doucment，window，body，html中的哪一个呢？获得问题答案的方式�
        document.body.scrollTop = 300; // FireFox  IE9+ 不可以
        document.documentElement.scrollTop = 300; // Chrome 不可以 document.documentElement  === html
 
-##综上
+## 综上
 
 页面滚动条是属于document的，但是通过window、document.body、html，可以控制它滚动到指定的位置。其实关于页面滚动的应用其实有很多，比如“返回顶部”、“Lazy Load”。
 
@@ -142,8 +142,8 @@ doucment，window，body，html中的哪一个呢？获得问题答案的方式�
 
 以上。
 
-####参考链接
+#### 参考链接
 
 > [The scroll event is raised when the user scrolls the contents of a element-MDN](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onscroll)
-> 
+>
 > [http://help.dottoro.com/ljurkcpe.php](http://help.dottoro.com/ljurkcpe.php)

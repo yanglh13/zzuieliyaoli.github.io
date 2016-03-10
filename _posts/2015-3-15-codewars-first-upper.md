@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Jaden Casing Strings - Codewars"
-date:   2015-3-15 
+date:   2015-3-15
 categories: [Codewars]
 ---
 
 说白了，题目的要求是“把英文句子中的单词首字母全部转换为大写”
 
-##我的解法：
+## 我的解法：
 {% highlight JavaScript %}
 
 String.prototype.toJadenCase = function () {
@@ -26,7 +26,7 @@ String.prototype.toJadenCase = function () {
 };
 
 {% endhighlight %}
-	
+
 
 **思路分析：我的想法很简单：切开、转换、拼接**
 
@@ -34,7 +34,7 @@ String.prototype.toJadenCase = function () {
  - 转换：利用toLocaleUpperCase()方法单词首字母转换为大写，然后replace()方法替换原单词的首字母
  - 拼接：转换后的单词push()成为新数组，最后join()方法得到答案
 
-##来看别人怎么写：
+## 来看别人怎么写：
 
 解法一：
 {% highlight JavaScript %}
@@ -54,7 +54,7 @@ String.prototype.toJadenCase = function () {
 
 {% highlight JavaScript %}
 
-String.prototype.toJadenCase = function () { 
+String.prototype.toJadenCase = function () {
   return this.split(" ").map(function(word){
     return word.charAt(0).toUpperCase() + word.slice(1);
   }).join(" ");
@@ -74,7 +74,7 @@ String.prototype.toJadenCase = function () {
 
 同样，用于匹配的正则表达式不同，解法也就不同。
 
-##分析：
+## 分析：
 
 解法一：向replace()方法传入函数。因为text代表着模式的匹配项，所以在正则的配合下，一个个匹配的单词被函数操作。最后返回首字母大写的单词，去替换句子中未首字母大写的单词。
 
@@ -82,7 +82,7 @@ String.prototype.toJadenCase = function () {
 
 解法三：避免了解法一的字符串拼接，直接替换单词首字母，精彩！
 
-##知识点：
+## 知识点：
 
 1. split( )，String类型的方法。基于指定的分隔符将一个字符串分割成多个子字符串，并将结果放在一个数组中。
 2. charAt( )，String类型的方法。以单字字符串的形式返回给定位置的那个字符。
@@ -95,7 +95,7 @@ String.prototype.toJadenCase = function () {
   - `/(^|\s)[a-z]/g`，匹配在字符串首位（index=0）且小写的字母**或者**前方（字母的index-1）为空格的小写字母。
 
 
-##个人反思：
+## 个人反思：
 
 1. 正则表达式掌握不好，所以不能写出可以直接操作字符串的式子。
 2. 加强锻炼！

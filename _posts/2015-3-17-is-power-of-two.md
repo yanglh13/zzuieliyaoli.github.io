@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Power of two - Codewars"
-date:   2015-3-17 
+date:   2015-3-17
 categories: [Codewars]
 ---
 
@@ -17,7 +17,7 @@ isPowerOfTwo(333)  // -> false
 
 翻译：判断一个非负整数 n 是不是 2的非负 整数次幂（题目很绕）。
 
-##我的解法：
+## 我的解法：
 {% highlight JavaScript %}
 
 function isPowerOfTwo(n){
@@ -35,7 +35,7 @@ function isPowerOfTwo(n){
 
 **思路分析：依旧简单 ←_←，for循环n次，让2的i次方与n对比**
 
-##来看别人怎么写：
+## 来看别人怎么写：
 
 解法一：
 {% highlight JavaScript %}
@@ -93,7 +93,7 @@ function isPowerOfTwo(x){
 
 还有[更多解法](http://www.codewars.com/kata/534d0a229345375d520006a0)
 
-##分析：
+## 分析：
 
 解法一：见识到了**位运算**的用处，真厉害啊！长见识了。
 
@@ -103,7 +103,7 @@ function isPowerOfTwo(x){
 
 也就是说位运算的结果始终为0。而对于不满足题意n（不为2的非负整数幂）的数，位运算后始终为非0（还没想好怎么证明）。
 
-解法二：数学知识，推导出**以2为底n的对数**的公式`Math.log(n)/Math.log(2)` 
+解法二：数学知识，推导出**以2为底n的对数**的公式`Math.log(n)/Math.log(2)`
 
 ![](/images/posts/20150317224203.png)
 
@@ -115,11 +115,8 @@ function isPowerOfTwo(x){
 
 解法五：就问你怕不怕！够简单，够粗暴！不过在这里有一个疑问，为什么只列举到2的31次方？[JavaScript最大数](https://cnodejs.org/topic/4fb3722c1975fe1e132b5a9a)？
 
-##知识点：
+## 知识点：
 1. test()方法，接受一个字符串参数，在模式与该参数匹配的情况下返回true，否则返回false。在只想知道其文本内容的情况下，使用这个方法非常方便。
 2. [JavaScript中位运算的应用](http://www.zhihu.com/question/21592697)
 
 以上。
-
-
-

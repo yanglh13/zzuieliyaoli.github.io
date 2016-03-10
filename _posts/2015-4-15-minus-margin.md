@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "负外边距"
-date:   2015-4-15 
+date:   2015-4-15
 categories: [css学习]
 ---
 
 这两天的主要精力在完成baidu-ife的task0001，其中涉及到负外边距的知识和实战。虽然平时关于这方面接触的不多，但好在网上、书上的资料比较丰富，就趁着这个机会总结整理一下。
 
-##基础知识
+## 基础知识
 
 抄书、粘贴复制也没意思，贴上几篇博文。
 
@@ -19,9 +19,9 @@ categories: [css学习]
 
 > [负值之美：负值在页面布局中的应用](http://www.topcss.org/?p=94)，这个也偏实战。
 
-##布局
+## 布局
 
-###三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化（双飞翼布局）。
+### 三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化（双飞翼布局）。
 
 
 HTML
@@ -61,7 +61,7 @@ CSS
 	    float: left;        
 	    width: 190px;
         height: 200px;
-	    margin-left: -100%; 
+	    margin-left: -100%;
 	    background-color: #C6D38E;   
 	}   
 	div.containerFirst div.extra {        
@@ -76,7 +76,7 @@ CSS
 
 [请点击DEMO，如方法一所示](./../demo/ife/task0001/box-model-postion/item4.html)
 
-###两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化
+### 两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化
 
 HTML
 
@@ -113,12 +113,12 @@ CSS
 知乎采取的便是这样的布局，不过对`div.wrapper`增加了最大宽度。
 
 
-###三栏等高布局
+### 三栏等高布局
 
 HTML
 
 	<div class="wrapper">
-		<div class="box">	
+		<div class="box">
 		</div>
 		<div class="box">
 		</div>
@@ -136,7 +136,7 @@ CSS
 		width: 100%;
 		overflow: hidden;
 	}
-			
+
 	div.box{
 		width: 250px;
 		padding-left: 20px;
@@ -149,25 +149,25 @@ CSS
 		margin-left: 20px;
 		float: left;
 		display: inline-block;
-				
+
 		color: white;
 		background-color: background-color: #0767c8;
-		
+
 	}
 
 把列的`padding-bottom`设为较大的值（因为不知道最长列与最短列之间的差值有多少），用来抵消`margin-bottom`负值带来的内容移动。最后配合`div.wrapper`的`overflow:hidden`，拦腰截断最长列，三栏等高布局。
 
 [请点击DEMO](./../demo/minus-margin/three-colums-same-height.html)
 
-##定位
+## 定位
 
-###水平垂直居中
+### 水平垂直居中
 
 HTML
 
 	<div class="wrapper">
 		<div class="inner">
-			
+
 		</div>
 	</div>
 
@@ -195,7 +195,7 @@ CSS
 
 [请点击DEMO](./../demo/minus-margin/vertical-horizontal.html)
 
-##除去列表右边距
+## 除去列表右边距
 
 HTML
 
@@ -249,7 +249,7 @@ CSS
 类似的用法还有[3.去除列表最后一个li元素的border-bottom](http://www.topcss.org/?p=94)。同样也是：增加(marin-bottom负值)-超出-hidden
 
 
-##其他收获
+## 其他收获
 
 1. 实现“两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化”有很多方法。[请点击DEMO](./../demo/ife/task0001/box-model-postion/item3.html)
 

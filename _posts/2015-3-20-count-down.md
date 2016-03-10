@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "倒计时与秒杀倒计时"
-date:   2015-3-20 
+date:   2015-3-20
 categories: [javascript学习]
 ---
 
@@ -21,20 +21,20 @@ categories: [javascript学习]
 
 以下是补充内容：
 
-##代码一
+## 代码一
 
 {% highlight JavaScript %}
 
 setInterval("timer()",1000); // 每隔1S执行一次
-  
+
 function timer(){
   var ts = (new Date(2015, 9, 1, 12, 0, 0)) - (new Date()); //设置目标时间，并计算剩余的毫秒数
-		
+
   var dd = parseInt(ts / 1000 / 60 / 60 / 24, 10);  //计算剩余天数
   var hh = parseInt(ts / 1000 / 60 / 60 % 24, 10);  //计算剩余小时
   var mm = parseInt(ts / 1000 / 60 % 60, 10);       //计算剩余分钟
   var ss = parseInt((ts / 1000 ) % 60 , 10);        //秒数
-		
+
   //为了美观，在剩余时间的数字小于10时转换为0X
   dd = checkTime(dd);    
   hh = checkTime(hh);
@@ -55,7 +55,7 @@ function checkTime(i){
   }  
   return i;  
 }  
-	
+
 {% endhighlight %}
 
 **这里是[Demo](../../demo/count-down.html)**
@@ -67,18 +67,18 @@ function checkTime(i){
 3. 因为浏览器JavaScript代码执行进程的原因，会造成跳秒的效果。
 4. 容易被修改。
 
-##代码二
+## 代码二
 {% highlight JavaScript %}
 
  var xhr = new XMLHttpRequest();
 //这里的testServer.txt，其实我没有创建，完全可以不需要这个文件，我们只是要时间罢了
- xhr.open('get', 'testServer.txt', true); 
+ xhr.open('get', 'testServer.txt', true);
  xhr.onreadystatechange = function(){
      if(xhr.readyState == 3){ //状态3响应
 	  var header = xhr.getAllResponseHeaders(); //获得所有的头信息
 	  alert(header);//会弹出一堆信息
 	  //弹出时间，那么可以利用获得的时间做倒计时程序了。
-	  alert(xhr.getResponseHeader('Date')); 
+	  alert(xhr.getResponseHeader('Date'));
      }
  }
  xhr.send(null);
