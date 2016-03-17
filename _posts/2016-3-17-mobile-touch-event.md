@@ -2,7 +2,7 @@
 layout: post
 title:  "Mobile Touch Event"
 date:   2016-3-17
-categories: [生活随笔]
+categories: [Mobile]
 ---
 
 The touchend are not fired properly on Android if event.preventDefault() is not used on touchstart and touchmove.
