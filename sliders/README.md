@@ -1,1 +1,1 @@
-The sliders are suppored by  [reveal.js](https://travis-ci.org/hakimel/reveal.js)
+The sliders are suppored by  [reveal.js](https://github.com/hakimel/reveal.js)
