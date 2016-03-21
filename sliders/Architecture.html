@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>看见音乐前端开发的痛点与畅想</title>
-		<meta name="description" content="看见音乐Web前端开发的痛点与畅想">
+		<title>看见音乐前端开发的困境与畅想</title>
+		<meta name="description" content="看见音乐Web前端开发的困境与畅想">
 		<meta name="author" content="zzuieliyaoli@gmail.com">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -31,55 +31,142 @@
 			<div class="slides">
 				<section>
 					<h4>「看见音乐」</h4>
-					<h1>前端开发的痛点与畅想</h1>
+					<h1>前端开发的困境与畅想</h1>
 					<p>
 						<small><a href="https://github.com/zzuieliyaoli" target="_blank">大力@zzuieliyaoli</a></small>
 					</p>
 				</section>
+
 				<section>
 					<h2>为什么要有这次分享？</h2>
 					<ul>
-						<li>帮大家重新认识前端开发</li>
-						<li>讲tu述cao看见音乐前端的困境</li>
-						<li>寻求各位后端大牛的配合以及帮助</li>
+						<li class="fragment">明确业界前端开发的现状</li>
+						<li class="fragment">讲tu述cao看见音乐前端的困境</li>
+						<li class="fragment">寻求各位后端大牛的配合以及帮助</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>写在开始之前</h2>
 					<ul>
-						<li>毕竟新手，求轻喷</li>
-						<li>求同存异，创造生命大和谐</li>
-						<li>暂且宏观地讨论问题，而非纠结于一点</li>
-						<li>分析利弊，而不是对错</li>
+						<li class="fragment">求同存异，创造生命大和谐</li>
+						<li class="fragment">暂且宏观地讨论问题</li>
+						<li class="fragment">分析利弊，而不是对错</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>业界前端开发的现状</h2>
 					<ul>
-						<li>组件化</li>
-						<li>工程化</li>
+						<li class="fragment">工程化</li>
+						<li class="fragment">组件化</li>
 					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>前端开发工程化</h3>
+						<p class="fragment">外因</p>
+						<ul>
+							<li class="fragment">资源复杂：HTML/CSS/JS/Img/Swf</li>
+							<li class="fragment">项目越来越大，页面越来越多</li>
+						</ul>
+						<p class="fragment">内因</p>
+						<ul>
+							<li class="fragment">基础设施越来越完善</li>
+							<li class="fragment">自动化测试，可视化开发，团队协作</li>
+						</ul>
+					</section>
+					<section>
+						<p>前端工程化应运而生</p>
+						<ul>
+							<li class="fragment">目录结构</li>
+							<li class="fragment">代码编写</li>
+							<li class="fragment">构建工具</li>
+							<li class="fragment">代码规范/校验</li>
+							<li class="fragment">代码测试</li>
+						</ul>
+					</section>
+					<section>
+						<h4>目录结构</h4>
+						<div data-markdown class="fragment">
+				```
+				项目一
+				├── /dist/                              # 代码打包目录
+				├── /node_modules/                      # node依赖包
+				├── /src/                               # 源码目录
+				│   ├── /pages/                         # 页面
+				│   │   ├── /page1/
+				│   │   │   ├── 1.html
+				│   │   │   ├── 1.scss
+				│   │   │   ├── 1.js
+				│   ├── /components/                    # 公用组件
+				│   │   ├── /LeftBar/                   # 侧边栏
+				│   │   │   ├── bar.html
+				│   │   │   ├── bar.scss
+				│   │   │   ├── bar.js
+				│   └── /public/                        # 公用JS、样式、图片、字体资源
+				├── webpack.config.js                   # 构建工具的配置文件
+				└── package.json                        # node 包文件
+				```
+						</div>
+
+					</section>
+
+
+					<section>
+						<h4>代码编写方式</h4>
+						<p class="fragment">所见即所得 => 预先编译</p>
+						<ul>
+							<li class="fragment" >SASS/LESS-CSS-Autoprefixer</li>
+							<li class="fragment">CoffeeScript/TypeScript-JS</li>
+							<li class="fragment">ES6-Babel-ES5</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>开发工具</h4>
+						<ul>
+							<li class="fragment">Node/MockServer</li>
+							<li class="fragment">WebPack/Grunt/Gulp/Browserify</li>
+							<li class="fragment">Livereload/BrowserSync/HotReplaceModule</li>
+							<li class="fragment">ChromeDevTool</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>代码规范/校验</h4>
+						<ul>
+							<li class="fragment">JSLint/ESLint/CSSLint</li>
+							<li class="fragment">AirBnb/Best Practice</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>代码测试</h4>
+						<ul>
+							<li class="fragment">PhantomJs/Mocha/Chai</li>
+							<li class="fragment">Karma</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
 					<section>
 						<h3>前端开发组件化</h3>
 						<ul>
-							<li>什么是组件化？</li>
-							<li>与模块化的区别与联系？</li>
-							<li>目的是什么？</li>
-							<li>利与弊</li>
+							<li class="fragment">什么是组件化？</li>
+							<li class="fragment">与模块化的区别与联系？</li>
+							<li class="fragment">目的是什么？</li>
+							<li class="fragment">利与弊</li>
 						</ul>
 					</section>
 
 					<section>
 						<h4>组件化的定义</h4>
-						<img data-src="./figures/architecture/components-1.png" alt="components">
+						<img data-src="./figures/architecture/components-1.png" alt="components" class="fragment">
 						<ul>
-							<li>页面基本按照组件来分，组件是最小的开发单位</li>
-							<li>每个组件内维护自己的HTML/JS/CSS/图片等资源</li>
+							<li class="fragment">页面基本按照组件来分，组件是最小的开发单位</li>
+							<li class="fragment">每个组件内维护自己的HTML/JS/CSS/Img等资源</li>
 						</ul>
 					</section>
 
@@ -87,61 +174,74 @@
 						<h4>模块化与组件化的区别与联系</h4>
 						<table>
 							<thead>
-								<tr>
+								<tr class="fragment">
 									<th>  </th>
 									<th>模块化</th>
 									<th>组件化</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
+								<tr class="fragment">
 									<td>对象</td>
 									<td>JS/CSS</td>
 									<td>HTML-CSS-JS..</td>
 								</tr>
-								<tr>
+								<tr class="fragment">
 									<td>标准</td>
 									<td>AMD/ES6 Modules</td>
 									<td>WebComponents/R...</td>
 								</tr>
-								<tr>
+								<tr class="fragment">
 									<td>主要目的</td>
 									<td>复用</td>
 									<td>分治</td>
 								</tr>
-
+								<tr class="fragment">
+									<td> </td>
+									<td> </td>
+									<td></td>
+								</tr>
 							</tbody>
 						</table>
-						<p>模块化是组件化的基础</p>
+						<p class="fragment">模块化是组件化的基础</p>
 
 					</section>
 					<section>
-						<h4>组件化的目的 —— 分治</h4>
-						<img data-src="./figures/architecture/components-2.png" alt="components">
+						<h4>组件化的目的</h4>
+						<img data-src="./figures/architecture/components-2.png" alt="components" class="fragment">
+						<p class="fragment">分治，提高可维护性</p>
 					</section>
+
 					<section>
 						<h4>组件化的利与弊</h4>
 						<table>
 							<thead>
-								<tr>
+								<tr class="fragment">
 									<th>利</th>
 									<th>弊</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
+								<tr class="fragment">
 									<td>便于维护</td>
 									<td>对于工程师要求高</td>
 								</tr>
-								<tr>
+								<tr class="fragment">
+									<td>工具</td>
+									<td>缺乏标准</td>
+								</tr>
+								<tr class="fragment">
 									<td>开发爽</td>
 									<td>老旧项目重构工作量大</td>
 								</tr>
-								<tr>
+								<tr class="fragment">
 									<td>可拓展</td>
 									<td>对工程化要求高</td>
 								</tr>
-
+								<tr class="fragment">
+									<td> </td>
+									<td> </td>
+								</tr>
 							</tbody>
 						</table>
 					</section>
@@ -149,356 +249,36 @@
 
 				<section>
 					<section>
-						<h3>前端开发工程化</h3>
-						<p>交互复杂、需求增多、资源繁多、开发人员的增多</p>
-						<p>对开发效率、维护成本、代码质量提出了要求</p>
+						<h2>看见前端的困境</h2>
+						<ul>
+							<li class="fragment">模块化几乎没有</li>
+							<li class="fragment">项目目录结构老旧</li>
+							<li class="fragment">资源引用不清晰</li>
+							<li class="fragment">工程化的探索几乎没有</li>
+						</ul>
+						<p class="fragment">结果：。。。。</p>
 					</section>
 					<section>
-						<p>前端工程化应运而生</p>
+						<h3>如何突破困局？</h3>
 						<ul>
-							<li>目录结构</li>
-							<li>代码编写</li>
-							<li>构建工具</li>
-							<li>代码规范/校验</li>
-							<li>代码测试</li>
+							<li class="fragment">新项目应用工程化</li>
+							<li class="fragment">老项目分组件重构</li>
 						</ul>
 					</section>
 					<section>
-						<h4>目录结构</h4>
-						<section data-markdown>
-```
-   项目一
-   ├── /dist/                              # 代码打包目录
-   ├── /node_modules/                      # node依赖包
-   ├── /src/                               # 源码目录
-   │   ├── /pages/                         # 页面
-   │   │   ├── /page1/
-   │   │   │   ├── 1.html
-   │   │   │   ├── 1.scss
-   │   │   │   ├── 1.js
-   │   │   ...
-   │   ├── /components/                    # 公用组件
-   │   ├── /assets/                        # 图片、字体资源
-   │   ├── /scss/                          # 公用样式
-   │   └── /utils/                         # 公用JS模块
-   ├── webpack.config.js                   # 构建工具的配置文件
-   └── package.json                        # node 包文件
-```
-						</section>
-
-					</section>
-
-
-					<section>
-						<h4>代码编写方式</h4>
-						<p>所见即所得 => 预先编译</p>
-						<ul>
-							<li>SASS/LESS-CSS-Autoprefixer</li>
-							<li>CoffeeScript/TypeScript-JS</li>
-							<li>ES6-Babel-ES5</li>
-						</ul>
-					</section>
-
-					<section>
-						<h4>开发工具</h4>
-						<ul>
-							<li>Node/Mock</li>
-							<li>WebPack/Grunt/Gulp/Browserify</li>
-							<li>Livereload/BrowserSync</li>
-							<li>GoogleDevTool</li>
-						</ul>
-					</section>
-
-					<section>
-						<h4>代码规范/校验</h4>
-						<ul>
-							<li>JSLint/ESLint/CSSLint</li>
-							<li>AirBnb/Baidu</li>
-						</ul>
-					</section>
-
-					<section>
-						<h4>代码测试</h4>
-						<ul>
-							<li>PhantomJs/Mocha/Chai</li>
-							<li>Karma</li>
-						</ul>
-					</section>
-				</section>
-
-
-				<section>
-					<h2>看见前端的困境</h2>
-					<ul>
-						<li>模块化几乎没有</li>
-						<li>项目目录结构老旧</li>
-						<li>资源引用不清晰</li>
-						<li>工程化的探索几乎没有</li>
-					</ul>
-					<p>结果：。。。。</p>
-				</section>
-
-				<section>
-					<h2>各位后端大牛带带我</h2>
-					<img data-src="./figures/architecture/good-driver.jpg" alt="老司机">
-
-				</section>
-
-				<section data-markdown>
-
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+						<h2>各位后端带带我</h2>
+						<img data-src="./figures/architecture/good-driver.jpg" alt="老司机">
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h3>可能出现的问题？</h3>
+						<p class="fragment">发布流程？</p>
+						<p class="fragment">工作量？</p>
+						<p class="fragment">新目录结构与现有的目录结构可以兼容吗？</p>
 					</section>
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
 				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+					<h2>谢谢</h2>
 				</section>
 
 			</div>
