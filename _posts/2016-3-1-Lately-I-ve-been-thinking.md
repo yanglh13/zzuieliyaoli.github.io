@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Lately I been thinking"
-date:   2016-3-1 
+title:  "Lately I've been thinking"
+date:   2016-3-1
 categories: [生活随笔]
 ---
 
