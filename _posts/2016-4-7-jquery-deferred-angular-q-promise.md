@@ -16,21 +16,6 @@ jQuery中的Deferred()、Angular中的$q()、ES6中的Promise都是为了解决�
 
 #### 调用`$.Deferred()`时是可以传入一个函数，这个函数会先于`$.Deferred()`返回（A function that is called just before the constructor returns.）。
 
-```JavaScript
-var deferred = $.Deferred(before);
-function before() {
-  console.log('before function runs!');
-  setTimeout(function(){
-    deferred.resolve('a');
-  }, 1000);
-}
-
-deferred.then(function(para){
-  console.log(para);
-  console.log('then function runs');
-});
-```
-
 <a class="jsbin-embed" href="http://jsbin.com/kepuba/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
