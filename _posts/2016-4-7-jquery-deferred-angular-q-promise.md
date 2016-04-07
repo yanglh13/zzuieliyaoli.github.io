@@ -9,12 +9,12 @@ jQuery中的Deferred()、Angular中的$q()、ES6中的Promise都是为了解决�
 
 ## jQuery Deferred()
 
-### 直接通过调用`$.Deferred()`可以返回一个新的deferred对象。
+#### 直接通过调用`$.Deferred()`可以返回一个新的deferred对象。
 
 <a class="jsbin-embed" href="http://jsbin.com/ruwoso/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
-### 调用`$.Deferred()`时是可以传入一个函数，这个函数会先于`$.Deferred()`返回（A function that is called just before the constructor returns.）。
+#### 调用`$.Deferred()`时是可以传入一个函数，这个函数会先于`$.Deferred()`返回（A function that is called just before the constructor returns.）。
 
 ```JavaScript
 var deferred = $.Deferred(before);
@@ -34,7 +34,7 @@ deferred.then(function(para){
 <a class="jsbin-embed" href="http://jsbin.com/kepuba/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
-### Deferred.promise()
+#### Deferred.promise()
 
 <a class="jsbin-embed" href="http://jsbin.com/loseta/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
