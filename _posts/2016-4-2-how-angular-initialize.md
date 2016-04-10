@@ -80,3 +80,7 @@ angular.resumeBootstrap = function(extraModules) {
 ```
 
 看Demo: <a class="jsbin-embed" href="http://jsbin.com/husupo/embed?html,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+
+#### Reference
+
+- [Angular-Bootstrap](https://docs.angularjs.org/guide/bootstrap)
