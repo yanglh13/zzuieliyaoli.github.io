@@ -69,6 +69,6 @@ here are two main differences:
 
 #### Reference
 
-- [jQuery](https://api.jquery.com/category/deferred-object/)
+- [jQuery-DeferredObject](https://api.jquery.com/category/deferred-object/)
 - [Angular-$q](https://docs.angularjs.org/api/ng/service/$q)
 - [ES6 Promise](http://liubin.org/promises-book/)
