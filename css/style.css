@@ -9,7 +9,7 @@ body{
 	.site-nav{
 		background-color: rgba(0,0,0,0.9);
 	}
-	
+
 
 }
 .site-header{
@@ -95,7 +95,7 @@ div.pagination a{
 	padding: 1em;
 	height: auto;
 	width: auto;
-	background-color:#da6426; 
+	background-color:#da6426;
 	vertical-align: middle;
 	-webkit-transition: 0.2s;
      -moz-transition: 0.2s;
@@ -170,10 +170,10 @@ p.post-meta a:focus{
 		position: fixed;
 		right: 2em;
 		bottom: 4em;
-		
+
 		height: 50px;
 		width: 50px;
-		
+
 		background-color: #da6426;
 		background-image: url(../images/scrollup.png);
 		background-position: center;
@@ -182,7 +182,7 @@ p.post-meta a:focus{
 	     -moz-transition: 0.5s;
 	      -ms-transition: 0.5s;
 	       -o-transition: 0.5s;
-	          transition: 0.5s;		
+	          transition: 0.5s;
 	}
 	a.back-top:hover{
 		background-color: white;
@@ -227,7 +227,7 @@ body > footer > div span{
 }
 body > footer > div a:hover,
 body > footer > div span:hover{
-	
+
 	color: white;
 }
 body > footer > div p.text{
@@ -246,7 +246,7 @@ div.category li a{
 div.category li a:hover,
 div.category li a:active,
 div.category li a:focus{
-	color:#da6426; 
+	color:#da6426;
 }
 
 
@@ -267,6 +267,7 @@ div.cnzz{
 
 /*图片框*/
 p img{
+	box-sizing: border-box;
 	display: block;
 	padding: 0.3em 0.5em;
 	background-color: rgba(0,0,0,0.05);
@@ -291,7 +292,7 @@ article.post-content{
 	position: relative;
 	padding-bottom: 3em;
 	border-bottom: 2px solid #eee;
-} 
+}
 
 p.end {
   color: #da6426;
@@ -313,14 +314,14 @@ div.home ul.post-list li h2 a{
 	div.home ul.post-list li h2 a{
 		font-size: 1em;
 	}
-	
+
 }
 
 /*导航条*/
 @media screen and (max-width: 600px){
-	
+
 	.site-nav {
-	 background-color: white; 
+	 background-color: white;
 	}
 	.site-nav div.trigger a{
 		color: black;
