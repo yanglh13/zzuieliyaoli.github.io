@@ -21,7 +21,7 @@ categories: [javascript]
 
 简单的Demo如下：
 
-<a class="jsbin-embed" href="http://jsbin.com/viliketofu/1/embed?html,js,console,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.38.7"></script>
+<a class="jsbin-embed" href="http://jsbin.com/viliketofu/1/embed?js,console,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.38.7"></script>
 
 
 ## 思考
@@ -37,13 +37,13 @@ categories: [javascript]
 
 从上面的流程，可以得到：
 
-1. `<input type="number">`
+1. `<input type="number">`；
 1. 整个流程中涉及到两次数值格式化：元 -> 分、分 -> 元；
 2. 在用JavaScript进行计算时，保证数值的单位是`分`；
-3. 当乐迷使用`input`输入框对数值进行填写或者修改时，应该选择合适的`JavaScirpt事件`驱动流程的运行；
+3. 当乐迷使用`input`输入框对数值进行填写或者修改时，应该选择合适的`JavaScirpt事件`驱动流程的运行。
 
 ## 需要注意的地方
 
 1. `input.value`的值类型为`string`;
-2. 因为`<input type="number">`，所以可以避免很多奇葩的输入，比如`123asd`等等。但是还是要考虑`12.02.3.1`这样奇葩的输入值。
+2. 因为`<input type="number">`，所以可以避免很多奇葩的输入，比如`123asd`等等。但是还是要考虑`12.02.3.1`这样奇葩的输入值；
 3. 在使用`Math`、`Number`等对象的方法时，要注意数值的隐式转换，还有返回值的值类型。最好加上类型判断。
