@@ -2,7 +2,7 @@
 layout: post
 title:  "举例说明：JavaScript中数据流动和数值的处理"
 date:   2016-07-25
-categories: [javascript]
+categories: [JavaScript]
 ---
 
 最近的工作需求是移动Web页面的编写，其中非常典型的涉及到了数据流动和数值的处理。

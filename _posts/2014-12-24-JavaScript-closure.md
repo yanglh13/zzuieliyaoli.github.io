@@ -2,7 +2,7 @@
 layout: post
 title:  "对闭包的理解"
 date:   2014-12-24
-categories: [javascript学习]
+categories: [JavaScript]
 ---
 
 我对闭包一直理解不了，今天突然开窍了，好开森。

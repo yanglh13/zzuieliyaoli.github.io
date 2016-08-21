@@ -2,7 +2,7 @@
 layout: post
 title:  "HTML-iframe标签总结"
 date:   2015-3-12
-categories: [HTML学习]
+categories: [HTML]
 ---
 
 本文乃是知识点整理，侵权立删。 ：）

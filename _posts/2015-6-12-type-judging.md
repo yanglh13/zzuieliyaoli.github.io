@@ -2,7 +2,7 @@
 layout: post
 title:  "JavaScript中变量类型的判断"
 date:   2015-6-12
-categories: [JavaScript学习]
+categories: [JavaScript]
 ---
 
 我曾经有过疑问：为什么那么多框架都会封装各种isFunction、isArray等方法。经过一段时间的学习，这个问题的答案渐渐清楚。但是呢，有了答案也不行，俺要把相关函数整理一下。故有此文。
