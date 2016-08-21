@@ -2,7 +2,7 @@
 layout: post
 title:  "负外边距"
 date:   2015-4-15
-categories: [css学习]
+categories: [CSS]
 ---
 
 这两天的主要精力在完成baidu-ife的task0001，其中涉及到负外边距的知识和实战。虽然平时关于这方面接触的不多，但好在网上、书上的资料比较丰富，就趁着这个机会总结整理一下。
