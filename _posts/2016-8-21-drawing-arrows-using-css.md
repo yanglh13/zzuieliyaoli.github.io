@@ -54,6 +54,7 @@ categories: [CSS]
 <a class="jsbin-embed" href="http://jsbin.com/sifasi/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
 
 除了没有间隔以外，简直完美。那么，什么属性可以设置或者模拟间隔呢？（分别记为：间隔方法一、间隔方法二）
+
 1. `border`
 2. `box-shadow`
 
@@ -64,6 +65,7 @@ categories: [CSS]
 <a class="jsbin-embed" href="http://jsbin.com/vigaza/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
 
 ### 总结
+
 1. 将设计效果分为三部分，再讲每部分进行拆分；
 2. CSS无法直接搞定的效果，通常需要拼接来解决。
 
