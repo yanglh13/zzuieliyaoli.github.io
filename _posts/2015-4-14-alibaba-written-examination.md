@@ -2,7 +2,7 @@
 layout: post
 title:  "阿里巴巴的一道笔试题目"
 date:   2015-4-14
-categories: [css学习]
+categories: [CSS]
 ---
 
 ![](/images/posts/2015041401.png)

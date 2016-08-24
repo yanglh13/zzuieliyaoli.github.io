@@ -2,7 +2,7 @@
 layout: post
 title:  "基本包装类型等概念辨析"
 date:   2015-3-19
-categories: [javascript学习]
+categories: [JavaScript]
 ---
 书读百遍，其义自现。
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "页面滚动条的一二事"
 date:   2015-8-17
-categories: [javascript学习]
+categories: [JavaScript]
 ---
 
 本篇文章涉及到“滚动条”的相关东东。这个算是工作上遇到的问题，虽然最后的效果满足了产品需求，但是其中还是有一些问题需要认真研究。

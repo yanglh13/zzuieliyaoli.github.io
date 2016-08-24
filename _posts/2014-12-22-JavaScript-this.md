@@ -2,7 +2,7 @@
 layout: post
 title:  "this值的总结"
 date:   2014-12-22
-categories: [javascript学习]
+categories: [JavaScript]
 ---
 
 ### 一、函数字面量（function literal）

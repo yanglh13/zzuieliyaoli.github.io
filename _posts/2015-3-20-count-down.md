@@ -2,7 +2,7 @@
 layout: post
 title:  "倒计时与秒杀倒计时"
 date:   2015-3-20
-categories: [javascript学习]
+categories: [JavaScript]
 ---
 
 观腾讯英福伦斯2015实习生招聘之收获。

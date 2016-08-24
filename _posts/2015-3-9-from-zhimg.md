@@ -2,7 +2,7 @@
 layout: post
 title:  "zhimg.com引起的知识点总结"
 date:   2015-03-09
-categories: [http学习]
+categories: [HTTP]
 ---
 今天不知怎么滴突然翻看了知乎的代码，发现如下URI ![My helpful screenshot](/images/posts/2015030802.png)
 
