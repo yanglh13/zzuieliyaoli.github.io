@@ -2,34 +2,13 @@
 <html>
   <!-- 主页引用页 -->
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
-
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
-
-      <div class="pagination">
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous on">上一页
-        {% else %}
-          <a class="previous off"><span >上一页</span</a>
-        {% endif %}
-        <a class="page_number"><span >{{ paginator.page }} /{{ paginator.total_pages }}</span>
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next on">下一页
-        {% else %}
-          <a class="next off"><span >下一页</span>
-        {% endif %}
-        
-      </div>
+      {% include footer.html %}
     </div>
-    <a class="back-top" href="#"></a>
-    {% include footer.html %}
-
   </body>
-
 </html>

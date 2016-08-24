@@ -3,47 +3,40 @@ layout: defaultPost
 ---
 <!-- 文章 -->
 <div class="post">
-
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%Y年%m月%d日" }}{% if page.author %} • {{ page.author }}{% endif %} - {% if page.meta %} • {{ page.meta }}{% endif %} 
-    	<!-- 分类 -->
-    	{% unless page.categories == empty %}
-		  {% assign categories_list = page.categories %}
-		  {% if categories_list.first[0] == null %}
-			{% for category in categories_list %} 
-				<a class="category" href="{{ site.BASE_PATH }}/category/#{{ category }}">{{ category | join: "/" }}{% unless forloop.last %},{% endunless %}</a>
-			{% endfor %}
-		  {% else %}
-			{% for category in categories_list %} 
-				<a class="category" href="{{ site.BASE_PATH }}/category/#{{ category[0] }}">
-					{{ category[0] | join: "/" }} 
-				</a>
-			{% endfor %}
-		  {% endif %}
-		{% endunless %}  </p>
-	
-    
-		
-		
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-    <p class="end">END</p>
-  </article>
-  	<!-- 上一篇、下一篇文章 -->
-  	<ul class="pager">
-		  {% if page.previous %}
-		  <li class="previous on"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">上一篇：  {{ page.previous.title }} - {{ page.previous.date  | date: "%Y年%m月%d日"}}</a></li>
-		  {% else %}
-		  <li class="previous off"><a>本文章已经是最后的文章 </a></li>
-		  {% endif %}
-		  {% if page.next %}
-		  <li class="next on"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇：  {{ page.next.title }} -  {{ page.next.date | date: "%Y年%m月%d日" }}</a></li>
-		  {% else %}
-			<li class="next off"><a>本文章已经是最新的文章</a>
-		  {% endif %}
-	</ul>
-  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+    <p class="post-meta">{{ page.date | date: "%Y年%m月%d日" }}{% if page.author %} • {{ page.author }}{% endif %} - {% if page.meta %} • {{ page.meta }}{% endif %}
+    <!-- 分类 -->
+    {% unless page.categories == empty %}
+    {% assign categories_list = page.categories %}
+    {% if categories_list.first[0] == null %}
+      {% for category in categories_list %}
+        <a class="category" href="{{ site.BASE_PATH }}/category/#{{ category }}">{{ category | join: "/" }}{% unless forloop.last %},{% endunless %}</a>
+      {% endfor %}
+    {% else %}
+      {% for category in categories_list %}
+        <a class="category" href="{{ site.BASE_PATH }}/category/#{{ category[0] }}">
+          {{ category[0] | join: "/" }}
+        </a>
+      {% endfor %}
+    {% endif %}
+  {% endunless %}  </p>
+</header>
+<article class="post-content">
+  {{ content }}
+</article>
+<!-- 上一篇、下一篇文章 -->
+<ul class="pager">
+  {% if page.previous %}
+    <li class="previous on"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">上一篇：  {{ page.previous.title }} - {{ page.previous.date  | date: "%Y年%m月%d日"}}</a></li>
+  {% else %}
+    <li class="previous off"><a>本文章已经是最后的文章 </a></li>
+  {% endif %}
+  {% if page.next %}
+    <li class="next on"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇：  {{ page.next.title }} -  {{ page.next.date | date: "%Y年%m月%d日" }}</a></li>
+  {% else %}
+    <li class="next off"><a>本文章已经是最新的文章</a>
+  {% endif %}
+</ul>
+{% include disqus.html disqus_identifier=page.disqus_identifier %}
 </div>
