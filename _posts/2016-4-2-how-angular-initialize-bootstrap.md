@@ -13,7 +13,7 @@ Angular 的初始化包含触发、注入、编译等几个过程。
 
 https://docs.angularjs.org/img/guide/concepts-startup.png
 
-# Angular的初始化 - 触发
+## Angular的初始化 - 触发
 
 ```JavaScript
 function angularInit(element, bootstrap) {
