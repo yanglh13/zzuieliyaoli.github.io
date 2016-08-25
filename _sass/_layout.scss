@@ -234,3 +234,24 @@
         font-size: 1.1em;
     }
 }
+
+div.category {
+  ul {
+    list-style-type: none;
+  }
+  li {
+    span.text-muted {
+      font-size: 14px;
+      color: #828282;
+    }
+    a {
+      display: inline-block;
+      font-size: 16px;
+      height: 21px;
+      line-height: 21px;
+      margin-left: 1em;
+      font-weight: lighter;
+    }
+  }
+}
+
