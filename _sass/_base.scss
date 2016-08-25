@@ -83,7 +83,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article.post-content h2,
-article.post-content h3{
+article.post-content h3,
+article.post-content h4 {
     border-bottom: 1px solid $grey-color-light;
 }
 
@@ -110,14 +111,16 @@ a {
  * Blockquotes
  */
 blockquote {
-    border-left: 4px solid $grey-color-light;
-    padding: 5px $spacing-unit / 2;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: -1px;
+    padding: 0 1em;
+    color: #777;
+    border-left: 0.25em solid #ddd;
+    margin-bottom: 16px;
     p {
+        margin: 0;
         color: #777;
     }
-
     > :last-child {
         margin-bottom: 0;
     }

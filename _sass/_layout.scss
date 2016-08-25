@@ -15,6 +15,7 @@
     float: left;
     &,
     &:visited {
+
     }
 }
 .site-nav {
@@ -166,7 +167,8 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
 }
 
 .page-heading {
@@ -207,12 +209,17 @@
 /**
  * Posts
  */
+.post {
+    padding: 15px;
+    solid: 1px solid #ddd;
+    border-radius: 3px;
+}
 .post-header {
     margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 22px;
+    font-size: 30px;
     letter-spacing: -1px;
     line-height: 1.1;
     font-weight: normal;
@@ -224,14 +231,16 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    padding-bottom: $spacing-unit;
+    border-bottom: 1px solid #ddd;
     h2 {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
     h3 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     h4 {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 }
 
