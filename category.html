@@ -4,21 +4,22 @@ title: 文章分类
 header: 文章分类
 permalink: /category/
 ---
-<article>
-  {% for category in site.categories %}
-    <div class="category" id="{{category[0]}}">
-      <h2 >{{ category[0] }}</h2>
-      <ul >
-        {% assign pages_list = category[1] %}
-        {% for node in pages_list %}
-          {% if node.title != null %}
-            {% if group == null or group == node.group %}
-              <li><a href="{{ site.BASE_PATH }}{{node.url}}">{{node.title}}</a> <span class="text-muted">- {{ node.date | date: "%Y年%m月%d日" }}</span></li>
-            {% endif %}
+{% for category in site.categories %}
+  <div class="category" id="{{category[0]}}">
+    <h2 >{{ category[0] }}</h2>
+    <ul >
+      {% assign pages_list = category[1] %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if group == null or group == node.group %}
+            <li>
+            <span class="text-muted">{{ node.date | date: "%Y.%m.%d" }}</span>
+            <a href="{{ site.BASE_PATH }}{{node.url}}">{{node.title}}</a>
+            </li>
           {% endif %}
-        {% endfor %}
-        {% assign pages_list = nil %}
-      </ul>
-    </div>
-  {% endfor %}
-</article>
+        {% endif %}
+      {% endfor %}
+      {% assign pages_list = nil %}
+    </ul>
+  </div>
+{% endfor %}
