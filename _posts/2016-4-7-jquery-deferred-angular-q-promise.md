@@ -2,7 +2,7 @@
 layout: post
 title:  "jQuery Deferred、Angular $q、ES6 Promise"
 date:   2016-4-7
-categories: [promise]
+categories: [Promise]
 ---
 
 jQuery中的Deferred()、Angular中的$q()、ES6中的Promise都是为了解决异步而各自实现或定义的方法。
