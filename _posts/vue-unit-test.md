@@ -8,3 +8,13 @@
 
 
 ## 坑
+
+### nextTick
+
+### jsdom
+
+### Assert / BDD
+
+### document.createElement vm.$mount()
+
+### Ajax

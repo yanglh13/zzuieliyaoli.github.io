@@ -23,4 +23,4 @@ http://stackoverflow.com/questions/35664594/redux-why-is-state-all-in-one-place-
 
 总结来说：
 
-
+https://github.com/vuejs/vuex/issues/207
