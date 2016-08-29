@@ -7,11 +7,11 @@ categories: [CSS]
 
 感谢CSS的发展，让Web前端工程师可以完成以前需要切图才能实现的设计效果。最近遇到一个需求：用CSS画流程箭头。具体的效果图如下所示：
 
-![step-1](/images/posts/20160821-arrow-1.png)
-
 ![step-2](/images/posts/20160821-arrow-2.png)
 
 ![step-3](/images/posts/20160821-arrow-3.png)
+
+![step-1](/images/posts/20160821-arrow-1.png)
 
 这要放到CSS2.1的年代或者想偷懒的话，直接三个切图搞定。但是切图无疑会增加页面的体积，减慢页面的加载速度。更何况，这几个切图的效果完全用CSS来搞定。
 
