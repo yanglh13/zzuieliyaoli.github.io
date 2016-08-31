@@ -13,8 +13,12 @@
 
 ### jsdom
 
+document.cookie 全局只会保证一个cookie?
+
 ### Assert / BDD
 
 ### document.createElement vm.$mount()
 
 ### Ajax
+
+### event handler
