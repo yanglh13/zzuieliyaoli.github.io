@@ -22,3 +22,7 @@ document.cookie 全局只会保证一个cookie?
 ### Ajax
 
 ### event handler
+
+
+### 通过什么来判断前端测试的次序？
+### 什么可以测？什么不测？什么测多少？测到什么程度？
