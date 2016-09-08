@@ -83,8 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article.post-content h2,
-article.post-content h3,
-article.post-content h4 {
+article.post-content h3 {
     border-bottom: 1px solid $grey-color-light;
 }
 
@@ -132,7 +131,7 @@ blockquote {
  */
 
 /*code*/
-code{
+code {
     padding: 0;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
@@ -142,7 +141,7 @@ code{
     border-radius: 3px;
 }
 
-pre{
+pre {
     padding: 16px;
     overflow: auto;
     font-size: 85%;
