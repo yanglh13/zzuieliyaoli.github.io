@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "由写Vue.js的单元测试所想到的"
+title:  "由写Vue.js的单元测试所得到的"
 date:   2016-09-07
 categories: [Test]
 ---
