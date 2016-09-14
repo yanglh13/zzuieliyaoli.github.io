@@ -2,7 +2,7 @@
 layout: post
 title:  "2014年理工杯第一场赛后反思"
 date:   2014-3-09
-categories: [反思与思考]
+categories: [Essay]
 ---
 
 旧文一篇，关于我曾经的辩论青春。

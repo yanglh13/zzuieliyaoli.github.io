@@ -2,7 +2,7 @@
 layout: post
 title:  "有关于前端学习的微信公众号"
 date:   2015-3-13
-categories: [学习资源]
+categories: [Resource]
 ---
 
 **一万年太短，只争朝夕。**

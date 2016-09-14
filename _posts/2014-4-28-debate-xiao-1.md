@@ -2,7 +2,7 @@
 layout: post
 title:  "2014校赛32进16赛后反思"
 date:   2014-4-28
-categories: [反思与思考]
+categories: [Essay]
 ---
 
 旧文一篇，关于我曾经的辩论青春。

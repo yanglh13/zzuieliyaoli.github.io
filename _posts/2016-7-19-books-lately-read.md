@@ -2,7 +2,7 @@
 layout: post
 title:  "最近读的几本书"
 date:   2016-07-19
-categories: [读书笔记]
+categories: [Essay]
 ---
 
 人（我）真是一种奇怪的生物啊。毕业前，在学校有大把的时间来浪费，却抽不出时间看书。

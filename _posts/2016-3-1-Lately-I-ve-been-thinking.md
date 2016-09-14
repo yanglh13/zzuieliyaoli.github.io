@@ -2,7 +2,7 @@
 layout: post
 title:  "Lately I've been thinking"
 date:   2016-3-1
-categories: [生活随笔]
+categories: [Essay]
 ---
 
 春节后回到公司，接连不断的面试了几个人。表现出色的面试者，都有自己的特色。但是面试表现稍差的面试者，大抵有同一种表现：缺乏对问题的拆分能力。

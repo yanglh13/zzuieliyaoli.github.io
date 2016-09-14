@@ -2,7 +2,7 @@
 layout: post
 title:  "卖春联！"
 date:   2015-02-15 
-categories: [生活随笔]
+categories: [Essay]
 ---
 
 春节前跟老爹一起去卖春联。 ：）

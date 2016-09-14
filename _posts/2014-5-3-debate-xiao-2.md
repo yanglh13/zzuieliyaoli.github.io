@@ -2,7 +2,7 @@
 layout: post
 title:  "2014校辩赛16进8赛后反思"
 date:   2014-5-3
-categories: [反思与思考]
+categories: [Essay]
 ---
 旧文一篇，关于我曾经的辩论青春。
 
