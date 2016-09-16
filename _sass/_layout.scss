@@ -160,6 +160,9 @@
 
         / 2));
     }
+    .post-content ul {
+        overflow-y: scroll;
+    }
 
 }
 
@@ -259,9 +262,6 @@
         margin-bottom: 16px;
         font-weight: 600;
         line-height: 1.25;
-    }
-    ul {
-        overflow-y: scroll;
     }
 }
 
