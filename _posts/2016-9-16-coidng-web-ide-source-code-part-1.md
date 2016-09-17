@@ -97,12 +97,27 @@ middlewares.forEach(middleware =>
 
 关于`middleware`就先说到这里，下面接着看：为什么需要`Redux Thunk`。
 
-[官方](https://github.com/gaearon/redux-thunk)给出了一个在stackoverflow的回答：[How to dispatch a Redux action with a timeout?](http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559)。这个回答概括起来有一下几点：
+[官方](https://github.com/gaearon/redux-thunk)给出了一个在stackoverflow的回答：[How to dispatch a Redux action with a timeout?](http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559)。这个回答概括起来有以下几点：
 
 - 简单的应用、简单问题用React自带的工具解决就够了。
 - `Redux Thunk`帮你抹平同步代码与异步代码的区别。因为异步代码需要手动传入`dispatch`太烦了，而且也容易出错。
 
-答主也给了一些[Redux Async Example](https://github.com/reactjs/redux/tree/master/examples/async)。在这个回答内包括其他回答，有提到`Redux Saga`和` Redux Loop`了，不过我已经不打算再深究下去了。
+答主也给了一些[Redux Async Example](https://github.com/reactjs/redux/tree/master/examples/async)。在这个回答内包括其他回答，有提到`Redux Saga`和`Redux Loop`了，不过我已经不打算再深究下去了。
 
-未完待续。。。
+### loadsh
 
+[A modern JavaScript utility library delivering modularity, performance, & extras.](https://github.com/lodash/lodash)
+
+### Webpack Merge
+
+[Merge designed for Webpack](https://github.com/survivejs/webpack-merge)
+
+### Classnames
+
+[Classnames A simple javascript utility for conditionally joining classNames together.](https://github.com/JedWatson/classnames)
+
+## 小节
+
+我想我会继续学习源码，不过就是另外的文章了吧。
+
+另外，知乎上有关于如何写一个Web IDE的讨论[要实现一个web IDE 需要哪些前端技术？](https://www.zhihu.com/question/41050429)
