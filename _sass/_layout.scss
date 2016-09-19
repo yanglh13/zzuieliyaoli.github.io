@@ -230,7 +230,7 @@
     font-size: 30px;
     letter-spacing: -1px;
     line-height: 1.1;
-    font-weight: normal;
+    font-weight: 600;
 
     @include media-query($on-laptop) {
         font-size: 1rem/1.42;
@@ -241,6 +241,7 @@
     margin-bottom: $spacing-unit;
     padding-bottom: $spacing-unit;
     border-bottom: 1px solid #ddd;
+
     h2 {
         font-size: 1.5em;
         margin-top: 24px;
