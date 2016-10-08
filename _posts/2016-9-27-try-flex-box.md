@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "FLexBox解决options和input宽度和数量不定的布局问题"
+title:  "FlexBox解决options和input宽度和数量不定的布局问题"
 date:   2016-09-27
 categories: [CSS]
 ---
@@ -91,5 +91,5 @@ li:not(:last-child) {
 - [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 - [Flex 布局教程：实例篇](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
 - [移动端全兼容的flexbox速成班](https://isux.tencent.com/flexbox.html)
-- [flexbox全兼容模板](http://115.159.36.96/tikizheng/flextest/demo.html)
+- [Flexbox全兼容模板](http://115.159.36.96/tikizheng/flextest/demo.html)
 - [Flexbox布局实战](http://www.w3cplus.com/css3/going-all-in-on-flexbox.html)
