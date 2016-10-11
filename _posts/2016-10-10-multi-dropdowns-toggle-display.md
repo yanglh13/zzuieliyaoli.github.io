@@ -52,3 +52,5 @@ categories: [Vue.js]
 #### 缺点：
 
 - 需要处理绑定`addEventListener`元素与`event.target`之间的逻辑。
+
+以上。
