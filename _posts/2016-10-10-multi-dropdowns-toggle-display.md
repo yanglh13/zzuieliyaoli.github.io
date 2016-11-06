@@ -2,7 +2,7 @@
 layout: post
 title:  "多个下拉列表间的显隐切换"
 date:   2016-10-10
-categories: [Vue.js]
+categories: [Vue]
 ---
 
 多个下拉列表间的显示与隐藏切换是个挺常见的交互。
