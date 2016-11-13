@@ -2,7 +2,7 @@
 layout: post
 title:  "使用Vue、Vuex时组件之间消息/数据传递的思考"
 date:   2016-05-04
-categories: [Vue.js]
+categories: [Vue]
 ---
 
 遇到的需求很典型：用户点击不同的按钮时，对数据进行不同的排序或不同的筛选。
