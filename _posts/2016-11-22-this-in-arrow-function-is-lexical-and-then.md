@@ -140,18 +140,22 @@ var test2 = {
 前者：
 
 ```js
-"type": "ArrowFunctionExpression",
-"method": false,
+{
+  "type": "ArrowFunctionExpression",
+  "method": false,
+}
 ```
 
 后者：
 
 ```js
-"type": "FunctionExpression",
-"method": true,
+{
+  "type": "FunctionExpression",
+  "method": true,
+}
 ```
 
-好奇怪。
+这是为啥呢？
 
 ## 参考
 
