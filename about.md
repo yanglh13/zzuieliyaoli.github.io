@@ -9,3 +9,5 @@ permalink: /about/
 [知乎](https://www.zhihu.com/people/zzuieliyaoli)
 
 [Github](https://github.com/zzuieliyaoli)
+
+<a href="mailto:zzuieliyaoli@gmail.com">zzuieliyaoli#gmail.com</a>
