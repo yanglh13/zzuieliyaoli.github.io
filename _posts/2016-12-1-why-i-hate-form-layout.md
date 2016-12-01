@@ -2,7 +2,7 @@
 layout: post
 title:  "当我在写表单布局时，我在想些什么"
 date:   2016-12-1
-categories: [Essay]
+categories: [JavaScript]
 ---
 
 所谓的表单布局，就是用于用户填写信息的布局。小到一个搜索框、登陆框，大到个人信息填写。其中包含但不限于：`button` `input`、`select`、`form`，这些 HTML 标签。
