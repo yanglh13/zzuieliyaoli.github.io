@@ -23,9 +23,9 @@ Demo 的地址在这里 [zzuieliyaoli/monitor](https://github.com/zzuieliyaoli/m
 参考如下的资料：
 
 - [PhantomJS & NodeJS 在京东网站前端监控平台的最佳实践](http://www.infoq.com/cn/articles/practise-of-phantomjs-and-nodejs-in-jingdong)
-- [node截图服务可用性报告](http://blog.angrytoro.com/2016/01/27/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%88%AA%E5%9B%BE%E5%BC%95%E5%8F%91%E7%9A%84%E8%A1%80%E6%A1%88/)
-- [webshot - 基于phantomjs和nodejs的服务器端截图服务](https://github.com/node-modules/webcamera)
-- [web-camera - 通过phantomjs来打开渲染网页，对网页进行截图](https://github.com/node-modules/webcamera)
+- [node 截图服务可用性报告](http://blog.angrytoro.com/2016/01/27/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%88%AA%E5%9B%BE%E5%BC%95%E5%8F%91%E7%9A%84%E8%A1%80%E6%A1%88/)
+- [webshot - 基于 phantomjs 和 nodejs 的服务器端截图服务](https://github.com/node-modules/webcamera)
+- [web-camera - 通过 phantomjs 来打开渲染网页，对网页进行截图](https://github.com/node-modules/webcamera)
 
 ## 感受
 
@@ -65,7 +65,7 @@ class Camera {
 
 #### 第一种：在相机模块的基础上，派生出截图模块
 
-```
+```js
 class Screenshot extends Camera {
   constructor() {
     super()
