@@ -262,6 +262,23 @@
     h4 {
         font-size: 1em;
     }
+    .content-bottom {
+    }
+    .payments {
+        padding-top: 1em;
+        border-top: 1px solid #ddd;
+        position: relative;
+        &:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        img {
+            float: left;
+            width: 30%;
+            margin-right: 2%;
+        }
+    }
 }
 
 ul.pager {
