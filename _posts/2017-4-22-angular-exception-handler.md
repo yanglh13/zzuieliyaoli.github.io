@@ -9,6 +9,28 @@ categories: [Angular]
 
 在 Angular1 中，`uncaught exceptions` 会被在 `$exceptionHandler service` 集中处理，并通过 `console.error()` 将报错信息输出。
 
+```js
+$apply: function(expr) {
+  try {
+    beginPhase('$apply');
+      try {
+        return this.$eval(expr);
+      } finally {
+        clearPhase();
+      }
+    } catch (e) {
+      $exceptionHandler(e);
+    } finally {
+      try {
+        $rootScope.$digest();
+      } catch (e) {
+        $exceptionHandler(e);
+      throw e;
+    }
+  }
+},
+```
+
 这意味着，Angular1 中的运行时错误，将不会被 `window.onerror` 捕获。
 
 <a class="jsbin-embed" href="http://jsbin.com/xulofuc/embed?html,console,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.41.10"></script>
@@ -16,8 +38,7 @@ categories: [Angular]
 好在可以改写 `$exceptionHandler service` ，使其可以被 `window.onerror` 捕获。
 
 ```js
-// angular.js/src/ng/exceptionHandler.js
-
+// https://rollbar.com/blog/client-side-angular-error-handling/
 angular.module('exceptionOverride', []).factory('$exceptionHandler',
   function() {
     return function(exception, cause) {
