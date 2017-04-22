@@ -10,6 +10,7 @@ categories: [Angular]
 在 Angular1 中，`uncaught exceptions` 会被在 `$exceptionHandler service` 集中处理，并通过 `console.error()` 将报错信息输出。
 
 ```js
+// https://github.com/angular/angular.js/blob/master/src/ng/rootScope.js
 $apply: function(expr) {
   try {
     beginPhase('$apply');
