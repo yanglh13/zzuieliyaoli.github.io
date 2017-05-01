@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "this值的总结"
+title:  "this 值的总结"
 date:   2014-12-22
 categories: [JavaScript]
 ---

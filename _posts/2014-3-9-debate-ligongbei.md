@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2014年理工杯第一场赛后反思"
+title:  "2014 年理工杯第一场赛后反思"
 date:   2014-3-09
 categories: [Essay]
 ---

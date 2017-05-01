@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript中的引用类型、类与继承概念辨析"
+title:  "JavaScript 中的引用类型、类与继承概念辨析"
 date:   2015-3-24
 categories: [JavaScript]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "用CSS画流程箭头"
+title:  "用 CSS 画流程箭头"
 date:   2016-08-21
 categories: [CSS]
 ---

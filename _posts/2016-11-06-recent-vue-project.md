@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "用Vue1做了个大项目"
+title:  "用 Vue1 做了个大项目"
 date:   2016-11-06
 categories: [Vue]
 ---

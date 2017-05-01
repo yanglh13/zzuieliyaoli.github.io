@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "那些年，学React.js遇到的坑"
+title:  "那些年，学 React.js 遇到的坑"
 date:   2016-09-15
 categories: [React]
 ---

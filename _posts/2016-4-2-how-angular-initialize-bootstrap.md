@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Angular的初始化 - 触发"
+title:  "Angular 的初始化 - 触发"
 date:   2016-4-2
 categories: [Angular]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "apply()的应用"
+title:  "apply() 的应用"
 date:   2014-12-29
 categories: [JavaScript]
 ---

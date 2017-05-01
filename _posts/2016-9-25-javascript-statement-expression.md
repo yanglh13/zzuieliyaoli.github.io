@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript的表达式语句和表达式"
+title:  "JavaScript 的表达式语句和表达式"
 date:   2016-09-25
 categories: [JavaScript]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2014校辩赛16进8赛后反思"
+title:  "2014 校辩赛 16 进 8 赛后反思"
 date:   2014-5-3
 categories: [Essay]
 ---

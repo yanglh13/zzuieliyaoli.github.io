@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "清除浮动的一些方法和BFC知识"
+title:  "清除浮动的一些方法和 BFC 知识"
 date:   2014-12-17
 categories: [CSS]
 ---

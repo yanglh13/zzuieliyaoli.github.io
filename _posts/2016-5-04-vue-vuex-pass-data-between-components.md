@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "使用Vue、Vuex时组件之间消息/数据传递的思考"
+title:  "使用 Vue、Vuex 时组件之间消息/数据传递的思考"
 date:   2016-05-04
 categories: [Vue]
 ---

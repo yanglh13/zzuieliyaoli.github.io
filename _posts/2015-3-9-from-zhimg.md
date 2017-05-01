@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "zhimg.com引起的知识点总结"
+title:  "zhimg.com 引起的知识点总结"
 date:   2015-03-09
 categories: [HTTP]
 ---

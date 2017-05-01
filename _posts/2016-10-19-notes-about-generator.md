@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "关于Generator的微小笔记"
+title:  "关于 Generator 的微小笔记"
 date:   2016-10-19
 categories: [JavaScript]
 ---

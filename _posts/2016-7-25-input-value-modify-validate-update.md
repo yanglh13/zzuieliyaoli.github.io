@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "举例说明：JavaScript中数据流动和数值的处理"
+title:  "举例说明：JavaScript 中数据流动和数值的处理"
 date:   2016-07-25
 categories: [JavaScript]
 ---

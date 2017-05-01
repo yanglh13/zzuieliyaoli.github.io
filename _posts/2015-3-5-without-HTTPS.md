@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "在不使用HTTPS的情况下，如何保证用户登录时提交密码已经加密?"
+title:  "在不使用 HTTPS 的情况下，如何保证用户登录时提交密码已经加密?"
 date:   2015-3-5
 categories: [Security]
 ---

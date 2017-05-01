@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript中变量类型的判断"
+title:  "JavaScript 中变量类型的判断"
 date:   2015-6-12
 categories: [JavaScript]
 ---

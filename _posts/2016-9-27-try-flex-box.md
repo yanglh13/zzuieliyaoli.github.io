@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "FlexBox解决options和input宽度和数量不定的布局问题"
+title:  "FlexBox 解决 options 和 input 宽度和数量不定的布局问题"
 date:   2016-09-27
 categories: [CSS]
 ---
