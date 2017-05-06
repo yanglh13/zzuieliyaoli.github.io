@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "基于 Vue-cli 构建多页面应用（Multi-pages Application）"
+title:  "基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架"
 date:   2017-5-6
 categories: [Vue]
 ---
