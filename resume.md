@@ -57,7 +57,8 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 ### 欢唱网络科技（上海）有限公司（2015.7 - 至今） 实习 + 全职
 
 - 独自公司承担 Web 前端开发工作近一年时间；
-- 参与和负责公司<a href="https//www.kanjian.com" target="_blank">「星球发行」</a>与<a href="https://star.kanjian.com" target="_blank">「看见音乐」</a>的维护与特性开发；
+- 参与和负责公司 <a href="https://www.kanjian.com" target="_blank">「看见音乐」</a> 与
+ <a href="https://star.kanjian.com" target="_blank">「星球发行」</a> 的维护与特性开发；
 - 配合公司营销需求，制作各种各样的专题页，涉及 PC 端、移动端与 APP Hybrid；
 - 推动公司 Web 前端开发技术的演进与规范化；
 - 推进工作流程规范化：沉淀技术文档，规范需求文档；
@@ -85,7 +86,8 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 ### 「星球发行」移动端页面
 
 - 负责项目脚手架搭建。基于 Vue-cli 单页面应用（SPA）模板，修改 Webpack 相关配置文件，最终实现多页面应用的开发；
-博文：[基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架](/2017-05-06/vue-multi-pages-application-boilerplate-modified-by-vue-cli.html)
+博文：<a href="/2017-05-06/vue-multi-pages-application-boilerplate-modified-by-vue-cli.html" target="_blank">
+基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架</a>  
 - 负责除“登录/注册”外，所有页面的开发。
 - Flexible 完成多移动端适配；
 - Flex 完成页面布局；
@@ -116,7 +118,7 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 
 ## 演讲和讲义
 
-- [看见音乐前端开发的困境与畅想](/sliders/Architecture.html)  
+- <a href="/sliders/Architecture.html" target="_blank">看见音乐前端开发的困境与畅想</a>  
 
 ## 开源社区贡献
 
