@@ -203,20 +203,20 @@
 .post-link {
     display: inline-block;
     font-size: 16px;
-    height: 21px;
-    line-height: 21px;
     margin-left: 1em;
-    font-weight: lighter;
 }
 
 /**
  * Posts
  */
 .post {
-    padding: 20px 15px 15px 15px;
+    padding: 45px;
     border: 1px solid #ddd;
     border-radius: 3px;
     background-color: #FFF;
+    @include media-query($on-laptop) {
+        padding: 20px 15px 15px 15px;
+    }
 }
 .post-header {
     margin-bottom: $spacing-unit;
