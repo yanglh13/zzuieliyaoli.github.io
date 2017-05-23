@@ -51,6 +51,7 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 - PC 端与移动端页面的调试与开发；
 - 微信 JS-SDK，如微信分享、微信支付；
 - Linux 以及 Vim 常用的命令与操作；
+- Git；
 
 ## 工作经历
 
