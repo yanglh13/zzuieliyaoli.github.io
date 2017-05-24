@@ -38,6 +38,7 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 - CSS3、Flexbox 布局、SASS
 - BEM
 - 前后端分离、Mock Server
+- ECharts
 - Node、Docker、ElasticSearch
 - jQuery、Zepto、Lodash 等工具类库
 
