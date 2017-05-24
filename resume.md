@@ -10,7 +10,7 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 
 - Email: <a href="mailto:zzuieliyaoli@gmail.com">zzuieliyaoli#gmail.com</a>
 - 微信：bodyhead
-- 手机：Kzg2MTUxMzkxNzk3ODk=
+- 手机：Kzg2IDE1MTM5MTc5Nzg5
 
 ## 基本信息
 
@@ -34,7 +34,7 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 - Angular1
 - Babel、Webpack、Gulp 等构建工具
 - ESLint
-- Flexible + REM 响应式页面
+- 常见布局、Flexible + REM 响应式页面
 - CSS3、Flexbox 布局、SASS
 - BEM
 - 前后端分离、Mock Server
