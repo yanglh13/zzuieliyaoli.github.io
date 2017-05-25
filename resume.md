@@ -34,7 +34,7 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 - Angular1
 - Babel、Webpack、Gulp 等构建工具
 - ESLint
-- 常见布局、Flexible + REM 响应式页面
+- 常见布局、Flexible + REM 多移动端适配
 - CSS3、Flexbox 布局、SASS
 - BEM
 - 前后端分离、Mock Server
@@ -71,7 +71,8 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 
 ### 版权交易平台（开发中）
 
-- 负责前端架构
+- 负责前端架构；
+- Mock Server；
 
 ### JavaScript 异常监控系统
 
