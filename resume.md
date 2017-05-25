@@ -52,7 +52,7 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 - PC 端与移动端页面的调试与开发；
 - 微信 JS-SDK，如微信分享、微信支付；
 - Linux 以及 Vim 常用的命令与操作；
-- Git；
+- Git 常用命令与操作；
 
 ## 工作经历
 
@@ -91,8 +91,8 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 博文：<a href="/2017-05-06/vue-multi-pages-application-boilerplate-modified-by-vue-cli.html" target="_blank">
 基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架</a>  
 - 负责除“登录/注册”外，所有页面的开发。
-- Flexible 完成多移动端适配；
-- Flex 完成页面布局；
+- Flexible + REM 完成多移动端适配；
+- Flexbox 完成页面布局；
 - Lazyloading 提高页面加载速度；
 - 帮助同事理解与使用 ES6+，比如：Promise、Async/Await 等；
 
@@ -115,8 +115,6 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 ### 「看见音乐」模块 —— 认证音乐人
 
 - 基于 Angular1 重构；
-
-### 部分活动页
 
 ## 演讲和讲义
 
