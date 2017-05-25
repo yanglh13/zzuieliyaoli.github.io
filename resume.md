@@ -22,7 +22,7 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 - 技术博客：<a href="http://liyaoli.com" target="_blank">http://liyaoli.com</a>
 - GitHub：<a href="https://github.com/zzuieliyaoli" target="_blank">https://github.com/zzuieliyaoli</a>
 - 知乎：<a href="https://www.zhihu.com/people/zzuieliyaoli" target="_blank">https://www.zhihu.com/people/zzuieliyaoli</a> 
-- 期望薪资：税前月薪 15K ~ 20K，特别喜欢的公司可例外
+- 期望薪资：面议
 - 期望环境：Macbook Pro + 27 寸显示器
 - 期望城市：上海
 
