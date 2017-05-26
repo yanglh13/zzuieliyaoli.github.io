@@ -26,7 +26,7 @@ categories: [CSS]
 
 #### 1.IE6+
 
-{% highlight CSS %}
+```css
 .clear:before,
 .clear:after {
     content: "";
@@ -38,18 +38,17 @@ categories: [CSS]
 .clear {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
-{% endhighlight %}
+```
 
 #### 2.IE8+
 
-{% highlight CSS %}
-
+```css
 .clear:after {
   content: "";
   display: table;
   clear: both;
 }
-{% endhighlight %}
+```
 
 ## 二、BFC（Block Formatting Contexts）
 
@@ -106,18 +105,10 @@ before伪元素是用来处理margin边距重叠的，由于内部元素 float �
 
 ## 参考文章：
 
+- [http://css.doyoe.com/properties/layout/clear.htm](http://css.doyoe.com/properties/layout/clear.htm "clear")
 
+- [http://www.iyunlu.com/view/css-xhtml/55.html](http://www.iyunlu.com/view/css-xhtml/55.html)
 
-> [http://css.doyoe.com/properties/layout/clear.htm](http://css.doyoe.com/properties/layout/clear.htm "clear")
+- [http://css-tricks.com/snippets/css/clear-fix/](http://css-tricks.com/snippets/css/clear-fix/)
 
-
-
-> [http://www.iyunlu.com/view/css-xhtml/55.html](http://www.iyunlu.com/view/css-xhtml/55.html)
-
-
-
-> [http://css-tricks.com/snippets/css/clear-fix/](http://css-tricks.com/snippets/css/clear-fix/)
-
-
-
-> [http://www.qianduan.net/comprehensive-haslayout.html](http://www.qianduan.net/comprehensive-haslayout.html)
+- [http://www.qianduan.net/comprehensive-haslayout.html](http://www.qianduan.net/comprehensive-haslayout.html)
