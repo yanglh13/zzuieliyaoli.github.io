@@ -64,7 +64,7 @@ categories: [CSS]
 
 答：触发了BFC。
 
-### 2. 如何触发BFC
+### 2. 如何触发 BFC
 
 
 - float 除了 none 以外的值
@@ -79,7 +79,7 @@ categories: [CSS]
 
 需要注意的是，display:table 本身并不会创建 BFC ，但是它会产生匿名框（anonymous boxes），而匿名框中的 display:table-cell 可以创建新的 BFC ，换句话说，触发块级格式化上下文的是匿名框，而不是 display:table 。所以通过 display:table 和 display:table-cell 创建的BFC效果是不一样的。
 
-### 3. BFC特性
+### 3. BFC 特性
 - 块级格式化上下文会阻止外边距叠加
 
 - 块级格式化上下文不会重叠浮动元素
@@ -101,7 +101,7 @@ haslayout 是 Windows Internet Explorer 渲染引擎的一个内部组成部分�
 
 当一个元素有一个布局时，它负责对自己和可能的子孙元素进行尺寸计算和定位。简单来说，这意味着这个元素需要花更多的代价来维护自身和里面的内容，而不是依赖于祖先元素来完成这些工作。因此，一些元素默认会有一个布局。当我们说一个元素“拥有layout”或“得到layout”，或者说一个元素“has layout” 的时候，我们的意思是指它的微软专有属性 hasLayout 被设为了 true 。一个“layout元素”可以是一个默认就拥有 layout 的元素或者是一个通过设置某些 CSS 属性得到 layout 的元素。如果某个 HTML 元素拥有 haslayout 属性，那么这个元素的 haslayout 的值一定只有 true ，haslayout 为只读属性 一旦被触发，就不可逆转。通过 IE Developer Toolbar 可以查看 IE 下 HTML 元素是否拥有 haslayout，在 IE Developer Toolbar 下，拥有 haslayout 的元素，通常显示为“haslayout = -1”。
 
-## 四、何时使用before
+## 四、何时使用 before
 
 before 伪元素是用来处理 margin 边距重叠的，由于内部元素 float 创建了 BFC，导致内部元素的 margin-top 和 上一个盒子的 margin-bottom 发生叠加。如果这不是你所希望的，那么就可以加上 before，如果只是单纯的闭合浮动，after 就够了！只使用 clearfix:after 时在跨浏览器兼容问题会存在一个垂直边距叠加的 bug，这不是 bug，是 BFC 应该有的特性。
 
