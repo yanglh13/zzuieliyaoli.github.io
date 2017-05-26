@@ -4,8 +4,7 @@
 .highlight {
     @extend %vertical-rhythm;
 
-    &,
-    .code {
+    code {
       font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     }
 
