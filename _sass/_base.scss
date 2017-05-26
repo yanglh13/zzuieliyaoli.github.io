@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+
 article.post-content h2 {
     border-bottom: 1px solid $grey-color-light;
 }
@@ -138,13 +139,26 @@ code {
     font-size: 85%;
     background-color: rgba(0,0,0,0.04);
     border-radius: 3px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 p code {
     &:after,
     &:before {
-        letter-spacing: -0.2em;
+        letter-spacing: -0.6em;
         content: "\00a0";
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    & {
+        code {
+            &:after,
+            &:before {
+                letter-spacing: -0.6em;
+                content: "\00a0";
+            }
+        }
     }
 }
 
@@ -194,21 +208,3 @@ pre code {
     }
 }
 
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
-}
