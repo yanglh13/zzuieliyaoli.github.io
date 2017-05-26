@@ -101,7 +101,7 @@ var nameObject = {
 };
 
 // nameObject 并没有继承自 Example.prototype，但是可以在 nameStatus 上
-// 调用sayName() 方法，尽管 nameObject 并没有一个名为 sayName() 的方法
+// 调用 sayName() 方法，尽管 nameObject 并没有一个名为 sayName() 的方法
 
 var name = Example.prototype.sayName.apply(nameObject);
 console.log(name);  // Jim
