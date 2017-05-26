@@ -8,7 +8,7 @@ categories: [JavaScript]
 ## 一、函数字面量（function literal）
 
 ```js
-//创建一个名为 add 的变量，并用来把两个数字相加的函数值赋值给它
+// 创建一个名为 add 的变量，并用来把两个数字相加的函数值赋值给它
 var add = function (a, b) {
   return a + b;
 }
