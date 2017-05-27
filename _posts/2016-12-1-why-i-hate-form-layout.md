@@ -51,7 +51,7 @@ categories: [JavaScript]
 
 - 如果使用的是框架，利用自定义事件。在表单组件内，监听事件。
 
-{% highlight JavaScript %}
+```js
 $broadcast('postDatainvalid', {
   tel: 'too short',
   name: 'empty'
@@ -61,11 +61,11 @@ telInput.on('postDatainvalid', (message) => {
   const { tel } = message
   // ...
 })
-{% endhighlight %}
+```
 
 - 不用框架的话，维护一个 `map`，把非法信息刷上去。
 
-{% highlight JavaScript %}
+```js
 const map = {
   tel: $('input.tel'),
   name: $('input.name')
@@ -74,8 +74,7 @@ $.ajax().then((message) => {
   const { tel } = message
   map.tel.find('.tips').text(tel)
 })
-
-{% endhighlight %}
+```
 
 ## 还原已填写的数据
 
@@ -83,7 +82,7 @@ $.ajax().then((message) => {
 
 - 用户填写了数据，但是 `不小心` 关闭了浏览器。重新打开时，还原用户已填写的数据。
   - 不点保存按钮，不还原；
-  - 只要填写了，就还原。 
+  - 只要填写了，就还原。
 - 用户信息填写成功，但是要修改某些项目。比如：用户资料修改。
 
 总的来说，就是把数据刷上去。解决办法还是通过自定义事件来搞定。

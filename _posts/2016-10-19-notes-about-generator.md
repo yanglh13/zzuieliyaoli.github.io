@@ -7,9 +7,9 @@ categories: [JavaScript]
 
 经常见如下的代码：
 
-{% highlight JavaScript %}
 
-co(function *(){
+```js
+co(function *() {
   // resolve multiple promises in parallel
   var a = Promise.resolve(1);
   var b = Promise.resolve(2);
@@ -18,13 +18,12 @@ co(function *(){
   console.log(res);
   // => [1, 2, 3]
 }).catch(onerror);
-
-{% endhighlight %}
+```
 
 其实是这样的：
 
-{% highlight JavaScript %}
 
+```js
 function co(genFunc) {
   const genObj = genFunc();
   step(genObj.next());
@@ -42,23 +41,21 @@ function co(genFunc) {
     }
   }
 }
+```
 
-{% endhighlight %}
+利用 `Generator` 的特性，在 `iterator.next()` 时，只有 `Promise` 被 `fullfilled` 后，才会运行 `yeild` 后的代码。
 
-利用`Generator`的特性，在`iterator.next()`时，只有`Promise`被`fullfilled`后，才会运行`yeild`后的代码。
+上面的例子是用的 [CO](https://github.com/tj/co)，是基于 Promise 的。与此类似的还有 [Q](https://github.com/kriskowal/q)，Q 在内部自己实现了 Promise 规范。
 
-上面的例子是用的[CO](https://github.com/tj/co)，是基于Promise的。与此类似的还有[Q](https://github.com/kriskowal/q)，Q在内部自己实现了Promise规范。
+在这篇文章 [No promises: asynchronous JavaScript with only generators](http://www.2ality.com/2015/03/no-promises.html) 中，作者实现了一个小库，也可以同样完成相同的效果。不同的是实现原理：
 
-在这篇文章[No promises: asynchronous JavaScript with only generators](http://www.2ality.com/2015/03/no-promises.html)中，作者实现了一个小库，也可以同样完成相同的效果。不同的是实现原理：
 
-{% highlight JavaScript %}
-
+```js
 setTimeout(runYieldedValue, 0, yielded.value);
+```
 
-{% endhighlight %}
+还要提到一个库 [wait-promise](https://github.com/akira-cn/wait-promise)。
 
-还要提到一个库[wait-promise](https://github.com/akira-cn/wait-promise)。
-
-参考文章：http://exploringjs.com/es6/ch_generators.html
+参考文章：[http://exploringjs.com/es6/ch_generators.html](http://exploringjs.com/es6/ch_generators.html)
 
 以上。

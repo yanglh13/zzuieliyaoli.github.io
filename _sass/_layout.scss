@@ -76,7 +76,7 @@
 }
 
 .page-content.about .post-content {
-    border-bottom: 0;   
+    border-bottom: 0;
     margin-bottom: 0;
 }
 
@@ -148,7 +148,7 @@
 
 .post-content {
     border-bottom: 1px solid #ddd;
-    h1, 
+    h1,
     h2,
     h3,
     h4 {
@@ -207,6 +207,10 @@ ul.pager {
         display: inline-block;
         width: 80px;
     }
+}
+
+.content-bottom {
+  margin-top: 30px;
 }
 
 .comments {

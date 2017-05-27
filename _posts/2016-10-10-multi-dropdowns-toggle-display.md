@@ -19,11 +19,11 @@ categories: [Vue]
 
 <a class="jsbin-embed" href="http://jsbin.com/zuhadel/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.19"></script>
 
-#### 优点：
+### 优点：
 
 - 粗暴简单。
 
-#### 缺点：
+### 缺点：
 
 - 得维护多个变量；
 - 多个下拉菜单之间耦合。
@@ -32,25 +32,25 @@ categories: [Vue]
 
 <a class="jsbin-embed" href="http://jsbin.com/qeqose/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.19"></script>
 
-#### 优点：
+### 优点：
 
 - 多个下拉菜单之间解耦。
 
-#### 缺点：
+### 缺点：
 
-- 需要注意`z-index`问题；
-- 多余的DOM结构。
+- 需要注意 `z-index` 问题；
+- 多余的 DOM 结构。
 
 ## click事件处理
 
 <a class="jsbin-embed" href="http://jsbin.com/jarube/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.19"></script>
 
-#### 优点：
+### 优点：
 
 - 多个下拉菜单之间解耦。
 
-#### 缺点：
+### 缺点：
 
-- 需要处理绑定`addEventListener`元素与`event.target`之间的逻辑。
+- 需要处理绑定 `addEventListener` 元素与 `event.target` 之间的逻辑。
 
 以上。

@@ -5,30 +5,30 @@ date:   2016-4-7
 categories: [Promise]
 ---
 
-jQuery中的Deferred()、Angular中的$q()、ES6中的Promise都是为了解决异步而各自实现或定义的方法。
+jQuery 中的 Deferred() 、 Angular 中的 $q() 、ES6 中的 Promise 都是为了解决异步而各自实现或定义的方法。
 
 ## jQuery Deferred()
 
-#### 直接通过调用`$.Deferred()`可以返回一个新的deferred对象。
+### 直接通过调用 `$.Deferred()` 可以返回一个新的 deferred 对象。
 
 <a class="jsbin-embed" href="http://jsbin.com/ruwoso/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
-#### 调用`$.Deferred()`时是可以传入一个函数，这个函数会先于`$.Deferred()`返回（A function that is called just before the constructor returns.）。
+### 调用 `$.Deferred()` 时是可以传入一个函数，这个函数会先于 `$.Deferred()` 返回（A function that is called just before the constructor returns）。
 
 <a class="jsbin-embed" href="http://jsbin.com/kepuba/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
-#### Deferred.promise()
+### Deferred.promise()
 
 <a class="jsbin-embed" href="http://jsbin.com/loseta/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-The Promise exposes only the Deferred methods needed to attach additional handlers or determine the state (`then`, `done`, `fail`, `always`, `pipe`, `progress`, `state` and `promise`).
+The Promise exposes only the Deferred methods needed to attach additional handlers or determine the state ( `then` , `done` , `fail` , `always` , `pipe` , `progress` , `state` and `promise` ).
 
 <a class="jsbin-embed" href="http://jsbin.com/powofi/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
-But not ones that change the state (`resolve`, `reject`, `notify`, `resolveWith`, `rejectWith`, and `notifyWith`).
+But not ones that change the state (`resolve` , `reject` , `notify` , `resolveWith` , `rejectWith` , and `notifyWith`).
 
 <a class="jsbin-embed" href="http://jsbin.com/zeqevoy/4/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
@@ -43,7 +43,7 @@ If you are creating a Deferred, keep a reference to the Deferred so that it can 
 
 $q can be used in two fashions --- one which is more similar to Kris Kowal's Q or jQuery's Deferred implementations, and the other which resembles ES6 (ES2015) promises to some degree.
 
-#### ES6-style
+### ES6-style
 
 <a class="jsbin-embed" href="http://jsbin.com/taxuju/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
@@ -52,13 +52,13 @@ Note: progress/notify callbacks are not currently supported via the ES6-style in
 Note: unlike ES6 behavior, an exception thrown in the constructor function will NOT implicitly reject the promise.
 
 
-#### jQuery's Deferred
+### jQuery's Deferred
 
 <a class="jsbin-embed" href="http://jsbin.com/govina/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-##### Differences between Kris Kowal's Q and $q
+### Differences between Kris Kowal's Q and $q
 
-here are two main differences:
+Here are two main differences:
 
 - $q is integrated with the $rootScope.Scope Scope model observation mechanism in angular, which means faster propagation of resolution or rejection into your models and avoiding unnecessary browser repaints, which would result in flickering UI.
 - Q has many more features than $q, but that comes at a cost of bytes. $q is tiny, but contains all the important functionality needed for common async tasks.
@@ -67,7 +67,7 @@ here are two main differences:
 
 <a class="jsbin-embed" href="http://jsbin.com/pijonec/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-#### Reference
+### Reference
 
 - [jQuery-DeferredObject](https://api.jquery.com/category/deferred-object/)
 - [Angular-$q](https://docs.angularjs.org/api/ng/service/$q)

@@ -69,7 +69,7 @@ categories: [Resource]
 ## 腾讯ISUX
 
 
-**腾讯社交用户体验设计是腾讯核心设计专业团队,负责腾讯的社交网络相关产品的用户体验设计与研究**
+**腾讯社交用户体验设计是腾讯核心设计专业团队，负责腾讯的社交网络相关产品的用户体验设计与研究**
 
 微信号：tencent_isux
 
@@ -77,9 +77,9 @@ categories: [Resource]
 
 ![](/images/wx/tencent-isux.png)
 
-## w3ctech## 
+## w3ctech##
 
-**w3ctech创立于2009年10月,是中国最大的前端技术社区**
+**w3ctech 创立于 2009 年 10 月，是中国最大的前端技术社区**
 
 网址：[http://www.w3ctech.com/](http://www.w3ctech.com/)
 
@@ -105,9 +105,9 @@ categories: [Resource]
 
 ![](/images/wx/fe.jpg)
 
-## w3cplus
+## W3CPLUS
 
-**W3CPLUS是一个前端爱好者的家园，W3CPLUS努力打造最优秀的web 前端学习的站点。**
+**W3CPLUS 是一个前端爱好者的家园，W3CPLUS 努力打造最优秀的 Web 前端学习的站点。**
 
 微信号：w3cplus_12
 

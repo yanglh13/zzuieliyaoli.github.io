@@ -45,7 +45,7 @@ hello("Jone"); //  "Nice to meet you Jone. My name is Tom."
 
 #### 解释：
 
-第一行等号右边 `(function...)()；` 的函数，记为“外函数”，第三行 `return` 的函数为“内函数”。
+第一行等号右边 `(function...)();` 的函数，记为“外函数”，第三行 `return` 的函数为“内函数”。
 
 1.内函数是闭包，它访问了外函数的变量 `myName`。
 
@@ -58,7 +58,7 @@ function hello (yourName) {
 }
 ```
 
-**变量`hello`获得了内函数返回的函数，也就是说变量`hello`被内函数return回来的函数给初始化了**。
+**变量 `hello` 获得了内函数返回的函数，也就是说变量 `hello` 被内函数 return 回来的函数给初始化了**。
 
 而且，该 `函数hello` 可以随时访问外函数中的变量 `myName` ，即使在外函数执行完毕后。也就是说 `函数hello` 也算闭包（这里涉及了作用域链的相关知识，内容较多，暂时不详细说明）
 
@@ -78,7 +78,7 @@ function example() {
   return result;
 }
 
-console.log(example());       //[function, function, function, ... ,function, function]
+console.log(example());       // [function, function, function, ... ,function, function]
 console.log(example()[0]());  // 10
 console.log(example()[1]());  // 10
 console.log(example()[2]());  // 10

@@ -9,42 +9,39 @@ categories: [Vue]
 
 <img src="/images/posts/2016-11-06-architecture.svg" alt="架构图">
 
-之所以用上`暂时`，是因为我也不知道以后会变成什么样子，现在来看还是比较满意。毕竟如果结构不适合或者有缺陷，进行修改是肯定的。
+之所以用上 `暂时`，是因为我也不知道以后会变成什么样子，现在来看还是比较满意。毕竟如果结构不适合或者有缺陷，进行修改是肯定的。
 
 ## 简单解释
 
-#### Vue-Router
+### Vue-Router
 
 1. 处理路由；
-2. 页面比较复杂，所以会用上`subRoutes`。
+2. 页面比较复杂，所以会用上 `subRoutes`。
 
-#### Vuex
+### Vuex
 
 1. 管理应用状态；
-2. 有一个缓存模块（如图Vuex部分的`Module Cache`），缓存非实时的数据。
+2. 有一个缓存模块（如图 Vuex 部分的 `Module Cache` ），缓存非实时的数据。
 
-#### 布局和样式
+### 布局和样式
 
-`Flex`配合`BEM`。
+`Flex` 配合 `BEM`。
 
 曾经写过一篇：[FlexBox解决options和input宽度和数量不定的布局问题](/2016-09-27/try-flex-box.html)
 
 ## 一些细节
 
-#### I18n
+### I18n
 
-用的是[vue-i18n](https://github.com/kazupon/vue-i18n)插件来处理i18n。简单的如下使用是可以的：
+用的是 [vue-i18n](https://github.com/kazupon/vue-i18n) 插件来处理 i18n。简单的如下使用是可以的：
 
-{% highlight HTML %}
-
+```html
 <p v-text="$t('翻译')"></p>
-
-{% endhighlight %}
+```
 
 但是，如果如下使用：
 
-{% highlight JavaScript %}
-
+```js
 export default {
   data() {
     return {
@@ -61,20 +58,20 @@ export default {
     }
   }
 }
-
-{% endhighlight %}
+```
 
 在切换语言的时候，该插件无效。
 
-可以通过一个HACK的手法来处理，即：
+可以通过一个 HACK 的手法来处理，即：
 
-1. 切换语言时，通过Vuex的`action`触发`mutation`；
-2. 需要i18n处理的组件内，通过`getter`来获得要切换的语言；
-3. `computed属性`来达到最终目的。
+1. 切换语言时，通过 Vuex 的 `action` 触发 `mutation`；
+2. 需要 i18n 处理的组件内，通过 `getter` 来获得要切换的语言；
+3. `computed属性` 来达到最终目的。
 
-{% highlight JavaScript %}
-
+```html
 <p v-text="i18nHack"></p>
+```
+```js
 
 import getChosenLanguage from 'myVuex/modules/i18n'
 
@@ -112,21 +109,21 @@ export default {
   },
 }
 
-{% endhighlight %}
+```
 
-#### View切分
+### View切分
 
-主要是说对于`表单`的处理，应该有合理的切分与分层。
+主要是说对于 `表单` 的处理，应该有合理的切分与分层。
 
 <img src="/images/posts/2016-11-06-form.svg" alt="表单">
 
-`View Data`只负责`POST Data`的逻辑，而`Form Components`则负责脏活累活，如：数据验证、状态管理、i18nHack等。
+`View Data` 只负责 `POST Data` 的逻辑，而 `Form Components` 则负责脏活累活，如：数据验证、状态管理、i18nHack 等。
 
-#### 组件
+### 组件
 
-首先先说`全局组件`。
+首先先说 `全局组件`。
 
-这里全局组件是指：整个APP都会重复多次使用且不和某一组件耦合。比如：消息框、确认框。
+这里全局组件是指：整个 APP 都会重复多次使用且不和某一组件耦合。比如：消息框、确认框。
 
 知乎上早有讨论：[如何使用vue.js构造modal(弹窗)组件?](https://www.zhihu.com/question/35820643)
 
@@ -142,26 +139,26 @@ export default {
 
 再来看视图中的组件嵌套。
 
-组件间沟通是`prop`和`event`来处理的。在Vue2中这一块有挺大的变化的。[vue2-props](http://vuejs.org/v2/guide/migration.html#Props)
+组件间沟通是 `prop` 和 `event` 来处理的。在Vue2中这一块有挺大的变化的。[vue2-props](http://vuejs.org/v2/guide/migration.html#Props)
 
-#### 异步操作
+### 异步操作
 
-由于对`Generator`、`Async/Await`不熟，就先用`Promise`。需要注意的是对`Error`的处理，我会单独写一篇文章来梳理。
+由于对 `Generator` 、 `Async/Await` 不熟，就先用 `Promise` 。需要注意的是对 `Error` 的处理，我会单独写一篇文章来梳理。
 
-#### 事件绑定与解绑
+### 事件绑定与解绑
 
-每个`View`所需要的时间是不同的，注意事件绑定的范围与解绑的时机。
+每个 `View` 所需要的时间是不同的，注意事件绑定的范围与解绑的时机。
 
-#### Vue的小坑
+### Vue 的小坑
 
-1. 善用`Immutable.js`、`Object.assign()`；
-2. `computed property`不能通过`this.computedProperty = 2`修改；而`prop property`可以。
+1. 善用 `Immutable.js` 、 `Object.assign()`；
+2. `computed property` 不能通过 `this.computedProperty = 2` 修改；而 `prop property` 可以。
 
 ## 一些碎碎念
 
-项目进行中的时候，恰逢Vue2发布，这就尴尬了，不过还是很积极乐观的。直到我使用了官方升级工具检查了以下代码。嗯，应该不算个事。
+项目进行中的时候，恰逢 Vue2 发布，这就尴尬了，不过还是很积极乐观的。直到我使用了官方升级工具检查了以下代码。嗯，应该不算个事。
 
-感觉Vue的生态还需要成长吧。和React、Angular相比，有时很难直接找到想要的问题答案。
+感觉 Vue 的生态还需要成长吧。和 React、Angular 相比，有时很难直接找到想要的问题答案。
 
 在做这个项目的时候，还写过另外一篇文章：[多个下拉列表间的显隐切换](/2016-10-10/multi-dropdowns-toggle-display.html)
 
