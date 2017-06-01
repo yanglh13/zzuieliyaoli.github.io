@@ -2,7 +2,7 @@
 layout: post
 title:  "FlexBox 解决 options 和 input 宽度和数量不定的布局问题"
 date:   2016-09-27
-categories: [sCSS]
+categories: [CSS]
 ---
 
 最近的在用 `FlexBox` 来完成大部分的布局任务。在要解决 `i18n` 的情况下，遇到一个很典型的布局需求。
