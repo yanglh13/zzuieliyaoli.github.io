@@ -1,7 +1,7 @@
 ---
 layout: pageAbout
 permalink: /resume/
-title: Web 前端开发工程师 / JavaScript 开发工程师 
+title: Web 前端开发工程师 / JavaScript 开发工程师
 ---
 
 (施工中 ……
@@ -21,9 +21,9 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 - 音乐狗 / 美腿控 / 像素眼
 - 技术博客：<a href="http://liyaoli.com" target="_blank">http://liyaoli.com</a>
 - GitHub：<a href="https://github.com/zzuieliyaoli" target="_blank">https://github.com/zzuieliyaoli</a>
-- 知乎：<a href="https://www.zhihu.com/people/zzuieliyaoli" target="_blank">https://www.zhihu.com/people/zzuieliyaoli</a> 
+- 知乎：<a href="https://www.zhihu.com/people/zzuieliyaoli" target="_blank">https://www.zhihu.com/people/zzuieliyaoli</a>
 - 期望薪资：面议
-- 期望环境：Macbook Pro + 27 寸显示器
+- 期望环境：MacBook Pro + 27 寸显示器
 - 期望城市：上海
 
 ## 技术栈
@@ -91,7 +91,7 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 
 - 负责项目脚手架搭建。基于 Vue-cli 单页面应用（SPA）模板，修改 Webpack 相关配置文件，最终实现多页面应用的开发；
 博文：<a href="/2017-05-06/vue-multi-pages-application-boilerplate-modified-by-vue-cli.html" target="_blank">
-基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架</a>  
+基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架</a>
 - 负责除“登录/注册”外，所有页面的开发。
 - Flexible + REM 完成多移动端适配；
 - Flexbox 完成页面布局；
@@ -103,16 +103,16 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 ### 「星球发行」模块 —— 上传 MV
 
 - 独自负责与开发 Web 前端页面；
-- 该模块是在原有模块基础上开发，用来帮助音乐人上传 MV；
 - 前后端分离；
 - 单页面应用，与原有模块有机结合；
-- 利用 Vuex 管理全局状态，完成多个页面与多个模块之间的通信；
+- 使用 AliOSS 完成上传功能；
+- 利用 Vuex 管理全局状态，完成多个页面与多个组件之间的通信；
 
 ### 「星球发行」模块 —— 数据展示
 
 - 展示音乐人各个维度的数据，包括但不限于：播放与收听数据、粉丝相关信息；
 - 前后端分离；
-- 基于 ECharts 开发，通过配置项自定义样式，使用了折线图、柱状图、地图、饼图等图表；
+- 基于 ECharts 开发，使用了折线图、柱状图、地图、饼图等图表；
 
 ### 「看见音乐」模块 —— 认证音乐人
 
@@ -120,7 +120,7 @@ React、JSX、Redux、Flow、CSS Next、CSS Modules
 
 ## 演讲和讲义
 
-- <a href="/sliders/Architecture.html" target="_blank">看见音乐前端开发的困境与畅想</a>  
+- <a href="/sliders/Architecture.html" target="_blank">看见音乐前端开发的困境与畅想</a>
 
 ## 开源社区贡献
 
