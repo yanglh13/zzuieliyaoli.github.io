@@ -295,3 +295,5 @@ Private fields are an awesome addition to the language.
 Thanks to all the wonderful hardworking people on TC39 who made/are making them happen!
 
 原文地址：[https://medium.com/the-thinkmill/javascripts-new-private-class-fields-93106e37647a](https://medium.com/the-thinkmill/javascripts-new-private-class-fields-93106e37647a)
+
+以上。
