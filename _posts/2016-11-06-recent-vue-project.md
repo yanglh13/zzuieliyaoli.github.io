@@ -25,9 +25,9 @@ categories: [Vue]
 
 ### 布局和样式
 
-`Flex` 配合 `BEM`。
+`Flexbox` 配合 `BEM`。
 
-曾经写过一篇：[FlexBox解决options和input宽度和数量不定的布局问题](/2016-09-27/try-flex-box.html)
+曾经写过一篇：[FlexBox 解决 options 和 input 宽度和数量不定的布局问题](/2016-09-27/try-flex-box.html)
 
 ## 一些细节
 
@@ -66,7 +66,7 @@ export default {
 
 1. 切换语言时，通过 Vuex 的 `action` 触发 `mutation`；
 2. 需要 i18n 处理的组件内，通过 `getter` 来获得要切换的语言；
-3. `computed属性` 来达到最终目的。
+3. `computed 属性` 来达到最终目的。
 
 ```html
 <p v-text="i18nHack"></p>
@@ -102,7 +102,7 @@ export default {
         Object.assign({}, this.options[0], {
           name: this.$t('苹果')
         }),
-        ...
+        // ...
       ];
       return chosenLanguage
     }
@@ -111,7 +111,7 @@ export default {
 
 ```
 
-### View切分
+### View 切分
 
 主要是说对于 `表单` 的处理，应该有合理的切分与分层。
 
@@ -139,7 +139,7 @@ export default {
 
 再来看视图中的组件嵌套。
 
-组件间沟通是 `prop` 和 `event` 来处理的。在Vue2中这一块有挺大的变化的。[vue2-props](http://vuejs.org/v2/guide/migration.html#Props)
+组件间沟通是 `prop` 和 `event` 来处理的。在 Vue2 中这一块有挺大的变化的。[vue2-props](http://vuejs.org/v2/guide/migration.html#Props)
 
 ### 异步操作
 
