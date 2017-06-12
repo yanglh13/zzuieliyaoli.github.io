@@ -27,7 +27,7 @@ categories: [Vue]
 
 `Flexbox` 配合 `BEM`。
 
-曾经写过一篇：[FlexBox 解决 options 和 input 宽度和数量不定的布局问题](/2016-09-27/try-flex-box.html)
+曾经写过一篇：[Flexbox 解决 options 和 input 宽度和数量不定的布局问题](/2016-09-27/try-flex-box.html)
 
 ## 一些细节
 

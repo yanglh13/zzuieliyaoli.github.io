@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "FlexBox 解决 options 和 input 宽度和数量不定的布局问题"
+title:  "Flexbox 解决 options 和 input 宽度和数量不定的布局问题"
 date:   2016-09-27
 categories: [CSS]
 ---
 
-最近的在用 `FlexBox` 来完成大部分的布局任务。在要解决 `i18n` 的情况下，遇到一个很典型的布局需求。
+最近的在用 `Flexbox` 来完成大部分的布局任务。在要解决 `i18n` 的情况下，遇到一个很典型的布局需求。
 
 ## 需求
 
@@ -21,10 +21,10 @@ categories: [CSS]
 - 当 `input`（宽度有最小值）可以与 `options` 排列于一行时，`input` 占满除 `options` 以外的空间；
 - 如果 `input` 无法与 `options` 排列于一行时，`input` 需另起新行，并占满新行的空间。
 
-## 为什么用 `FlexBox`
+## 为什么用 `Flexbox`
 
 - 浮动（float）不能用；
-- JavaScript不想用。
+- JavaScript 不想用。
 
 ## 分析问题
 
@@ -62,7 +62,7 @@ li:last-child input {
 }
 ```
 
-最后，将容器设置为 `FlexBox`:
+最后，将容器设置为 `Flexbox`:
 
 ```scss
 ul {
@@ -84,12 +84,12 @@ li:not(:last-child) {
 ## 总结
 
 - 分析问题，抽象问题的能力很重要；
-- `FlexBox` 的能力不止于此，需多探索。
+- `Flexbox` 的能力不止于此，需多探索。
 
 ## 参考资料
 
 - [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 - [Flex 布局教程：实例篇](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
-- [移动端全兼容的flexbox速成班](https://isux.tencent.com/flexbox.html)
-- [Flexbox全兼容模板](http://115.159.36.96/tikizheng/flextest/demo.html)
-- [Flexbox布局实战](http://www.w3cplus.com/scss3/going-all-in-on-flexbox.html)
+- [移动端全兼容的 flexbox 速成班](https://isux.tencent.com/flexbox.html)
+- [Flexbox 全兼容模板](http://115.159.36.96/tikizheng/flextest/demo.html)
+- [Flexbox 布局实战](http://www.w3cplus.com/scss3/going-all-in-on-flexbox.html)

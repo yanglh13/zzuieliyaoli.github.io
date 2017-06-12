@@ -44,7 +44,7 @@ FunctionDeclaration :
 ```
 
 
-[ECMAScript2015规范](http://www.ecma-international.org/ecma-262/6.0/index.html#sec-expression-statement) 提示说：
+[ECMAScript2015 规范](http://www.ecma-international.org/ecma-262/6.0/index.html#sec-expression-statement) 提示说：
 
 > An `ExpressionStatement` cannot start with *a U+007B (LEFT CURLY BRACKET)* because that might make it ambiguous with a `Block`. Also, an `ExpressionStatement` cannot start with the *function* or *class* keywords because that would make it ambiguous with a `FunctionDeclaration`, a *GeneratorDeclaration*, or a *ClassDeclaration*. An ExpressionStatement cannot start with the two token sequence *let [* because that would make it ambiguous with a *let* LexicalDeclaration whose first LexicalBinding was an ArrayBindingPattern.
 

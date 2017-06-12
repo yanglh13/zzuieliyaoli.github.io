@@ -14,9 +14,9 @@ categories: [React]
 
 ## 浅显的整体感受
 
-- 没有测试相关代码;
-- 居然没有 `router` 相关的代码，哭啊。我正想学习一下 `React router` 相关代码的。不过对于 IDE 来讲，并没有 router 要切换。
-- 所有的样式都放在 `./styles` 里面，并没有和相关 `js/jsx` 代码放在一起。也没有用 `CSS Modules` 或者 `BEM` 来控制 CSS 类的编写。
+- 没有测试相关代码；
+- 居然没有 `router` 相关的代码，哭啊。我正想学习一下 `React router` 相关代码的。不过对于 IDE 来讲，并没有 router 要切换；
+- 所有的样式都放在 `./styles` 里面，并没有和相关 `js/jsx` 代码放在一起。也没有用 `CSS Modules` 或者 `BEM` 来控制 CSS 类的编写；
 - `Redux` 的代码和相关 `js/jsx` 代码放在一起了。
 
 ## Packages
@@ -91,7 +91,7 @@ middlewares.forEach(middleware =>
 
 关于 `middleware` 就先说到这里，下面接着看：为什么需要 `Redux Thunk`。
 
-[官方](https://github.com/gaearon/redux-thunk) 给出了一个在 stackoverflow 的回答：[How to dispatch a Redux action with a timeout?](http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559)。这个回答概括起来有以下几点：
+[官方](https://github.com/gaearon/redux-thunk) 给出了一个在 stackoverflow 的回答：[How to dispatch a Redux action with a timeout?](http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559) 这个回答概括起来有以下几点：
 
 - 简单的应用、简单问题用 React 自带的工具解决就够了。
 - `Redux Thunk` 帮你抹平同步代码与异步代码的区别。因为异步代码需要手动传入 `dispatch` 太烦了，而且也容易出错。
@@ -115,3 +115,5 @@ middlewares.forEach(middleware =>
 我想我会继续学习源码，不过就是另外的文章了吧。
 
 另外，知乎上有关于如何写一个 Web IDE 的讨论 [要实现一个 Web IDE 需要哪些前端技术？](https://www.zhihu.com/question/41050429)
+
+以上。

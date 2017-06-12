@@ -28,7 +28,7 @@ categories: [Vue]
 - 得维护多个变量；
 - 多个下拉菜单之间耦合。
 
-## 隐形Overlay
+## 隐形 Overlay
 
 <a class="jsbin-embed" href="http://jsbin.com/qeqose/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.19"></script>
 
@@ -41,7 +41,7 @@ categories: [Vue]
 - 需要注意 `z-index` 问题；
 - 多余的 DOM 结构。
 
-## click事件处理
+## click 事件处理
 
 <a class="jsbin-embed" href="http://jsbin.com/jarube/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.19"></script>
 
