@@ -143,4 +143,5 @@ process.on('unhandledRejection', (reason, p) => {
 ## 参考
 
 - [Promises/A+](https://promisesaplus.com/)
+- [Possibly Unhandled Rejection NodeJS Promise Hook](https://gist.github.com/benjamingr/0237932cee84712951a2)
 - [应该如何理解 Erlang 的「任其崩溃」思想？](https://www.zhihu.com/question/21325941/answer/173370966)
