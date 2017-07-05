@@ -5,6 +5,39 @@ date:   2016-09-07
 categories: [Test]
 ---
 
+## 2017.9.7 更新
+
+### 推荐文章
+
+- [Vue 的单元测试探索（一）](https://zhuanlan.zhihu.com/p/26752090)
+
+  > 主要讲的是 Vue 业务组件的单元测试，侧重点主要包括模板渲染、方法执行（其中包括 watch，computed，filter， 生命周期函数等）两个方面
+- [Vue 的单元测试探索（二）](https://zhuanlan.zhihu.com/p/26796206)
+
+  > 我期望中的测试方法应该像 JS 单元测试一样，构造组件实例，调用组件方法或属性进行测试
+
+### 推荐单元测试代码
+
+- [Element-UI 单元测试](https://github.com/ElemeFE/element/tree/dev/test/unit)
+
+  几个关注点：
+  - 样式与组件代码分离的情况下，怎么编写测试？测试用例通过的标准是什么？
+  - `test/unit/util.js` 中各个工具函数的作用是什么？`Click` 、 `Hover` 等事件怎么处理？
+  - `单个组件渲染` 与 `全局组件渲染`
+
+### 相关姿势：
+
+- [安装 node-sass 的正确姿势](https://github.com/lmk123/blog/issues/28)
+
+### Vue-cli
+
+测试脚手架现在非常好用。
+
+把 Element-UI 的 `test/unit/util.js` 抄过来，并且参照着 Element-UI 的单元测试代码写自己的单元测试，非常爽。
+
+
+## 原文
+
 虽然 Vue.js 代码越堆越多，但却没有写过测试。`写测试越来越重要` 的想法越来越强烈，是因为发觉随着程序逻辑的增加，自己已经无法完全把握，不能预见一个小的修改可能会造成的影响。
 好在 [Vue-cli](https://github.com/vuejs/vue-cli) 在项目初始化的时候便可以提供完备的测试框架。这篇文章便是记录自己第一次写测试的点滴与思考吧。
 
