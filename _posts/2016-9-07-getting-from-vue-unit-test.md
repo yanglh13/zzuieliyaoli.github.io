@@ -21,11 +21,13 @@ categories: [Test]
 - [Element-UI 单元测试](https://github.com/ElemeFE/element/tree/dev/test/unit)
 
   几个关注点：
-  - 样式与组件代码分离的情况下，怎么编写测试？测试用例通过的标准是什么？
-  - `test/unit/util.js` 中各个工具函数的作用是什么？`Click` 、 `Hover` 等事件怎么处理？
+  - 样式与组件代码分离的情况下，怎么编写测试？
+  - 测试用例通过的标准是什么？
+  - `test/unit/util.js` 中各个工具函数的作用是什么？
+  - `Click` 、 `Hover` 等事件怎么处理？
   - `单个组件渲染` 与 `全局组件渲染`
 
-### 相关姿势：
+### 相关姿势
 
 - [安装 node-sass 的正确姿势](https://github.com/lmk123/blog/issues/28)
 
