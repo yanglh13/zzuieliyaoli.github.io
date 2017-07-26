@@ -17,10 +17,13 @@ categories: [Vue]
 
 `Vue.component` 作用是告诉 `Vue` 在处理 `template` 时，将 `<test-component></test-component>` 替换为相应的组件。
 
-也可以通过组件的 `components` 属性使用其他组件。
+而 `Vue.extend` 却不能，因为生成的对象`没有名字`，得这样：
+
+<a class="jsbin-embed" href="http://jsbin.com/lavavas/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
+
+`Vue.component` 也可以通过组件的 `components` 属性使用其他组件。
 
 <a class="jsbin-embed" href="http://jsbin.com/bimamut/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.0.4"></script>
-
 
 对于 `Vue.component` 和 `Vue.extend` 返回的都是 `组件的构造器（constructor）`，而且这些构造器是 `Vue 构造器` 的子类。
 这也意味着，这些构造器的实例将会继承了 `Vue` 实例的属性和方法，比如 `$mount`。
