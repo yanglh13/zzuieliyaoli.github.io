@@ -4,7 +4,8 @@ title: Category
 header: Category
 permalink: /category/
 ---
-{% for category in site.categories reversed %}
+{% assign categories = site.categories | sort: category[1].size %}
+{% for category in categories %}
   <div class="category" id="{{category[0]}}">
     <h2 >{{ category[0] }}</h2>
     <ul >
