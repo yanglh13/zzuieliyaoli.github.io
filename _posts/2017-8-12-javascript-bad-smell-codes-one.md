@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "写出更好的 JavaScript 代码（一）"
-date:   2017-8-11
+date:   2017-8-12
 categories: [JavaScript]
 ---
 
