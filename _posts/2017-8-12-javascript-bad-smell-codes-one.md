@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "写出更好的 JavaScript 代码（一）"
+title:  "写出更好的 JavaScript 代码（一）—— Code Review 小结"
 date:   2017-8-12
 categories: [JavaScript]
 ---
@@ -9,6 +9,7 @@ categories: [JavaScript]
 在框架功能日渐完善的现今，绝大部分需求场景都可以借助框架来完成。
 但是作为一个有追求的程序员，绝不应该以此为终点。
 除了完成需求，还更应该写出一手风格简洁、易于理解的代码。
+毕竟，框架可以帮助你处理 `视图与模型` 的绑定，但是不会告诉你 `如何抽象数据`。
 
 本文是平时 Code Review 的总结，以此为警示。
 
