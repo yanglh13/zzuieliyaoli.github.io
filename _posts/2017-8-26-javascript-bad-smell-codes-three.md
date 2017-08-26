@@ -5,7 +5,7 @@ date:   2017-8-26
 categories: [JavaScript]
 ---
 
-在本文是关于如何写出更好的 JavaScript 代码的第三篇文章，也是 《Clean Code》第四章与第五章的笔记，也做了 Java 到 JavaScript 的转换。
+在本文是关于 `写出更好的 JavaScript 代码` 的第三篇文章，也是 《Clean Code》第四章与第五章的笔记，也做了 Java 到 JavaScript 的转换。
 
 ## 注释
 
