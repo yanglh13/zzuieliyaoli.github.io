@@ -14,8 +14,8 @@ permalink: /category/
         {% if node.title != null %}
           {% if group == null or group == node.group %}
             <li>
-            <span class="text-muted">{{ node.date | date: "%Y.%m.%d" }}</span>
-            <a href="{{ site.BASE_PATH }}{{node.url}}">{{node.title}}</a>
+              <span class="text-muted">{{ node.date | date: "%Y.%m.%d" }}</span>
+              <div><a href="{{ site.BASE_PATH }}{{node.url}}">{{node.title}}</a></div>
             </li>
           {% endif %}
         {% endif %}
