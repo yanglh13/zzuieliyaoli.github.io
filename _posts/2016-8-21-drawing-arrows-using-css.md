@@ -64,7 +64,7 @@ categories: [CSS]
 
 比较遗憾的是， `三角方法一` 是无法再绘制出间隔的。`三角方法二` 是可以用 `间隔方法一` 、 `间隔方法二` 。
 
-如下Demo所示：
+如下 Demo 所示：
 
 <a class="jsbin-embed" href="http://jsbin.com/vigaza/embed?html,css,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
 
@@ -83,3 +83,5 @@ categories: [CSS]
 ## 工具
 
 - [CSS3 Box Shadow Generator](http://css3gen.com/box-shadow/)
+
+以上。
