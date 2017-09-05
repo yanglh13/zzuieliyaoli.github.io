@@ -245,6 +245,7 @@ const $error = $errorContainer.find('.error');
 - [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 - [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 - [编写「可读」代码的实践](http://taobaofed.org/blog/2017/01/05/writing-readable-code/index.html)
-- [怎么消除JavaScript中的代码坏味道](https://github.com/gaohailang/blog/issues/5)
+- [怎么消除 JavaScript 中的代码坏味道](https://github.com/gaohailang/blog/issues/5)
+- [如何优雅的编写 JavaScript 代码](https://zhuanlan.zhihu.com/p/28910636)
 
 以上。
