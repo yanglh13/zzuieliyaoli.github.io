@@ -35,32 +35,117 @@ categories: [JavaScript]
 
 
 - 对象把数据隐藏于抽象，暴露操作数据的函数。数据结构暴露其数据，没有提供有意义的函数。
+留意这两种定义的本质。它们是对立的。这种差异貌似微小，但却有深远的含义。
 
-```js
-// 过程式形状代码
-// Geometry 类操作三个形状类。形状类都是简单的数据结构，没有任何行为。
-// 行为都在 Geometry 类中
-class Square {
-  topLest;
-  side;
-}
+  ```js
+  // 过程式形状代码
+  // Geometry 类操作三个形状类。形状类都是简单的数据结构，没有任何行为。
+  // 行为都在 Geometry 类中
+  class Square {
+    topLest;
+    side;
+  }
 
-class Rectangle {
-  topLeft;
-  height;
-  width;
-}
+  class Rectangle {
+    topLeft;
+    height;
+    width;
+  }
 
-class Circle {
-  center;
-  radius;
-}
+  class Circle {
+    center;
+    radius;
+  }
 
-class Geometry {
+  class Geometry {
+    static PI = 3.141592653589793;
+    area(shape) {
+      if (shape instanceof Square) {
+        const s = Shape;
+        return (s.side ** 2);
+      } else if (shape instanceof Rectangle) {
+        const r = shape;
+        return (r.height * r.width);
+      } else if (shape instanceof Circle) {
+        const c = shape;
+        return (Geometry.PI * (c.radius ** 2));
+      }
+    }
+  }
+  ```
 
-}
-```
+  如果给 Geometry 添加一个 Primeter() 函数会怎样。那些性状类根本不会因此而受到影响！
+  另一方面，如果给 Geometry 添加一个新形状，就得修改 Geometry 中的所有函数来处理它；
 
+  ```js
+  // 多态式形状
+  class Square extends Shape {
+    #TopLeft;
+    #side;
 
+    area() {
+      return (this.#side ** 2);
+    }
+  }
+
+  class Rectangle extends Square {
+    #TopLeft;
+    #height;
+    #width;
+
+    area() {
+      return (this.#height * this.#width);
+    }
+  }
+
+  class Circle extends Shape {
+    #center;
+    #radius;
+    static PI = 3.141592653589793;
+
+    area() {
+      return (Circle.PI * (this.#radius ** 2));
+    }
+  }
+  ```
+
+  这里，area() 方法是多态的。不需要有 Geometry 类。所以，如果添加一个新形状，现有的 `函数` 一个也不会受到影响，
+  而当添加新函数时所有的 `形状` 都得做修改！
+
+- 对象与数据结构之间的二分原理
+
+  过程式代码（使用数据结构的代码）便于在不改动既有数据结构的前提下添加新函数。
+  面向对象代码便于在不改动既有函数的前提下添加新类。
+
+  反过来讲也说得通：过程式代码难以添加新数据结构，因为必须修改所有函数。面向对象代码难以添加新函数，因为必须修改所有类。
 
 ## 错误处理
+
+- 错误处理很重要，但如果它搞乱了代码逻辑，就是错误的做法。
+
+- 使用异常而非返回码
+
+  > TODO
+
+- 异常的妙处之一是，它们在程序中定义了一个范围。执行 try-catch-finally 语句中 try 部分代码时，
+你是在表明可随时取消执行，并在 catch 语句中接续。
+
+- 在编写可能抛出异常的代码时，最好先写出 try-catch-finally 语句。这能帮你定义代码的用户应该期待什么，
+不论 try 代码块中执行的代码出什么错都一样。
+
+- 你抛出的每个异常，都应当提供足够的环境说明，以便判断错误的来源和处所。
+
+```js
+(async () => {
+  try {
+    const userInfo = await getUserInfoPromise();
+  } catch (e) {
+    const error = {
+      message: JSON.stringify(e),
+      api: '',
+      ua: '',
+    }
+    reportError(error);
+  }
+})();
+```
