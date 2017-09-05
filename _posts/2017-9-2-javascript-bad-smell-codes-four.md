@@ -135,17 +135,55 @@ categories: [JavaScript]
 
 - 你抛出的每个异常，都应当提供足够的环境说明，以便判断错误的来源和处所。
 
-```js
-(async () => {
-  try {
-    const userInfo = await getUserInfoPromise();
-  } catch (e) {
-    const error = {
-      message: JSON.stringify(e),
-      api: '',
-      ua: '',
+  ```js
+  (async () => {
+    try {
+      const userInfo = await getUserInfoPromise();
+    } catch (e) {
+      const error = {
+        message: JSON.stringify(e),
+        api: '',
+        ua: '',
+      }
+      reportError(error);
     }
-    reportError(error);
+  })();
+  ```
+
+- 创建一个类或配置一个对象，用来处理特例。你来处理特例，客户代码就不用应付异常行为了。异常行为被封装到特例对象中。
+
+  ```java
+  // 如果消耗了餐食，则计入总额中。如果没有消耗，则员工得到当日餐食补贴。
+  // bad
+  try {
+    MealExpenses expenses = expenseReportDao.getMeals(employee.getId());
+    m_total += expenses.getTotal();
+  } catch(MealExpensesNotFound e) {
+    total += getMealPerDiem();
   }
-})();
-```
+  ```
+
+  异常打断了业务逻辑。不去处理特殊情况就会好一些。
+
+  ```java
+  // good
+  MealExpenses expenses = expenseReportDao.getMeals(employee.getId());
+  m_total += expenses.getTotal();
+  ```
+
+  但是需要修改 expenseReportDao 是其总是返回 MealExpense 对象。
+  如果没有餐食消耗，就返回一个返回餐食补贴的 MealExpense 对象。
+
+  ```java
+  public class PerDiemMealExpenses implements MealExpenses {
+    public int getTotal() {
+      // return the per diem default
+    }
+  }
+  ```
+
+- 别返回 null 值。只要有一处没检查 null 值，应用程序就会失控。如果你打算在方法中返回 null 值，不如抛出异常，或是返回特例对象。
+
+- 别传递 null 值，除非 API 要求你向它传递 null 值。
+
+以上。
