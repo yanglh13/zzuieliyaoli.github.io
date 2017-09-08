@@ -2,9 +2,11 @@
  * Site header
  */
 .site-header {
-    min-height: 56px;
+    min-height: 54px;
     // Positioning context for the mobile navigation icon
     position: relative;
+    background-color: #000;
+    margin-bottom: 40px;
 }
 
 .site-title {
@@ -25,10 +27,16 @@
         display: none;
     }
     .page-link {
+        margin-right: 16px;
+
+        font-weight: 600;
+        font-size: 14px;
         line-height: $base-line-height;
         font-size: 20px;
-        &:not(:first-child) {
-            margin-left: 20px;
+        color: rgba(255,255,255,0.75);
+
+        &:hover {
+          color: #EEE;
         }
     }
 }
@@ -40,31 +48,23 @@
 /**
  * Site footer
  */
-.site-footer {
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
 
 .footer-lists {
-    list-style: none;
-    margin-left: 0;
-    > li {
-        font-size: 12px;
-        display: inline-block;
-        line-height: 16px;
-        display: block;
-        span {
-            float: left;
-        }
-        a {
-            float: right;
-            margin-left: 10px;
-        }
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px #e1e4e8 solid;
+  .copyright {
+    font-size: 12px;
+  }
+  .catalog {
+    a {
+      margin-left: 16px;
+      font-size: 12px;
     }
+  }
 }
 
 
