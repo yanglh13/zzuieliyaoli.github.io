@@ -58,8 +58,14 @@
   border-top: 1px #e1e4e8 solid;
   .copyright {
     font-size: 12px;
+    height: 24px;
+    line-height: 24px;
   }
   .catalog {
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    height: 24px;
     a {
       margin-left: 16px;
       font-size: 12px;
