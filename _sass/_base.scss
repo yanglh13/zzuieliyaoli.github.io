@@ -199,3 +199,23 @@ pre code {
     }
 }
 
+/**
+ * Table
+ */
+ table {
+  margin-bottom: 16px;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  td,
+  th {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+  }
+  th {
+    font-weight: 600;
+  }
+  tr:nth-child(2n) {
+    background-color: #f6f8fa;
+  }
+}
