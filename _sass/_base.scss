@@ -203,6 +203,10 @@ pre code {
  * Table
  */
  table {
+  @include media-query($on-laptop) {
+    display: block;
+    overflow: scroll;
+  }
   margin-bottom: 16px;
   border-spacing: 0;
   border-collapse: collapse;
