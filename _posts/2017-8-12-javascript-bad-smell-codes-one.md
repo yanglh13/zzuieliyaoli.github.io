@@ -199,8 +199,6 @@ if (numberArray.indexOf(1) > -1) {}
 
 ## Vue
 
-> [官方 Style Guide](https://cn.vuejs.org/v2/style-guide/)
-
 ### 复杂的 template 内渲染条件
 
 ```html
