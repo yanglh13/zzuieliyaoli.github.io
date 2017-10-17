@@ -199,6 +199,8 @@ if (numberArray.indexOf(1) > -1) {}
 
 ## Vue
 
+> [官方 Style Guide](https://cn.vuejs.org/v2/style-guide/)
+
 ### 复杂的 template 内渲染条件
 
 ```html
@@ -242,6 +244,7 @@ const $error = $errorContainer.find('.error');
 
 ## 其他资料
 
+- [Vue 官方 Style Guide](https://cn.vuejs.org/v2/style-guide/)
 - [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 - [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 - [编写「可读」代码的实践](http://taobaofed.org/blog/2017/01/05/writing-readable-code/index.html)
