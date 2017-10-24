@@ -6,10 +6,10 @@ permalink: /about/
 
 音乐狗 / 美腿控 / Web 前端
 
-[知乎](https://www.zhihu.com/people/zzuieliyaoli)
+[知乎](https://www.zhihu.com/people/zzuieliyaoli){:target="_blank"}
 
-[Github](https://github.com/zzuieliyaoli)
+[Github](https://github.com/zzuieliyaoli){:target="_blank"}
 
 <a href="mailto:zzuieliyaoli@gmail.com">zzuieliyaoli#gmail.com</a>
 
-<a style="color: white" href="/resume">Resume</a>
+[本博客](https://github.com/zzuieliyaoli/zzuieliyaoli.github.io){:target="_blank"} 基于 Jekyll 和 GitHub Pages 开发，欢迎 Folk 和 Star。
