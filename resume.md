@@ -33,10 +33,6 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 - 前后端分离、Mock Server
 - Node、Docker、ElasticSearch
 
-### 了解过以下技术：
-
-- React、Redux、React Router、Styled Components
-
 ### 熟悉以下技能：
 
 - 常见 Web 前端性能优化方法；
@@ -45,14 +41,16 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 - Linux 以及 Vim 常用的命令与操作；
 - Git 常用命令与操作；
 
+### 了解过以下技术：
+
+- React、Redux、React Router、Styled Components
+
 ## 工作经历
 
 ### 欢唱网络科技（上海）有限公司（2015.7 - 至今） 实习 + 全职
 
 - 一人承担公司 Web 前端开发工作近一年时间；
-- 参与和负责公司<a href="https://www.coolvox.com" target="_blank">「库音」</a>、
-<a href="https://star.kanjian.com" target="_blank">「星球发行」</a> 、
-<a href="https://www.kanjian.com" target="_blank">「看见音乐」</a> 的维护与特性开发；
+- 参与和负责公司<a href="https://www.coolvox.com" target="_blank">「库音」</a>、<a href="https://star.kanjian.com" target="_blank">「星球发行」</a> 、<a href="https://www.kanjian.com" target="_blank">「看见音乐」</a> 的维护与特性开发；
 - 配合公司营销需求，制作各种各样的专题页，涉及 PC 端、移动端页面；
 - 推动公司 Web 前端开发技术的演进与规范化；
 - 推进工作流程规范化：沉淀技术文档，规范需求文档；
@@ -81,9 +79,7 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 
 #### 移动端页面
 
-- 负责项目脚手架搭建。基于 Vue-cli 单页面应用（SPA）模板，修改 Webpack 相关配置文件，最终实现多页面应用的开发；
-博文：<a href="/2017-05-06/vue-multi-pages-application-boilerplate-modified-by-vue-cli.html" target="_blank">
-基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架</a>
+- 负责项目脚手架搭建。基于 Vue-cli 单页面应用（SPA）模板，修改 Webpack 相关配置文件，最终实现多页面应用的开发；博文：<a href="/2017-05-06/vue-multi-pages-application-boilerplate-modified-by-vue-cli.html" target="_blank">基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架</a>
 - 负责除“登录/注册”外，所有页面的开发。
 - Flexbox + Flexible + REM 完成页面布局与移动端适配；
 - Lazyloading 提高页面加载速度；
