@@ -14,11 +14,10 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 
 - 李耀力 / 男 / 1993
 - 2012.9-2016.7 / 郑州大学（211） / 本科 / 计算机科学与技术
+- 校三等奖学金 / 校三好学生 / 院辩论队副队长
 - 技术博客：<a href="http://liyaoli.com" target="_blank">http://liyaoli.com</a>
 - GitHub：<a href="https://github.com/zzuieliyaoli" target="_blank">https://github.com/zzuieliyaoli</a>
 - 知乎：<a href="https://www.zhihu.com/people/zzuieliyaoli" target="_blank">https://www.zhihu.com/people/zzuieliyaoli</a>
-- 期望薪资：面议
-- 期望城市：上海
 
 ## 技术栈
 
