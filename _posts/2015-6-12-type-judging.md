@@ -25,7 +25,7 @@ categories: [JavaScript]
 ### Boolean、Number、String
 
 ```js
-// 因为typeof不靠谱
+// 因为 typeof 不靠谱
 typeof new Boolean(false); // object
 typeof new Number(123); // object
 typeof new String("haha"); // object
@@ -77,7 +77,7 @@ Object.prototype.toString.call(undefined); // [object Undefined]
 ### Null
 
 ```js
-typeof null; // object（因为null是空对象指针）
+typeof null; // object（因为 null 是空对象指针）
 ```
 
 null 的判定很简单，就是和 null 进行对比就可以
@@ -106,7 +106,7 @@ ES5 上有一个原生的判断方法。
 Array.isArray([]); // true
 ```
 
-依旧可以使用toString()方法
+依旧可以使用 toString() 方法
 
 ```js
 Object.prototype.toString.call([]) // [object Array]
@@ -136,14 +136,14 @@ jQuery.isPlainObject 是用来判定是否为纯净的 JavaScript 对象。既�
 
 ```js
 function isPlainObject(obj) {
-  // 首先排除基础类型不为Object的类型
-  // 再排除DOM节点和Window对象
+  // 首先排除基础类型不为 Object 的类型
+  // 再排除 DOM 节点和 Window 对象
   if (!obj || toString.call(obj) !== "[object Object]"
   || obj.nodeType || jQuery.isWindow(obj)) {
     return false;
   }
 
-  // 判断obj是否为自定义“类”的实例对象
+  // 判断 obj 是否为自定义“类”的实例对象
   if (obj.constructor && !hasOwnProperty.call(obj, "constructor")
   && !hasOwnProperty.call(obj.constructor.prototype, "isPrototypeOf")) {
     return false;
