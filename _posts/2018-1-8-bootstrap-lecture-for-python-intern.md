@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "给 Python 实习生的 Bootstrap 讲座"
+title: "给 Python 实习生的 Bootstrap3 讲座"
 date: 2018-01-08
 categories: [CSS]
 ---
 
 ## 2.1 基础的 CSS 知识
+
+Cascading Style Sheets (CSS) 层叠样式表
+
+[http://www.w3school.com.cn/css/css_jianjie.asp](http://www.w3school.com.cn/css/css_jianjie.asp)
 
 ### 2.1.1 种类
 
@@ -51,12 +55,13 @@ selector {declaration1; declaration2; ... declarationN }
 
 ### 2.2.3 选择器
 
-[http://www.w3school.com.cn/css/css_syntax_class_selector.asp](http://www.w3school.com.cn/css/css_syntax_class_selector.asp)
-[http://www.w3school.com.cn/cssref/css_selectors.asp](http://www.w3school.com.cn/cssref/css_selectors.asp)
+[CSS 基础语法](http://www.w3school.com.cn/css/css_syntax.asp)
+[CSS 类选择器](http://www.w3school.com.cn/css/css_syntax_class_selector.asp)
+[CSS 选择器参考手册](http://www.w3school.com.cn/cssref/css_selectors.asp)
 
 #### 问题
 
-- 批量性：`id 选择器` 与 `HTML`
+- 批量性：`id 选择器` 与 `HTML`：选择器通常是需要改变样式的 HTML 元素
 
 ### 2.2.4 `层叠`
 
@@ -106,7 +111,7 @@ selector {declaration1; declaration2; ... declarationN }
 
 ### 2.2.5 盒模型
 
-[https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+[盒模型](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 
 - `content-box`
 - `border-box`
@@ -125,16 +130,17 @@ selector {declaration1; declaration2; ... declarationN }
 
 ### 2.2.1 简单介绍
 
-- 栅格系统
+- 栅格系统、响应式
 - 使用层次
   - 预定义类
   - 整体使用
 
-### 2.2.2 原理
+### 2.2.2 响应式原理
 
-- MediaQuery
+- [MediaQuery](https://v3.bootcss.com/css/#grid-media-queries)
 - border-box
-- 百分比 width
+- [百分比 width](https://v3.bootcss.com/css/#grid-options)
+- 浮动
 
 ### 常见布局
 
@@ -142,3 +148,5 @@ selector {declaration1; declaration2; ... declarationN }
 [实例精选](https://v3.bootcss.com/getting-started/#examples-navbars)
 
 - [两列布局](http://www.ghostchina.com/)
+- [左侧固定，右侧自适应]()
+- 居中
