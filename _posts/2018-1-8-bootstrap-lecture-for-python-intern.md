@@ -7,11 +7,30 @@ categories: [CSS]
 
 ## 2.1 基础的 CSS 知识
 
-Cascading Style Sheets (CSS) 层叠样式表
+### 2.1.1 简介
 
-[http://www.w3school.com.cn/css/css_jianjie.asp](http://www.w3school.com.cn/css/css_jianjie.asp)
+- CSS 指层叠样式表 (Cascading Style Sheets)
+- 样式定义如何显示 HTML 元素
+- 样式通常存储在样式表中
+- 为了解决内容与表现分离的问题
 
-### 2.1.1 种类
+```html
+<!-- bad -->
+<H2><font color="red" bgcolor="white"><i>使用 CSS</i></font></H2>
+```
+
+```html
+<!-- good -->
+<style>
+h2 {
+  color: red;
+  background-color: red;
+}
+</style>
+<h2>使用 CSS</h2>
+```
+
+### 2.1.2 CSS 种类
 
 - 外部
 - 内部
@@ -45,32 +64,128 @@ Cascading Style Sheets (CSS) 层叠样式表
 
 - 维护性？
 
-### 2.2.2 语法
-
-[http://www.w3school.com.cn/css/css_syntax.asp](http://www.w3school.com.cn/css/css_syntax.asp)
+### 2.2.3 语法
 
 ```css
-selector {declaration1; declaration2; ... declarationN }
+selector {
+  declaration1;
+  property: value;
+  color: red;
+}
+
+selector1，
+selector2 {
+  color: red;
+}
 ```
 
-### 2.2.3 选择器
+- 选择器：需要改变样式的 HTML 元素
+- 声明：由一个属性和一个值组成
 
-[CSS 基础语法](http://www.w3school.com.cn/css/css_syntax.asp)
-[CSS 类选择器](http://www.w3school.com.cn/css/css_syntax_class_selector.asp)
+### 2.2.4 选择器
+
 [CSS 选择器参考手册](http://www.w3school.com.cn/cssref/css_selectors.asp)
+
+```css
+/* 通用选择器 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ID 选择器 */
+#test {
+  color: red;
+}
+
+/* class 选择器 */
+.test {
+  color: red;
+}
+```
+
+- 不是第一个 li 元素
+- 伪元素
 
 #### 问题
 
-- 批量性：`id 选择器` 与 `HTML`：选择器通常是需要改变样式的 HTML 元素
+- 批量性：`ID 选择器` 与 `HTML`：选择器通常是需要改变样式的 HTML 元素
 
-### 2.2.4 `层叠`
+```html
+<style>
+#test {
+  color: red;
+}
+</style>
+<!-- bad to js -->
+<p id="test">123123</p>
+<p id="test">123123</p>
+
+<script>
+document.getElementById("test"); // 哪一个？
+</script>
+```
+
+- `ID 选择器` 与 `class 选择器` 大小写敏感
+
+### 2.2.5 层叠
 
 [CSS 层叠](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Cascade)
 
-#### `层叠顺序` 与 `层叠优先级`
+#### 层叠优先级
 
-- [https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)
+[层叠优先级](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity)
+
+```html
+<style>
+div#test span {
+  color: green
+}
+span {
+  color: red;
+}
+div span {
+  color: blue;
+}
+</style>
+<div id="test">
+  <span>Text</span>
+</div>
+```
+
+- 优先级：相等时，前面被后面覆盖
+- 类型选择器：`h1`、`p`
+- 类选择器、属性选择器：`.test`、`[type="radio"]`
+- ID 选择器：`#test`
+- 内联样式/`important`
+
+```html
+<style>
+div#test span {
+  color: green
+}
+span {
+  color: red;
+}
+div span {
+  color: blue;
+}
+</style>
+<div id="test">
+  <span style="color: yellow;">Text</span>
+</div>
+```
+
+简单来说：更具体的胜出
+
+
 - `important`：百度分享
+
+```css
+.bd__share a {
+  color: #888;
+}
+```
 
 #### `层叠` 的意义
 
@@ -109,20 +224,58 @@ selector {declaration1; declaration2; ... declarationN }
 }
 ```
 
-### 2.2.5 盒模型
+### 2.2.6 盒模型
 
 [盒模型](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 
 - `content-box`
+
+```css
+.box {
+  with: 100px;
+}
+```
+
 - `border-box`
 
-### 2.2.5 元素类型
+```css
+.box {
+  box-sizing: border-box;
+  width: 100px;
+  padding: 20px;
+  border: 10px solid red;
+}
+```
 
-[https://zhuanlan.zhihu.com/p/23207229](https://zhuanlan.zhihu.com/p/23207229)
+### 2.2.7 元素 display
+
+[CSS 布局的基本原理：盒模型、display、postion 和 float](https://zhuanlan.zhihu.com/p/23207229)
+
+```css
+#test {
+  display: inline;
+  display: block;
+  display: inline-block;
+}
+```
 
 - inline
+  - 和其他行内元素都在一行上
+  - 元素的高度、宽度、行高及顶部和底部边距等属性不可设置
+  - 元素不能设置高度，宽度就是它包含的文字或图片的宽度
+  - 行内元素只能容纳文本或者其他行内元素
+  - 比如 `<a>、<span>、<br>、<em>、<strong>` 等元素都是行内元素。
+
 - block
+  - 每个块元素都从新的一行开始，独占一行
+  - 元素的高度、宽度、行高以及顶和底边距等属性都可设置
+  - 默认的宽度与父元素的宽度一致，即 width 默认为 100%
+  - 可以容纳行内元素和其他块元素
+  - 比如 `<div>、<p>、<ol>、<ul>、<table>、<form>` 等元素都是块元素。
+
 - inline-block
+  - 和其他行内元素都在一行上
+  - 元素的高度、宽度、行高以及顶和底边距等属性都可设置
 
 ## 2.2 Bootstrap
 
@@ -150,3 +303,11 @@ selector {declaration1; declaration2; ... declarationN }
 - [两列布局](http://www.ghostchina.com/)
 - [左侧固定，右侧自适应]()
 - 居中
+
+```css
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+```
