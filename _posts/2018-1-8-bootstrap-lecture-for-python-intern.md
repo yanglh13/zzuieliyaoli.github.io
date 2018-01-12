@@ -30,7 +30,17 @@ h2 {
 <h2>使用 CSS</h2>
 ```
 
-### 2.1.2 CSS 种类
+### 2.1.2 CSS 简介
+
+#### 版本
+
+- CSS2.1：整体规范，包含多个模块：`CSS 语法`、`CSS 颜色`等
+- CSS3：是一个非正式的集合，它包括 CSS 规范 level3 再加上 level1 的新规范
+  - 各个模块拆分，形成独立的规范文档
+  - level2.1 -> level3：`CSS 语法`、`CSS 颜色`
+  - level1：`CSS 变形`、`CSS 伸缩盒布局`
+
+#### 类型
 
 - 外部
 - 内部
@@ -46,14 +56,26 @@ h2 {
   <title>css-type.html</title>
   <!-- 外部 -->
   <link rel="stylesheet" href="./css-type.css">
+  <link rel="stylesheet" href="./css-type2.css">
   <!-- 内部 -->
   <style>
     #test {
       color: red;
     }
   </style>
+  <style>
+    #demo {
+      color: red;
+    }
+  </style>
 </head>
 <body>
+  <link rel="stylesheet" href="./css-type2.css">
+  <style>
+    #demo2 {
+      color: red;
+    }
+  </style>
   <!-- 内联 -->
   <p style="color: red;">Test</p>
 </body>
@@ -77,6 +99,13 @@ selector1，
 selector2 {
   color: red;
 }
+
+@media (min-width: 700px) {
+  selector1，
+  selector2 {
+    color: red;
+  }
+}
 ```
 
 - 选择器：需要改变样式的 HTML 元素
@@ -85,6 +114,8 @@ selector2 {
 ### 2.2.4 选择器
 
 [CSS 选择器参考手册](http://www.w3school.com.cn/cssref/css_selectors.asp)
+
+简单看一些例子，使用时要思路开阔
 
 ```css
 /* 通用选择器 */
@@ -103,9 +134,6 @@ selector2 {
   color: red;
 }
 ```
-
-- 不是第一个 li 元素
-- 伪元素
 
 #### 问题
 
@@ -128,9 +156,53 @@ document.getElementById("test"); // 哪一个？
 
 - `ID 选择器` 与 `class 选择器` 大小写敏感
 
+```css
+#test {}
+#Test {}
+.test {}
+.Test {}
+```
+
 ### 2.2.5 层叠
 
 [CSS 层叠](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Cascade)
+
+#### `层叠` 的意义
+
+- 合并
+
+```css
+#test {
+  font-size: 20px;
+}
+#test {
+  color: red;
+}
+
+/* 等于 */
+#test {
+  font-size: 20px;
+  color: red;
+}
+```
+
+- 覆盖
+
+```css
+#test {
+  font-size: 20px;
+  color: red;
+}
+#test {
+  font-size: 40px;
+}
+
+/* 等于 */
+#test {
+  font-size: 40px;
+  color: red;
+}
+```
 
 #### 层叠优先级
 
@@ -178,49 +250,11 @@ div span {
 
 简单来说：更具体的胜出
 
-
 - `important`：百度分享
 
 ```css
 .bd__share a {
   color: #888;
-}
-```
-
-#### `层叠` 的意义
-
-- 合并
-
-```css
-#test {
-  font-size: 20px;
-}
-#test {
-  color: red;
-}
-
-/* 等于 */
-#test {
-  font-size: 20px;
-  color: red;
-}
-```
-
-- 覆盖
-
-```css
-#test {
-  font-size: 20px;
-  color: red;
-}
-#test {
-  font-size: 40px;
-}
-
-/* 等于 */
-#test {
-  font-size: 40px;
-  color: red;
 }
 ```
 
@@ -252,7 +286,7 @@ div span {
 [CSS 布局的基本原理：盒模型、display、postion 和 float](https://zhuanlan.zhihu.com/p/23207229)
 
 ```css
-#test {
+default {
   display: inline;
   display: block;
   display: inline-block;
