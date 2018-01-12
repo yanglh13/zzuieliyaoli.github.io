@@ -325,23 +325,38 @@ default {
 ### 2.2.2 响应式原理
 
 - [MediaQuery](https://v3.bootcss.com/css/#grid-media-queries)
-- border-box
-- [百分比 width](https://v3.bootcss.com/css/#grid-options)
+- [百分比 width](https://v3.bootcss.com/css/#grid-options) + `border-box`
 - 浮动
+
+### 2.2.3 教程中注意的地方
+
+- [基本模板](https://v3.bootcss.com/getting-started/#template)
+- [实例精选](https://v3.bootcss.com/getting-started/#examples)
+- [栅格系统](https://v3.bootcss.com/css/#grid)
 
 ### 常见布局
 
 [Bootstrap 优站精选](http://www.youzhan.org/)
-[实例精选](https://v3.bootcss.com/getting-started/#examples-navbars)
 
 - [两列布局](http://www.ghostchina.com/)
-- [左侧固定，右侧自适应]()
-- 居中
+- [左侧固定，右侧自适应](https://v3.bootcss.com/examples/dashboard/)
+- [水平居中](https://v3.bootcss.com/examples/jumbotron-narrow/)
 
 ```css
-.box {
+#box1 {
   width: 200px;
   height: 200px;
   margin: 0 auto;
+}
+```
+
+```css
+.container {
+  text-align: center;
+}
+#box2 {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
 }
 ```
