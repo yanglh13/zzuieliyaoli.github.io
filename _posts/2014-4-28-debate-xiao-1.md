@@ -63,4 +63,4 @@ categories: [Essay]
 
 ![](/images/posts/20140428.jpg)
 
-[原文地址](http://user.qzone.qq.com/466096042/blog/1398617073)
+以上。
