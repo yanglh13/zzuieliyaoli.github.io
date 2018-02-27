@@ -6,7 +6,7 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 
 ## 联系方式
 
-- Email: <a href="mailto:zzuieliyaoli@gmail.com">zzuieliyaoli#gmail.com</a>
+- Email: <a href="mailto:zzuieliyaoli@gmail.com">zzuieliyaoli@gmail.com</a>
 - 微信：bodyhead
 - 手机：Kzg2IDE1MTM5MTc5Nzg5
 
@@ -38,7 +38,6 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 - 常见 Web 前端性能优化方法；
 - PC 端与移动端页面的调试与开发；
 - 微信 JS-SDK，如微信分享、微信支付；
-- Linux 以及 Vim 常用的命令与操作；
 - Git 常用命令与操作；
 
 ### 了解过以下技术：
@@ -83,7 +82,6 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 - 负责除“登录/注册”外，所有页面的开发。
 - Flexbox + Flexible + REM 完成页面布局与移动端适配；
 - Lazyloading 提高页面加载速度；
-- 帮助同事理解与使用 ES6+，比如：Promise、Async/Await 等；
 
   ![星球发行移动端页面](/images/resume/star-mobile.png)
 
