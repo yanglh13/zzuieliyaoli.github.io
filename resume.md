@@ -1,14 +1,10 @@
----
-layout: pageAbout
-permalink: /resume/
-title: Web 前端开发工程师 / JavaScript 开发工程师
----
+# Web 前端开发工程师
 
 ## 联系方式
 
 - Email: <a href="mailto:zzuieliyaoli@gmail.com">zzuieliyaoli@gmail.com</a>
 - 微信：bodyhead
-- 手机：Kzg2IDE1MTM5MTc5Nzg5
+- 手机：15139179789
 
 ## 基本信息
 
@@ -78,7 +74,7 @@ title: Web 前端开发工程师 / JavaScript 开发工程师
 
 #### 移动端页面
 
-- 负责项目脚手架搭建。基于 Vue-cli 单页面应用（SPA）模板，修改 Webpack 相关配置文件，最终实现多页面应用的开发；博文：<a href="/2017-05-06/vue-multi-pages-application-boilerplate-modified-by-vue-cli.html" target="_blank">基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架</a>
+- 负责项目脚手架搭建。基于 Vue-cli 单页面应用（SPA）模板，修改 Webpack 配置文件，最终实现多页面应用的开发；博文：<a href="/2017-05-06/vue-multi-pages-application-boilerplate-modified-by-vue-cli.html" target="_blank">基于 Vue-cli 构建多页面应用（Multi-pages Application）脚手架</a>
 - 负责除“登录/注册”外，所有页面的开发。
 - Flexbox + Flexible + REM 完成页面布局与移动端适配；
 - Lazyloading 提高页面加载速度；
