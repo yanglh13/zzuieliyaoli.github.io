@@ -207,7 +207,7 @@ Even though a portal can be anywhere in the DOM tree, it behaves like a normal R
 
 This includes event bubbling. An event fired from inside a portal will propagate to ancestors in the containing React tree, even if those elements are not ancestors in the DOM tree.
 
-## (Error Boundaries)(https://reactjs.org/docs/error-boundaries.html)
+## [Error Boundaries](https://reactjs.org/docs/error-boundaries.html)
 
 Error boundaries do not catch errors for:
 
